@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="placeholder" style="background-color: #b0deff; ">
+    Home
+  </div>
+  <!-- #################################################### -->
+  <div class="wrapper collapsed sticky">
+    <div onclick="clickHandler(event)" data-target="buy">
+      <div class="content underline">
+        Buy
+      </div>
+    </div>
+    <div onclick="clickHandler(event)" data-target="sell">
+      <div class="active content underline">
+        Sell
+      </div>
+    </div>
+    <div onclick="clickHandler(event)" data-target="rent">
+      <div class="content underline">
+        Rent
+      </div>
+    </div>
+  </div>
+  <div id="buy" class="placeholder" style="background-color: #fff8a6; ">Buy</div>
+  <div id="sell" class="placeholder" style="background-color:#b0f4e6; ">Sell</div>
+  <div id="rent" class="placeholder" style="background-color: plum; ">Rent</div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+    })
+    function clickHandler(event) {
+      var wrapper = document.querySelector('.wrapper');
+      wrapper.classList.toggle('collapsed');
+      event.target.classList.add('active')
+      wrapper.querySelectorAll(':scope >div').forEach((wrapperChild) => {
+        var wrapperChildContent = wrapperChild.querySelector('.content');
+        if (wrapperChildContent !== event.target) {
+          wrapperChildContent.classList.remove('active')
+        } else {
+          // read data-target of wrapperChild
+          if(wrapperChild.dataset.target){
+            smoothScroll(wrapperChild.dataset.target)
+          }
+        }
+      })
+    }
+    function smoothScroll(elementId) {
+      document.getElementById(elementId).scrollIntoView()
+    };
+  </script>
+</body>
+
+</html>
