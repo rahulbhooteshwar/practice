@@ -1,0 +1,7 @@
+div.dxp.dxp-site-map-group-item .group-item {
+  margin-bottom: 1.1875rem;
+}
+div.dxp.dxp-site-map-group-item .disable {
+  pointer-events: none;
+  cursor: not-allowed;
+}

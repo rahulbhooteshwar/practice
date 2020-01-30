@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <title>accordion</title>
+    <link rel="stylesheet" href="https://asset.mastercard.com/dxp-styles/latest/css/dxp-fonts.min.css">
+  <link rel="stylesheet" href="https://asset.mastercard.com/dxp-styles/latest/css/dxp.min.css">
+  <link rel="stylesheet" href="https://asset.mastercard.com/dxp-styles/latest/css/themes/dxp-theme-b2b/dxp-theme-b2b.min.css">
+  <link rel="stylesheet" href="https://asset.mastercard.com/dxp-styles/latest/css/themes/dxp-theme-black/dxp-theme-black.min.css">
+  <link rel="stylesheet" href="https://asset.mastercard.com/dxp-styles/latest/css/themes/dxp-theme-light-grey/dxp-theme-light-grey.min.css">
+  <link rel="stylesheet" href="https://asset.mastercard.com/dxp-styles/latest/css/themes/dxp-theme-rich-grey/dxp-theme-rich-grey.min.css">
+  <link rel="stylesheet" href="https://asset.mastercard.com/dxp-styles/latest/css/themes/dxp-theme-white/dxp-theme-white.min.css">
+
+  
+
+  <script nomodule="" src="./dist/dxp-web/dxp-web.js"></script>
+  <script type="module" src="./dist/dxp-web/dxp-web.esm.js"></script>
+  
+  </head>
+
+  <body data-theme="dxp-theme-black">
+    <div class="dxp dxp-theme-black">
+      <dxp-header-rich is-header-sticky="true" background-type="solid">
+        <dxp-logo slot="logo" src="./images/logos/mastercard_circles_92px_2x.png?at=refs%2Fheads%2Fmaster" src-sm="https://stage.asset.mastercard.com/dxp-ui/assets/dxp-logo/mc-logo-sm.svg"
+          href="http://www.mastercard.com" alt="Go to Mastercard">
+        </dxp-logo>
+        <dxp-nav slot="nav">
+          <dxp-nav-menu link-title="Mastercard for you" navigation-title="Mastercard for you" menu-route-link="/consumers"
+            accessibility-text="Mastercard for you menuitem">
+            <dxp-cta-list title-text="With Mastercard in your wallet, life is full of priceless possibilities" title-style="dxp-title-sm" orientation="vertical">
+              <dxp-cta type="link" text="Contact Us" href="https://google.com" icon-align="left"
+                src="./images/icons/icon-facebook-white.svg"
+                open-in-new-tab="false"></dxp-cta>
+              <dxp-cta type="link" src="./images/icons/icon-facebook-white.svg" icon-align="left"
+                text="Get support" href="https://google.com" open-in-new-tab="false"></dxp-cta>
+              <dxp-cta type="link" src="./images/icons/icon-facebook-white.svg" icon-align="left"
+                text="Report a card missing" href="https://google.com" open-in-new-tab="false"></dxp-cta>
+            </dxp-cta-list>
+            <dxp-nav-item-container slot="group-content">
+              <dxp-nav-item-content navigation-title="Event Details"
+                description-text="Find new ways to pay, explore trending tenchnologies and discover all that is priceless."
+                menu-route-link="./event-detail-template-local.html" link-title="accessibililty-text"></dxp-nav-item-content>
+              <dxp-nav-item-content navigation-title="Event Overview"
+                description-text="Find the credit, debit or prepaid card for your needs and lifestyle."
+                menu-route-link="./event-overview-template-local.html" link-title="accessibililty-text"></dxp-nav-item-content>
+              <dxp-nav-item-content navigation-title="Cardholder benefits"
+                description-text="Learn more about the features, offers and perks that come with your Mastercard."
+                menu-route-link="https://google.com" link-title="accessibililty-text"></dxp-nav-item-content>
+            </dxp-nav-item-container>
+          </dxp-nav-menu>
+          <dxp-nav-menu link-title="Mastercard for business" navigation-title="Mastercard for business"
+            menu-route-link="/businesses" accessibility-text="Mastercard for business menu">
+            <dxp-cta-list title-text="With Mastercard in your wallet, life is full of priceless possibilities" title-style="dxp-title-sm" orientation="vertical">
+              <dxp-cta type="link" text="Contact Us" href="https://google.com" icon-align="left"
+                src="./images/icons/icon-facebook-white.svg"
+                open-in-new-tab="false"></dxp-cta>
+              <dxp-cta type="link" src="./images/icons/icon-facebook-white.svg" icon-align="left"
+                text="Get support" href="https://google.com" open-in-new-tab="false"></dxp-cta>
+              <dxp-cta type="link" src="./images/icons/icon-facebook-white.svg" icon-align="left"
+                text="Report a card missing" href="https://google.com" open-in-new-tab="false"></dxp-cta>
+            </dxp-cta-list>
+            <dxp-nav-item-container slot="group-content">
+              <dxp-nav-item-content navigation-title="Get started"
+                description-text="Whether you're a small shop or global enterprise, find payment solutions and tools to grow your solutions."
+                menu-route-link="https://google.com" link-title="accessibililty-text"></dxp-nav-item-content>
+              <dxp-nav-item-content navigation-title="Banks"
+                description-text="Empower tour customers with innovative payment solutions and data-driven sights."
+                menu-route-link="https://google.com" link-title="accessibililty-text"></dxp-nav-item-content>
+              <dxp-nav-item-content navigation-title="Public Sector"
+                description-text="Unlock inclusive economic growth, create operational efficiencies and better your community."
+                menu-route-link="https://google.com" link-title="accessibililty-text"></dxp-nav-item-content>
+            </dxp-nav-item-container>
+          </dxp-nav-menu>
+          <dxp-nav-menu link-title="Our Vision" navigation-title="Our Vision" menu-route-link="/consumers"
+            accessibility-text="Our Vision menuitem">
+            <dxp-cta-list title-text="With Mastercard in your wallet, life is full of priceless possibilities" title-style="dxp-title-sm" orientation="vertical">
+              <dxp-cta type="link" text="Contact Us" href="https://google.com" icon-align="left"
+                src="./images/icons/icon-facebook-white.svg"
+                open-in-new-tab="false"></dxp-cta>
+              <dxp-cta type="link" src="./images/icons/icon-facebook-white.svg" icon-align="left"
+                text="Get support" href="https://google.com" open-in-new-tab="false"></dxp-cta>
+              <dxp-cta type="link" src="./images/icons/icon-facebook-white.svg" icon-align="left"
+                text="Report a card missing" href="https://google.com" open-in-new-tab="false"></dxp-cta>
+            </dxp-cta-list>
+            <dxp-nav-item-container slot="group-content">
+              <dxp-nav-item-content navigation-title="Get started"
+                description-text="Find new ways top pay, explore trending technologies and discover all that is priceless."
+                menu-route-link="https://google.com" link-title="accessibililty-text"></dxp-nav-item-content>
+              <dxp-nav-item-content navigation-title="Find a Card"
+                description-text="Find the right credit, debit or prepaid card for your needs and lifestyle."
+                menu-route-link="https://google.com" link-title="accessibililty-text"></dxp-nav-item-content>
+              <dxp-nav-item-content navigation-title="Cardholder benefits"
+                description-text="Unlock inclusive economic growth, create operational efficiencies and better your community."
+                menu-route-link="https://google.com" link-title="accessibililty-text"></dxp-nav-item-content>
+            </dxp-nav-item-container>
+          </dxp-nav-menu>
+        </dxp-nav>
+        <dxp-search slot="search" placeholder="Search" suggest-count=4 cfq="/content/mccom/" suggest-api-url= "/services/dxp/suggest/" cfq-locale="en-us" suggest-dictionary="contentSuggester"
+              suggest-collection="dm-mccom" search-type="advance" show-suggestions="true">
+              <dxp-cta-list title-text="With Mastercard in your wallet, life is full of priceless possibilities" title-style="dxp-title-sm" slot="cta" orientation="vertical">
+                <dxp-cta type="link" text="Contact Us" href="https://google.com" icon-align="left"
+                  src="./images/icons/icon-facebook-white.svg"
+                  open-in-new-tab="false"></dxp-cta>
+                <dxp-cta type="link" src="./images/icons/icon-facebook-white.svg" icon-align="left"
+                  text="Get support" href="https://google.com" open-in-new-tab="false"></dxp-cta>
+                <dxp-cta type="link" src="./images/icons/icon-facebook-white.svg" icon-align="left"
+                  text="Report a card missing" href="https://google.com" open-in-new-tab="false"></dxp-cta>
+              </dxp-cta-list>
+            </dxp-search>
+      </dxp-header-rich>
+    </div>
+    <div data-theme="dxp-theme-black">
+      <dxp-banner content-id="solid-hero-banner" banner-type="image-overlay" background-type="solid-background"
+        add-circle="true" banner-size="extra-long" data-theme="dxp-theme-white" eyebrow-title="LOREM IPSUM SIMPLY DUMMY TEXT."
+        title-text="Lorem ipsum dolor sit ultricies faucibus"
+        sub-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit" category-tag="" enable-overlay="false"
+        page-scroll-down-arrow=true>
+      </dxp-banner>
+    </div>
+    <div class="dxp-container" data-theme="dxp-theme-white">
+      <div class="">
+        <div class="dxp-col-12 dxp dxp-theme-light-grey">
+          <dxp-content-item-grid column="2" enable-pagination="true" items-per-page="2" pagination-display-text="Showing" first-button-label="Go to first page" last-button-label="Go to last page" next-button-label="Go to next page" previous-button-label="Go to previous page">
+            <dxp-content-item
+              data-theme = "dxp-theme-white"
+              content-type="content-image-text"
+              header-type="image"
+              orientation="vertical"
+              content-item-type="media-on-top"
+              eyebrow-text="OUR THESIS"
+              content-item-title="1 A harmonized brand identity for a modern world"
+              description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+              src="./images/content-item/Paddleboard-shade.png"
+              image-title="Mastercard"
+              alt="Mastercard"
+              href="https://www.mastercard.co.in"
+              open-in-new-tab="false"
+              enable-overlay=true
+              responsive=true
+              type="youtube"
+              src-video="MoX4qcvxPCI"
+              src-poster="./images/banner/white-bg.png"
+              height="300"
+              disable-controls="true" autoplay="true"
+              badge-text="new">
+              <dxp-cta-list orientation="horizontal" title-text="">
+                <dxp-cta type="link" link-type="dxp-btn-external-link" text="Explore capabilities" href="https://www.mastercard.co.in" open-in-new-tab="false"></dxp-cta>
+                <dxp-cta type="link" link-type="dxp-btn-external-link" text="Explore capabilities surprises" href="https://www.mastercard.co.in" open-in-new-tab="false"></dxp-cta>
+              </dxp-cta-list>
+            </dxp-content-item>
+            <dxp-content-item
+              data-theme = "dxp-theme-white"
+              content-type="content-image-text"
+              header-type="image"
+              orientation="vertical"
+              content-item-type="media-on-top"
+              eyebrow-text="OUR THESIS"
+              content-item-title="2 A harmonized brand identity for a modern world"
+              description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+              src="./images/content-item/Paddleboard-shade.png"
+              image-title="Mastercard"
+              alt="Mastercard"
+              href="https://www.mastercard.co.in"
+              open-in-new-tab="false"
+              enable-overlay=true
+              responsive=true
+              type="youtube"
+              source-id="MoX4qcvxPCI"
+              src-poster="./images/banner/white-bg.png"
+              height="300"
+              badge-text="new">
+              <dxp-cta-list orientation="horizontal" title-text="">
+                <dxp-cta type="link" link-type="dxp-btn-external-link" text="Explore capabilities" href="https://www.mastercard.co.in" open-in-new-tab="false"></dxp-cta>
+                <dxp-cta type="link" link-type="dxp-btn-external-link" text="Explore capabilities surprises" href="https://www.mastercard.co.in" open-in-new-tab="false"></dxp-cta>
+              </dxp-cta-list>
+            </dxp-content-item>
+            <dxp-content-item
+              data-theme = "dxp-theme-white"
+              content-type="content-image-text"
+              header-type="image"
+              orientation="vertical"
+              content-item-type="media-on-top"
+              eyebrow-text="OUR THESIS"
+              content-item-title="3 A harmonized brand identity for a modern world"
+              description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+              src="./images/content-item/Paddleboard-shade.png"
+              image-title="Mastercard"
+              alt="Mastercard"
+              href="https://www.mastercard.co.in"
+              open-in-new-tab="false"
+              enable-overlay=true
+              responsive=true
+              type="youtube"
+              source-id="MoX4qcvxPCI"
+              src-poster="./images/banner/white-bg.png"
+              height="300"
+              badge-text="new">
+              <dxp-cta-list orientation="horizontal" title-text="">
+                <dxp-cta type="link" link-type="dxp-btn-external-link" text="Explore capabilities" href="https://www.mastercard.co.in" open-in-new-tab="false"></dxp-cta>
+                <dxp-cta type="link" link-type="dxp-btn-external-link" text="Explore capabilities surprises" href="https://www.mastercard.co.in" open-in-new-tab="false"></dxp-cta>
+              </dxp-cta-list>
+            </dxp-content-item>
+            <dxp-content-item
+              data-theme = "dxp-theme-white"
+              content-type="content-image-text"
+              header-type="image"
+              orientation="vertical"
+              content-item-type="media-on-top"
+              eyebrow-text="OUR THESIS"
+              content-item-title="4 A harmonized brand identity for a modern world"
+              description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+              src="./images/content-item/Paddleboard-shade.png"
+              image-title="Mastercard"
+              alt="Mastercard"
+              href="https://www.mastercard.co.in"
+              open-in-new-tab="false"
+              enable-overlay=true
+              responsive=true
+              type="youtube"
+              source-id="MoX4qcvxPCI"
+              src-poster="./images/banner/white-bg.png"
+              height="300"
+              badge-text="new">
+              <dxp-cta-list orientation="horizontal" title-text="">
+                <dxp-cta type="link" link-type="dxp-btn-external-link" text="Explore capabilities" href="https://www.mastercard.co.in" open-in-new-tab="false"></dxp-cta>
+                <dxp-cta type="link" link-type="dxp-btn-external-link" text="Explore capabilities surprises" href="https://www.mastercard.co.in" open-in-new-tab="false"></dxp-cta>
+              </dxp-cta-list>
+            </dxp-content-item>
+          </dxp-content-item-grid>
+  
+        </div>
+        <div class="dxp-col-12">
+          <dxp-banner
+            content-id="benefits-hero-banner"
+            banner-type="benefits-hero"
+            banner-size="long"
+            eyebrow-title="LOREM IPSUM SIMPLY DUMMY TEXT."
+            title-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            sub-title="Lorem ipsum dolor sit"
+            image-enable-overlay="true"
+            src="./images/banner/2500X1406_test1.jpg?at=refs%2Fheads%2Fmaster"
+            image-title="banner-img"
+            alt="image-alt"
+            href="https://www.mastercard.com"
+            open-in-new-tab="true"
+            responsive="true"
+            position-of-image="Left">
+          </dxp-banner>
+          <dxp-line height-sm="80px" border-width="0px"></dxp-line>
+          <dxp-accordion heading="Mastercard" is-header-required=true >
+            <dxp-accordion-item item-title="How do I apply for a <b>MasterCard</b>?" item-subtitle="" item-description="Mastercard has created an online tool to assist in making decisions about which
+              card products are available." show-expanded=true>
+            </dxp-accordion-item>
+      
+            <dxp-accordion-item item-title="How do I <b>apply</b> for a MasterCard?"
+              item-subtitle="How do I <b>apply</b> for a MasterCard?" item-description="Description" show-expanded=true>
+              <dxp-copyright slot="top">
+                <h2>&lrm;© 1994-2018 Mastercard.&lrm; Mastercard is an Equal Opportunity Employer.&lrm;</h2>
+              </dxp-copyright>
+            </dxp-accordion-item>
+      
+          </dxp-accordion>
+        </div>
+      </div>
+    </div>
+    <div class="dxp-col-12 dxp dxp-theme-black" data-theme="dxp-theme-black">
+      <div class="dxp-container">
+        <dxp-footer content-id="dxp-footer" enable-logo="true" enable-quicklink="true" enable-contentlist="true" enable-footerlink="true" enable-sociallinks="true" enable-countrylanguageselectors="true" enable-copyright="true">
+          <!--  HTML Content for logo component-->
+               <dxp-logo  src="./images/logos/mclogo-for-footer.svg?at=refs%2Fheads%2Fmaster"
+                  src-sm="./images/logos/mclogo-for-footer.svg?at=refs%2Fheads%2Fmaster"
+                  href="http://www.mastercard.com"
+                  alt="Go to Mastercard" slot="logo">
+                </dxp-logo>
+            <!--End:HTML Content for logo component-->
+            <!--  HTML Content for CTA component-->
+                <dxp-cta-list orientation="vertical"  title-style="dxp-title-sm" title-text="Need help? We’re always here when you need us" slot="cta-list">
+                  <dxp-cta type="link"  link-type="dxp-btn-custom-link" icon-align="left" src="./images/icons/contact-us-grey-22x22.svg?at=refs%2Fheads%2Fmaster" text="Get support" href="https://mastercard.com" open-in-new-tab="false" accent-color="#b1ada6"></dxp-cta>
+                  <dxp-cta type="link"  link-type="dxp-btn-custom-link" icon-align="left"  src="./images/icons/credit-card-grey-23x15.svg?at=refs%2Fheads%2Fmaster" text="Report a missing card" href="https://mastercard.com" open-in-new-tab="false" accent-color="#b1ada6"></dxp-cta>
+                  <dxp-cta type="link"  link-type="dxp-btn-custom-link" icon-align="left" src="./images/icons/location-grey-15x23.svg?at=refs%2Fheads%2Fmaster" text="Find ATM" href="https://mastercard.com" open-in-new-tab="false" accent-color="#b1ada6"></dxp-cta>
+                </dxp-cta-list>
+                <!--End:HTML Content for CTA component-->
+            <!--HTML Content for content-list component-->
+            <dxp-content-list content-id="content-list" header-tag="h5"  title-text="Company" href="http://www.mastercard.com" aria-label="Company" target="true" slot="content-list">
+              <dxp-content-list-item sub-title="What we do" href="#" aria-label="What we do" target="false"></dxp-content-list-item>
+              <dxp-content-list-item sub-title="What we are" href="#" aria-label="What we are" target="true"></dxp-content-list-item>
+              <dxp-content-list-item sub-title="Careers" href="#" aria-label="Careers" target="true"></dxp-content-list-item>
+              <dxp-content-list-item sub-title="Newsroom" href="#" aria-label="Newsroom" target="true"></dxp-content-list-item>
+              <dxp-content-list-item sub-title="Investors" href="#" aria-label="Investors" target="true"></dxp-content-list-item>
+          </dxp-content-list>
+          <dxp-content-list content-id="content-list" header-tag="h5" title-text="Resources" href="http://www.mastercard.com" aria-label="Resources" target="true" slot="content-list">
+            <dxp-content-list-item sub-title="Mastercard Data & Service" href="#" aria-label="Mastercard Data & Service" target="false"></dxp-content-list-item>
+            <dxp-content-list-item sub-title="Mastercard Brand Center" href="#" aria-label="Mastercard Brand Center" target="true"></dxp-content-list-item>
+            <dxp-content-list-item sub-title="Mastercard Marketing Center" href="#" aria-label="Mastercard Marketing Center" target="true"></dxp-content-list-item>
+            <dxp-content-list-item sub-title="Mastercard Connect" href="#" aria-label="Mastercard Connect" target="true"></dxp-content-list-item>
+            <dxp-content-list-item sub-title="Developer Zone" href="#" aria-label="Developer Zone" target="true"></dxp-content-list-item>
+        </dxp-content-list>
+        
+          <dxp-content-list slot="content-link-list" orientation="horizontal">
+            <dxp-content-list-item sub-title="Privacy" href="#" aria-label="Privacy" target="false"></dxp-content-list-item>
+            <dxp-content-list-item sub-title="Terms" href="#" aria-label="Terms" target="true"></dxp-content-list-item>
+            <dxp-content-list-item sub-title="Accessibility" href="#" aria-label="Accessibility" target="true"></dxp-content-list-item>
+            <dxp-content-list-item sub-title="Sitemap" href="#" aria-label="Sitemap" target="true"></dxp-content-list-item>
+        </dxp-content-list>
+               <!--End:HTML Content for content-list component-->
+              <!--HTML Content for social-links component-->
+               <dxp-social-links social-type="follow" orientation='horizontal' slot='social-links'>
+                 <dxp-social-links-item type="linkedin" href="http://www.linkedin.com/company/mastercard" social-title="LinkedIn" alt="LinkedIn" target="true"></dxp-social-links-item>
+                 <dxp-social-links-item type="facebook" href="https://www.facebook.com/MasterCardUS?brand_redir=1" social-title="Facebook" alt="Facebook" target="true"></dxp-social-links-item>
+                <dxp-social-links-item type="twitter" href="https://twitter.com/mastercardnews" social-title="Twitter" alt="Twitter" target="true"></dxp-social-links-item>
+                <dxp-social-links-item type="youtube" href="http://www.youtube.com/user/MasterCard" social-title="Youtube" alt="Youtube" target="true"></dxp-social-links-item>
+                </dxp-social-links>
+              <!--End:HTML Content for social-links component-->
+            <!--HTML Content for country-language-selector component-->
+            <dxp-country-language-selector content-id="dxp-country-language-selector" logo-data
+            sub-title='Please Select'
+             button-label='Go back to site' slot="country-language-selector" api-url='https://api.myjson.com/bins/y4gbw'>
+        
+             <dxp-country country="Canada">
+               <dxp-language locale='fr-ca' language='French' in-language='Francias'
+                 link='https://www.mastercard.ca/fr' accessibity-text='Mastercard CA French Site'>
+               </dxp-language>
+               <dxp-language locale='en-ca' language='English' in-language='English'
+                 link='https://www.mastercard.ca/en' accessibity-text='Mastercard CA English Site'>
+               </dxp-language>
+             </dxp-country>
+             <dxp-country country="US">
+               <dxp-language locale='en-us' language='English' in-language='English'
+                 link='https://www.mastercard.us/en' accessibity-text='Mastercard US English Site'>
+               </dxp-language>
+             </dxp-country>
+           </dxp-country-language-selector>
+           <!--End:HTML Content for country-language-selector component-->
+            <!--HTML Content for copyright component-->
+               <dxp-copyright text='© 1994-2019 Mastercard' slot='copyright'></dxp-copyright>
+            <!--End:HTML Content for copyright component-->
+          </dxp-footer >
+      </div>
+    </div>
+    
+  </body>
+
+</html>

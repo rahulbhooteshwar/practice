@@ -1,0 +1,223 @@
+div.dxp.dxp-checkbox-tree .chkbox-tree {
+  box-sizing: border-box;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree > .chkbox-tree-node {
+  padding-left: 0;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-nodes {
+  list-style: none;
+  padding-left: 1.438rem;
+  overflow: hidden;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-nodes:first-child {
+  padding-left: 0;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-node {
+  cursor: pointer;
+  overflow: hidden;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-node.chkbox-tree-placeholder {
+  padding-left: 1.438rem;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-node > div input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-icon, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-disabled.chkbox-tree-node-checked > div > .chkbox-tree-checkbox::after, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-halfchecked > div > .chkbox-tree-checkbox::after, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-checked > div > .chkbox-tree-checkbox::after, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-checkbox::before, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-close > div > .chkbox-tree-switcher::before, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-switcher::before, div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-node-disabled.chkbox-tree-node-checked > div > .chkbox-tree-checkbox::after, div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-node-halfchecked > div > .chkbox-tree-checkbox::after, div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-node-checked > div > .chkbox-tree-checkbox::after, div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-checkbox::before, div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-node-close > div > .chkbox-tree-switcher::before, div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-switcher::before {
+  cursor: pointer;
+  position: absolute;
+  top: 0.2rem;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-sw, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-checkbox, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-switcher, div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-checkbox, div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-switcher {
+  vertical-align: sub;
+  margin-right: 1.438rem;
+  cursor: pointer;
+  position: relative;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-switcher::before {
+  top: -0.5rem;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-node-close > div > .chkbox-tree-switcher::before {
+  top: -0.5rem;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-node-close > .chkbox-tree-nodes {
+  height: 0;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-node-disabled {
+  cursor: not-allowed;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-node-disabled > div .chkbox-tree-checkbox {
+  cursor: not-allowed;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-node-disabled > div .chkbox-tree-checkbox::before {
+  cursor: not-allowed;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-node-disabled > div .chkbox-tree-checkbox:hover::before {
+  box-shadow: none;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-label {
+  vertical-align: middle;
+  margin-top: 0.125rem;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-label-bold {
+  margin-left: 1.375rem;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .help-g {
+  margin-top: 0;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .trunc-display {
+  align-items: center;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-bilr, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-rpps, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-proc, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-rtn, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-cid, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-rng, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-bin, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-ica, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-bilr, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-rpps, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-proc, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-rtn, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-cid, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-rng, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-bin, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-ica {
+  text-align: center;
+  padding: 0.069rem 0.375rem 0.006rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  width: 2.125rem;
+  height: 1rem;
+  margin-left: 1.4rem;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-proc {
+  padding: 0.069rem 0.188rem 0.006rem;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-rpps {
+  padding: 0.069rem 0.188rem 0.006rem;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-bilr {
+  padding: 0.069rem 0.188rem 0.006rem;
+}
+div.dxp.dxp-checkbox-tree .chkbox-tree .trunc-align.trunc-rtl {
+  display: flex;
+  align-items: center;
+}
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-bilr, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-rpps, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-proc, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-rtn, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-cid, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-rng, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-bin, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-ica, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-ica, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-bin, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-rng, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-cid, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-rtn, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-proc, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-rpps, div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-bilr {
+    padding: 0.125rem 0.375rem;
+  }
+  div.dxp.dxp-checkbox-tree .chkbox-tree .chk-pill-proc {
+    padding: 0.125rem 0.25rem;
+  }
+  div.dxp.dxp-checkbox-tree .chkbox-tree .trunc-align.trunc-rtl {
+    display: inline-table;
+    align-items: center;
+  }
+  div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-switcher::before {
+    top: -1.188rem;
+  }
+  div.dxp.dxp-checkbox-tree .chkbox-tree .chkbox-tree-node-close > div > .chkbox-tree-switcher::before {
+    top: -1.188rem;
+  }
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree {
+  box-sizing: border-box;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree > .chkbox-tree-node {
+  padding-right: 0;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-nodes {
+  list-style: none;
+  padding-right: 1.438rem;
+  overflow: hidden;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-nodes:first-child {
+  padding-right: 0;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node {
+  cursor: pointer;
+  overflow: hidden;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node.chkbox-tree-placeholder {
+  padding-right: 1.438rem;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-icon, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-disabled.chkbox-tree-node-checked > div > .chkbox-tree-checkbox::after, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-halfchecked > div > .chkbox-tree-checkbox::after, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-checked > div > .chkbox-tree-checkbox::after, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-checkbox::before, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-close > div > .chkbox-tree-switcher::before, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-switcher::before {
+  cursor: pointer;
+  position: absolute;
+  top: 0.2rem;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-sw, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-checkbox, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-switcher {
+  vertical-align: sub;
+  margin-left: 1.438rem;
+  cursor: pointer;
+  position: relative;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-switcher::before {
+  top: -0.5rem;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-close > div > .chkbox-tree-switcher::before {
+  top: -0.5rem;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-close > .chkbox-tree-nodes {
+  height: 0;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-checkbox {
+  margin-right: 0;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-disabled {
+  cursor: not-allowed;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-disabled > div .chkbox-tree-checkbox {
+  cursor: not-allowed;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-disabled > div .chkbox-tree-checkbox::before {
+  cursor: not-allowed;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-disabled > div .chkbox-tree-checkbox:hover::before {
+  box-shadow: none;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-label {
+  vertical-align: middle;
+  margin-top: 0.125rem;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-label-bold {
+  margin-right: 1.375rem;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .help-g {
+  margin-top: 0;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .trunc-display {
+  align-items: center;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-bilr, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-rpps, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-proc, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-rtn, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-cid, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-rng, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-bin, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-ica {
+  text-align: center;
+  padding: 0.069rem 0.375rem 0.006rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+  width: 2.125rem;
+  height: 1rem;
+  margin-right: 1.4rem;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-proc {
+  padding: 0.069rem 0.188rem 0.006rem;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-rpps {
+  padding: 0.069rem 0.188rem 0.006rem;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-bilr {
+  padding: 0.069rem 0.188rem 0.006rem;
+}
+div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .trunc-align.trunc-rtl {
+  display: flex;
+  align-items: center;
+}
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-ica, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-bin, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-rng, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-cid, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-rtn, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-proc, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-rpps, div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chk-pill-bilr {
+    padding: 0.125rem 0.375rem;
+  }
+  div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .trunc-align.trunc-rtl {
+    display: inline-table;
+    align-items: center;
+  }
+  div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-switcher::before {
+    top: -1.188rem;
+  }
+  div.dxp.dxp-checkbox-tree[dir=rtl] .chkbox-tree .chkbox-tree-node-close > div > .chkbox-tree-switcher::before {
+    top: -1.188rem;
+  }
+}

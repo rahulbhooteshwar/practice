@@ -1,0 +1,9 @@
+div.dxp.dxp-social-links .vertical, div.dxp.dxp-social-links .horizontal {
+  display: inline-flex;
+}
+div.dxp.dxp-social-links .vertical {
+  flex-direction: column;
+}
+div.dxp.dxp-social-links p:first-child {
+  margin-bottom: 8px;
+}

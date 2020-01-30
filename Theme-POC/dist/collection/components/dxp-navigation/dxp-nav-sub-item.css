@@ -1,0 +1,14 @@
+.dxp.dxp-nav-sub-item {
+  background: transparent;
+}
+@media (min-width: 1200px) {
+  .dxp.dxp-nav-sub-item .dxp-col-lg-4 {
+    padding-left: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .dxp.dxp-nav-sub-item [dir=rtl] .dxp-col-lg-4 {
+    padding-right: 24px;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,9 @@
+li.dxp.dxp-site-map-list-item {
+  text-decoration: none;
+  overflow: hidden;
+  margin-top: 1.1875rem;
+}
+li.dxp.dxp-site-map-list-item .disable {
+  pointer-events: none;
+  cursor: not-allowed;
+}

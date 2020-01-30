@@ -1,0 +1,248 @@
+div.dxp.dxp-navigation-banner select::-ms-expand {
+  display: none;
+}
+div.dxp.dxp-navigation-banner .navigation-banner {
+  position: relative;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state {
+  display: flex;
+  flex-flow: row wrap;
+  order: 2;
+  padding: 5.8rem 0 4rem;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-container,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container {
+  float: left;
+  width: 50%;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-container {
+  padding-right: 7.25rem;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-container h2 {
+  margin-bottom: 0.718rem;
+  line-height: 2.63rem;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-container .dxp-title-eyebrow {
+  margin-bottom: 0.8125rem;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container .dxp-lead {
+  margin-bottom: 1.1rem;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container .dropdown-block {
+  margin-bottom: 1.5rem;
+  width: 79.1%;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state.apply-indentation .banner-container {
+  padding-left: 6.75rem;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state.apply-indentation .banner-with-dropdown-container {
+  padding-right: 6.75rem;
+  padding-left: 7.25rem;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state {
+  display: flex;
+  flex-flow: column;
+  padding: 5.23rem 0 4.52rem;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-container,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container {
+  float: none;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-container h2,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container h2 {
+  margin-bottom: 0.1rem;
+  line-height: 2.375rem;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container .dxp-lead {
+  margin-bottom: 1rem;
+  margin-top: 0.45rem;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container .add-dropdown {
+  margin-bottom: 1rem;
+  margin-top: 0.55rem;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container .dropdown-block {
+  margin-bottom: 1.5rem;
+  width: 77.8%;
+}
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .apply-indentation .banner-container,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .apply-indentation .banner-with-dropdown-container {
+  padding-left: 6.75rem;
+  padding-right: 7.25rem;
+}
+@media (max-width: 991px) {
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state {
+    flex-direction: column;
+    padding: 5.15rem 0 4rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-container,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container {
+    padding-right: 17.25rem;
+    width: 100% !important;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-container h2,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container h2 {
+    margin-bottom: 0.1rem;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-container .dxp-lead,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container .dxp-lead {
+    margin-bottom: 1.1rem;
+    margin-top: 0.44rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-container .dropdown-block,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container .dropdown-block {
+    width: 89.1%;
+    margin-bottom: 1.5rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state.apply-indentation .banner-container,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state.apply-indentation .banner-with-dropdown-container {
+    padding-left: 2.25rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state {
+    padding: 5.2rem 0 4rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-container,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-container h2,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container h2 {
+    margin-bottom: 0.1rem;
+    line-height: 2.25rem;
+    font-size: 1.75rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-container .dxp-lead,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container .dxp-lead {
+    margin-bottom: 1rem;
+    margin-top: 0.45rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-container .add-dropdown,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container .add-dropdown {
+    margin-bottom: 1.1rem;
+    margin-top: 0.45rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-container .dropdown-block,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container .dropdown-block {
+    width: 67.1%;
+    margin-bottom: 1.47rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state.apply-indentation .banner-container,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state.apply-indentation .banner-with-dropdown-container {
+    padding-left: 2.25rem;
+    padding-right: 17.25rem;
+  }
+}
+@media (max-width: 767px) {
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state {
+    padding: 3.62rem 0 2.11rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-container,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container {
+    padding: 0;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container h2 {
+    margin-bottom: 0.1rem;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container .dxp-lead {
+    margin-bottom: 2.125rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container .dropdown-block {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container .cta-block {
+    display: grid;
+    width: 50%;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state.apply-indentation {
+    padding: 3.62rem 1.2rem 2.11rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state.apply-indentation .banner-container,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content .navigation-banner-state.apply-indentation .banner-with-dropdown-container {
+    padding: 0;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state {
+    padding: 3.7rem 0 2.6rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state.apply-indentation {
+    padding: 3.7rem 1.2rem 2.6rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state.apply-indentation .banner-container,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state.apply-indentation .banner-with-dropdown-container {
+    padding: 0;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-container,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container {
+    padding: 0;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-container h2,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container h2 {
+    margin-bottom: 0.368rem;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-container .dxp-lead,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container .dxp-lead {
+    margin-bottom: 1.5rem;
+    margin-top: 0.1rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-container .add-dropdown,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container .add-dropdown {
+    margin-bottom: 2.1rem;
+    margin-top: 0.225rem;
+  }
+  div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-container .dropdown-block,
+div.dxp.dxp-navigation-banner .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state .banner-with-dropdown-container .dropdown-block {
+    width: 100%;
+    margin-bottom: 1.92rem;
+  }
+}
+div.dxp.dxp-navigation-banner[dir=rtl] .navigation-banner .navigation-banner-content .navigation-banner-state {
+  flex-direction: row-reverse;
+}
+div.dxp.dxp-navigation-banner[dir=rtl] .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container {
+  padding-left: 7.25rem;
+}
+div.dxp.dxp-navigation-banner[dir=rtl] .navigation-banner .navigation-banner-content.vertical-content .navigation-banner-state {
+  display: flex;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+@media (max-width: 991px) {
+  div.dxp.dxp-navigation-banner[dir=rtl] .navigation-banner .navigation-banner-content .navigation-banner-state.apply-indentation .banner-container,
+div.dxp.dxp-navigation-banner[dir=rtl] .navigation-banner .navigation-banner-content .navigation-banner-state.apply-indentation .banner-with-dropdown-container {
+    padding-right: 2.25rem;
+    padding-left: 17.25rem;
+  }
+  div.dxp.dxp-navigation-banner[dir=rtl] .navigation-banner .navigation-banner-content .navigation-banner-state .banner-container,
+div.dxp.dxp-navigation-banner[dir=rtl] .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container {
+    padding-right: 0;
+    padding-left: 17.25rem;
+  }
+}
+@media (max-width: 767px) {
+  div.dxp.dxp-navigation-banner[dir=rtl] .navigation-banner .navigation-banner-content .navigation-banner-state.apply-indentation .banner-container,
+div.dxp.dxp-navigation-banner[dir=rtl] .navigation-banner .navigation-banner-content .navigation-banner-state.apply-indentation .banner-with-dropdown-container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  div.dxp.dxp-navigation-banner[dir=rtl] .navigation-banner .navigation-banner-content .navigation-banner-state .banner-container,
+div.dxp.dxp-navigation-banner[dir=rtl] .navigation-banner .navigation-banner-content .navigation-banner-state .banner-with-dropdown-container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

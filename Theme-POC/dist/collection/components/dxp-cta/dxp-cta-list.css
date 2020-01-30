@@ -1,0 +1,43 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-cta-list {
+  background: transparent;
+}
+div.dxp.dxp-cta-list ::slotted(dxp-cta),
+div.dxp.dxp-cta-list dxp-cta {
+  /* overriding default button style */
+  -webkit-appearance: none !important;
+}
+div.dxp.dxp-cta-list ::slotted(dxp-cta.dxp-btn-block),
+div.dxp.dxp-cta-list .dxp-cta.dxp-btn-block,
+div.dxp.dxp-cta-list dxp-cta.dxp-btn-block {
+  display: block;
+  width: 100%;
+}
+div.dxp.dxp-cta-list .vertical {
+  display: flex;
+  flex-direction: column;
+}
+div.dxp.dxp-cta-list .vertical ::slotted(dxp-cta),
+div.dxp.dxp-cta-list .vertical dxp-cta {
+  display: inline-block;
+}
+div.dxp.dxp-cta-list .vertical ::slotted(dxp-cta:not(:last-child)),
+div.dxp.dxp-cta-list .vertical dxp-cta:not(:last-child) {
+  margin-bottom: 24px;
+}
+div.dxp.dxp-cta-list .horizontal ::slotted(dxp-cta),
+div.dxp.dxp-cta-list .horizontal dxp-cta {
+  margin: 0 0 24px 0;
+  display: inline-block;
+}
+div.dxp.dxp-cta-list .horizontal ::slotted(dxp-cta:not(:last-child)),
+div.dxp.dxp-cta-list .horizontal dxp-cta:not(:last-child) {
+  margin: 0 24px 24px 0;
+}
+div.dxp.dxp-cta-list p {
+  margin-bottom: 40px;
+}
+div.dxp.dxp-cta-list[dir=rtl] .horizontal ::slotted(dxp-cta),
+div.dxp.dxp-cta-list[dir=rtl] .horizontal dxp-cta {
+  margin: 0 0 24px 24px;
+}

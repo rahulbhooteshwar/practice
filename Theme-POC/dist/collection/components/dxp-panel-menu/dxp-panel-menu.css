@@ -1,0 +1,94 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-panel-menu {
+  width: 100%;
+  padding: 1rem;
+}
+div.dxp.dxp-panel-menu .panel-control-group {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+div.dxp.dxp-panel-menu .panel-control-group.panel-vertical {
+  display: inline-block;
+  width: 25%;
+  padding-right: 2.5rem;
+  float: left;
+}
+div.dxp.dxp-panel-menu .panel-control {
+  text-align: left;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-width: 6.1875rem;
+  background: transparent;
+  border-radius: 0;
+  padding: 0 12px;
+  font-size: 0.875rem;
+}
+div.dxp.dxp-panel-menu .panel-control.panel-fixed-width {
+  width: 100%;
+}
+div.dxp.dxp-panel-menu .panel-control .panel-icon-wrapper {
+  display: inline-block;
+}
+@media (max-width: 767.9px) {
+  div.dxp.dxp-panel-menu .panel-control .panel-icon-wrapper {
+    display: block;
+  }
+}
+div.dxp.dxp-panel-menu .panel-control .panel-icon-wrapper img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+div.dxp.dxp-panel-menu .panel-control.panel-control-active .panel-title {
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+  outline: none;
+}
+div.dxp.dxp-panel-menu .panel-control.panel-control-active .subpanel-wrapper {
+  padding: 1rem 0;
+}
+div.dxp.dxp-panel-menu .panel-control.panel-control-active .subpanel-wrapper .sub-menus {
+  margin-bottom: 0.5rem;
+}
+div.dxp.dxp-panel-menu .panel-control.panel-control-active .subpanel-wrapper .sub-menus:last-child {
+  margin-bottom: 0;
+}
+div.dxp.dxp-panel-menu .panel-control .panel-title {
+  padding: 0.75rem 0.0625rem;
+  height: 100%;
+}
+@media (max-width: 767.9px) {
+  div.dxp.dxp-panel-menu .panel-control .panel-title .icon-only-sm {
+    display: none;
+  }
+}
+div.dxp.dxp-panel-menu .panel-control:not(.panel-control-active) .panel-title:hover,
+div.dxp.dxp-panel-menu .panel-control:not(.panel-control-active) .panel-title:focus {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+div.dxp.dxp-panel-menu .item-wrapper.item-wrapper-vertical {
+  padding: 0 0 2rem 1rem;
+  width: calc(75% - 1.5rem);
+  display: inline-block;
+}
+div.dxp.dxp-panel-menu .item-wrapper .item-container {
+  padding: 3rem 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+@media (max-width: 767px) {
+  div.dxp.dxp-panel-menu .panel-control {
+    font-size: 0.75rem;
+    min-width: 9rem;
+  }
+  div.dxp.dxp-panel-menu .panel-control.panel-control-active .panel-title {
+    border-bottom-width: 4px;
+  }
+  div.dxp.dxp-panel-menu .panel-control .panel-icon-wrapper img {
+    margin-bottom: 0.5rem;
+  }
+}

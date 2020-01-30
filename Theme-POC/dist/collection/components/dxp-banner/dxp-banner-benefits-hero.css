@@ -1,0 +1,339 @@
+div.dxp-banner-benefits-hero .benefits-hero,
+div.dxp-banner-benefits-hero .banner-small {
+  position: relative;
+}
+div.dxp-banner-benefits-hero .benefits-hero-content,
+div.dxp-banner-benefits-hero .banner-small-content {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+div.dxp-banner-benefits-hero .benefits-hero-content .banner-state,
+div.dxp-banner-benefits-hero .banner-small-content .banner-state {
+  display: flex;
+  flex-flow: row wrap;
+  order: 2;
+}
+div.dxp-banner-benefits-hero .benefits-hero-content .banner-state .img-wrapper,
+div.dxp-banner-benefits-hero .banner-small-content .banner-state .img-wrapper {
+  float: left;
+}
+div.dxp-banner-benefits-hero .benefits-hero-content .banner-state .content-wrapper,
+div.dxp-banner-benefits-hero .banner-small-content .banner-state .content-wrapper {
+  float: left;
+  position: absolute;
+  right: 0;
+  top: 51%;
+  transform: translateY(-51%);
+  white-space: normal;
+}
+@media (min-width: 1440px) {
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state .content-wrapper,
+div.dxp-banner-benefits-hero .banner-small-content .banner-state .content-wrapper {
+    padding-right: calc((100% - 1440px) / 2);
+    padding-left: 8rem;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1656px) {
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state .content-wrapper,
+div.dxp-banner-benefits-hero .banner-small-content .banner-state .content-wrapper {
+    padding-right: 108px;
+  }
+}
+div.dxp-banner-benefits-hero .benefits-hero-content .banner-state .content-wrapper .dxp-title-eyebrow,
+div.dxp-banner-benefits-hero .banner-small-content .banner-state .content-wrapper .dxp-title-eyebrow {
+  margin-bottom: 0.875rem;
+}
+div.dxp-banner-benefits-hero .benefits-hero-content .banner-state .content-wrapper h2,
+div.dxp-banner-benefits-hero .banner-small-content .banner-state .content-wrapper h2 {
+  margin-bottom: 1.125rem;
+}
+div.dxp-banner-benefits-hero .benefits-hero-content .banner-state .content-wrapper .dxp-lead,
+div.dxp-banner-benefits-hero .banner-small-content .banner-state .content-wrapper .dxp-lead {
+  margin-bottom: 1.5rem;
+}
+div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.reverse,
+div.dxp-banner-benefits-hero .banner-small-content .banner-state.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  padding-right: 0;
+  padding-left: 0;
+}
+div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.reverse .content-wrapper,
+div.dxp-banner-benefits-hero .banner-small-content .banner-state.reverse .content-wrapper {
+  left: 24px;
+  right: auto;
+  float: right;
+}
+@media (min-width: 992px) {
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.reverse .content-wrapper,
+div.dxp-banner-benefits-hero .banner-small-content .banner-state.reverse .content-wrapper {
+    left: 0;
+  }
+}
+@media (min-width: 1440px) {
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.reverse .content-wrapper,
+div.dxp-banner-benefits-hero .banner-small-content .banner-state.reverse .content-wrapper {
+    left: calc((100% - 1440px) / 2);
+    width: calc( 50% - calc((100% - 1440px) / 2));
+    padding-left: 0;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1656px) {
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.reverse .content-wrapper,
+div.dxp-banner-benefits-hero .banner-small-content .banner-state.reverse .content-wrapper {
+    padding-left: 108px;
+    padding-right: 128px;
+    left: 0;
+  }
+}
+div.dxp-banner-benefits-hero.full-height-banner {
+  max-height: 100%;
+  overflow: hidden;
+}
+div.dxp-banner-benefits-hero .img-wrapper {
+  overflow: hidden;
+}
+div.dxp-banner-benefits-hero .banner-state {
+  overflow: hidden;
+}
+div.dxp-banner-benefits-hero .banner-state .img-wrapper {
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+}
+div.dxp-banner-benefits-hero .banner-state .content-wrapper {
+  padding-right: 108px;
+  padding-left: 128px;
+}
+div.dxp-banner-benefits-hero .banner-state .img-wrapper,
+div.dxp-banner-benefits-hero .banner-state .content-wrapper {
+  width: 50%;
+}
+div.dxp-banner-benefits-hero .banner-state.extra-long .img-wrapper {
+  height: 100vh;
+  max-height: 100vh;
+}
+div.dxp-banner-benefits-hero .banner-state.long {
+  max-height: 650px;
+}
+div.dxp-banner-benefits-hero .banner-state.long .img-wrapper {
+  height: 650px;
+}
+div.dxp-banner-benefits-hero .banner-state.medium {
+  max-height: 450px;
+}
+div.dxp-banner-benefits-hero .banner-state.short {
+  max-height: 350px;
+}
+div.dxp-banner-benefits-hero .banner-state.extra-long .content-wrapper .dxp-title-eyebrow, div.dxp-banner-benefits-hero .banner-state.long .content-wrapper .dxp-title-eyebrow {
+  margin-bottom: 0;
+}
+div.dxp-banner-benefits-hero .banner-state.extra-long .content-wrapper .dxp-title-eyebrow + .dxp-header-text, div.dxp-banner-benefits-hero .banner-state.long .content-wrapper .dxp-title-eyebrow + .dxp-header-text {
+  margin-top: 22px;
+  margin-bottom: 0;
+}
+div.dxp-banner-benefits-hero .banner-state.extra-long .content-wrapper .dxp-title-eyebrow + .dxp-header-text + .dxp-lead, div.dxp-banner-benefits-hero .banner-state.long .content-wrapper .dxp-title-eyebrow + .dxp-header-text + .dxp-lead {
+  margin-top: 1rem;
+}
+div.dxp-banner-benefits-hero .banner-state.extra-long .content-wrapper .dxp-title-eyebrow + .dxp-lead, div.dxp-banner-benefits-hero .banner-state.long .content-wrapper .dxp-title-eyebrow + .dxp-lead {
+  margin-top: 1rem;
+}
+div.dxp-banner-benefits-hero .banner-state.extra-long .content-wrapper .dxp-lead, div.dxp-banner-benefits-hero .banner-state.long .content-wrapper .dxp-lead {
+  margin-bottom: 0;
+}
+div.dxp-banner-benefits-hero .banner-state.medium .content-wrapper .dxp-title-eyebrow, div.dxp-banner-benefits-hero .banner-state.short .content-wrapper .dxp-title-eyebrow {
+  margin-bottom: 0;
+}
+div.dxp-banner-benefits-hero .banner-state.medium .content-wrapper .dxp-title-eyebrow + h1, div.dxp-banner-benefits-hero .banner-state.short .content-wrapper .dxp-title-eyebrow + h1 {
+  margin-top: 11px;
+  margin-bottom: 0;
+}
+div.dxp-banner-benefits-hero .banner-state.medium .content-wrapper .dxp-title-eyebrow + .dxp-lead, div.dxp-banner-benefits-hero .banner-state.short .content-wrapper .dxp-title-eyebrow + .dxp-lead {
+  margin-top: 13px;
+}
+div.dxp-banner-benefits-hero .banner-state.medium .content-wrapper h1, div.dxp-banner-benefits-hero .banner-state.short .content-wrapper h1 {
+  margin-bottom: 0;
+}
+div.dxp-banner-benefits-hero .banner-state.medium .content-wrapper h1 + .dxp-lead, div.dxp-banner-benefits-hero .banner-state.short .content-wrapper h1 + .dxp-lead {
+  margin-top: 13px;
+}
+div.dxp-banner-benefits-hero .banner-state.medium .content-wrapper .dxp-lead, div.dxp-banner-benefits-hero .banner-state.short .content-wrapper .dxp-lead {
+  margin-bottom: 0;
+}
+div.dxp-banner-benefits-hero .banner-state.reverse .img-wrapper {
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+}
+div.dxp-banner-benefits-hero .banner-state.reverse .content-wrapper {
+  padding-right: 108px;
+  padding-left: 128px;
+}
+div.dxp-banner-benefits-hero .banner-state.reverse .content-wrapper {
+  padding-left: 108px;
+  padding-right: 128px;
+}
+@media (max-width: 991px) {
+  div.dxp-banner-benefits-hero .benefits-hero .banner-state {
+    overflow: inherit;
+    max-height: inherit;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero .banner-state .img-wrapper {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero .banner-state.extra-long .img-wrapper, div.dxp-banner-benefits-hero .benefits-hero .banner-state.long .img-wrapper {
+    margin-bottom: 44px;
+    height: auto;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero .banner-state.medium .img-wrapper, div.dxp-banner-benefits-hero .benefits-hero .banner-state.short .img-wrapper {
+    margin-bottom: 40px;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero .banner-state .content-wrapper {
+    width: 100%;
+    top: auto;
+    -webkit-transform: none;
+    transform: none;
+    position: inherit;
+    float: left;
+    padding-left: 36px;
+    padding-bottom: 40px;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero .banner-state .content-wrapper .dxp-title-eyebrow {
+    margin-bottom: 0;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero .banner-state .content-wrapper .dxp-title-eyebrow + h2 {
+    margin-top: 14px;
+    margin-bottom: 0;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero .banner-state .content-wrapper .dxp-title-eyebrow + .dxp-lead {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero .banner-state.reverse .img-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero .banner-state.reverse .content-wrapper {
+    float: left;
+  }
+}
+@media (max-width: 767px) {
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state .img-wrapper {
+    margin-bottom: 1.6875rem;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.extra-long .img-wrapper, div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.long .img-wrapper {
+    height: auto;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.extra-long .content-wrapper .dxp-title-eyebrow, div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.long .content-wrapper .dxp-title-eyebrow {
+    margin-bottom: 0;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.extra-long .content-wrapper .dxp-title-eyebrow + h2, div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.long .content-wrapper .dxp-title-eyebrow + h2 {
+    margin-top: 12px;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.medium .content-wrapper .dxp-title-eyebrow, div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.short .content-wrapper .dxp-title-eyebrow {
+    margin-bottom: 0;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.medium .content-wrapper .dxp-title-eyebrow + .dxp-header-text, div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.short .content-wrapper .dxp-title-eyebrow + .dxp-header-text {
+    margin-top: 5px;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.medium .content-wrapper .dxp-title-eyebrow + .dxp-lead, div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.short .content-wrapper .dxp-title-eyebrow + .dxp-lead {
+    margin-top: 5px;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.medium .content-wrapper .dxp-header-text, div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.short .content-wrapper .dxp-header-text {
+    margin-bottom: 0;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.medium .content-wrapper .dxp-header-text + .dxp-lead, div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.short .content-wrapper .dxp-header-text + .dxp-lead {
+    margin-top: 8px;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.medium .content-wrapper .dxp-lead, div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.short .content-wrapper .dxp-lead {
+    margin-bottom: 0;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.medium .img-wrapper, div.dxp-banner-benefits-hero .benefits-hero-content .banner-state.short .img-wrapper {
+    margin-bottom: 28px;
+  }
+  div.dxp-banner-benefits-hero .benefits-hero-content .banner-state .content-wrapper {
+    width: 100%;
+    margin: 0 0 23px 0;
+    padding: 0 1rem;
+  }
+}
+div.dxp-banner-benefits-hero[dir=rtl] .benefits-hero-content .banner-state .content-wrapper {
+  left: 24px;
+  right: auto;
+  float: right;
+}
+@media (min-width: 992px) {
+  div.dxp-banner-benefits-hero[dir=rtl] .benefits-hero-content .banner-state .content-wrapper {
+    left: 0;
+  }
+}
+@media (min-width: 1440px) {
+  div.dxp-banner-benefits-hero[dir=rtl] .benefits-hero-content .banner-state .content-wrapper {
+    left: calc((100% - 1440px) / 2);
+    width: calc( 50% - calc((100% - 1440px) / 2));
+    padding-left: 0;
+  }
+}
+div.dxp-banner-benefits-hero[dir=rtl] .benefits-hero-content .banner-state .content-wrapper {
+  padding-right: 0;
+  padding-left: 8rem;
+}
+@media (min-width: 1440px) {
+  div.dxp-banner-benefits-hero[dir=rtl] .benefits-hero-content .banner-state .content-wrapper {
+    width: 50%;
+    padding-right: 128px;
+    padding-left: calc((100% - 1440px) / 2);
+    left: 0;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1656px) {
+  div.dxp-banner-benefits-hero[dir=rtl] .benefits-hero-content .banner-state .content-wrapper {
+    padding-left: 108px;
+  }
+}
+div.dxp-banner-benefits-hero[dir=rtl] .benefits-hero-content .banner-state.reverse .content-wrapper {
+  padding-right: 0;
+  padding-left: 8rem;
+}
+@media (min-width: 1440px) {
+  div.dxp-banner-benefits-hero[dir=rtl] .benefits-hero-content .banner-state.reverse .content-wrapper {
+    width: 50%;
+    padding-right: 128px;
+    padding-left: calc((100% - 1440px) / 2);
+    left: 0;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1656px) {
+  div.dxp-banner-benefits-hero[dir=rtl] .benefits-hero-content .banner-state.reverse .content-wrapper {
+    padding-left: 108px;
+  }
+}
+div.dxp-banner-benefits-hero[dir=rtl] .benefits-hero-content .banner-state.reverse .content-wrapper {
+  padding-left: 128px;
+  padding-right: calc((100% - 1440px) / 2);
+  right: 0;
+}
+@media (max-width: 1656px) {
+  div.dxp-banner-benefits-hero[dir=rtl] .benefits-hero-content .banner-state.reverse .content-wrapper {
+    padding-right: 108px;
+  }
+}
+@media (max-width: 991px) {
+  div.dxp-banner-benefits-hero[dir=rtl] .benefits-hero-content .banner-state .content-wrapper {
+    padding-right: 2.25rem;
+  }
+  div.dxp-banner-benefits-hero[dir=rtl] .benefits-hero-content .banner-state.reverse .content-wrapper {
+    padding-right: 2.25rem;
+  }
+}
+@media (max-width: 767px) {
+  div.dxp-banner-benefits-hero[dir=rtl] .benefits-hero-content .banner-state .content-wrapper {
+    padding: 0 16px;
+  }
+}

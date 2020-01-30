@@ -1,0 +1,46 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-accordion dxp-accordion-item {
+  display: block;
+  width: 100%;
+}
+div.dxp.dxp-accordion .toggle .title-wrapper {
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.dxp.dxp-accordion .toggle .title-wrapper > span {
+  padding: 0;
+}
+div.dxp.dxp-accordion .toggle .title-wrapper > span:last-child {
+  text-align: right;
+}
+div.dxp.dxp-accordion .toggle .title-wrapper > span:only-child {
+  text-align: left;
+}
+div.dxp.dxp-accordion .toggle .expand-all {
+  cursor: pointer;
+}
+div.dxp.dxp-accordion .toggle .collapse-all {
+  cursor: pointer;
+  margin-left: 0.5625rem;
+}
+div.dxp.dxp-accordion .pipe-separator:after {
+  content: "|";
+  padding-left: 0.75rem;
+}
+@media (max-width: 575px) {
+  div.dxp.dxp-accordion .toggle .title-wrapper {
+    border: none;
+    margin-bottom: 1rem;
+  }
+  div.dxp.dxp-accordion .toggle .title-wrapper > span:first-child {
+    padding-bottom: 2rem;
+  }
+}
+div.dxp.dxp-accordion[dir=rtl] .toggle .title-wrapper > span:last-child {
+  text-align: left;
+}
+div.dxp.dxp-accordion[dir=rtl] .toggle .title-wrapper > span:only-child {
+  text-align: right;
+}

@@ -1,0 +1,81 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-toggle-switch {
+  /* The switch - the box around the slider */
+  /* Hide default HTML checkbox */
+  /* The slider */
+  /* Rounded sliders */
+}
+div.dxp.dxp-toggle-switch .switch {
+  position: relative;
+  display: inline-block;
+  width: 40.3px;
+  height: 24px;
+  border-radius: 1px;
+}
+div.dxp.dxp-toggle-switch .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+div.dxp.dxp-toggle-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+div.dxp.dxp-toggle-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  top: 1px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+div.dxp.dxp-toggle-switch input:disabled + .slider {
+  opacity: 0.5;
+}
+div.dxp.dxp-toggle-switch input:disabled:checked + .slider {
+  background-color: #F38B00;
+  opacity: 0.5;
+}
+div.dxp.dxp-toggle-switch input:disabled + .slider::before {
+  opacity: 0.5;
+}
+div.dxp.dxp-toggle-switch input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+div.dxp.dxp-toggle-switch[dir=rtl] input:checked + .slider:before {
+  -webkit-transform: translateX(-16px);
+  -ms-transform: translateX(-16px);
+  transform: translateX(-16px);
+}
+div.dxp.dxp-toggle-switch .slider.round {
+  border-radius: 24px;
+  border: 1px solid;
+}
+div.dxp.dxp-toggle-switch .slider.round:before {
+  border-radius: 50%;
+}
+div.dxp.dxp-toggle-switch .toggle-container {
+  display: flex;
+}
+div.dxp.dxp-toggle-switch .toggle-content {
+  margin: 0 15px;
+  word-wrap: break-word;
+}
+div.dxp.dxp-toggle-switch .toggle-container-left {
+  order: 1;
+}
+div.dxp.dxp-toggle-switch .toggle-container-right {
+  order: 2;
+}

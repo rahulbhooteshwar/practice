@@ -1,0 +1,24 @@
+.dxp.dxp-nav-item .mega-menu-content {
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .dxp.dxp-nav-item .icon-container {
+    width: 33.33333%;
+  }
+}
+@media (min-width: 1200px) {
+  .dxp.dxp-nav-item .icon-container {
+    padding-right: 12px;
+    padding-left: 12px;
+    min-width: 95px;
+    max-width: 95px;
+    min-height: 1px;
+    float: left;
+  }
+  .dxp.dxp-nav-item .mega-menu-content {
+    width: 66.66667%;
+    padding-left: 0;
+    float: left;
+  }
+}

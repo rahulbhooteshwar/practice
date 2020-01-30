@@ -1,0 +1,58 @@
+div.dxp.dxp-banner-small-image .img-wrapper {
+  overflow: hidden;
+}
+div.dxp.dxp-banner-small-image .banner-small-content {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  min-height: 415px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+div.dxp.dxp-banner-small-image .banner-small-content .dxp-title-eyebrow {
+  font-size: 1rem;
+  margin-bottom: 1.5625rem;
+}
+div.dxp.dxp-banner-small-image .banner-small-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.625rem;
+  line-height: 1.2;
+}
+div.dxp.dxp-banner-small-image .banner-small-content .dxp-lead {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+div.dxp.dxp-banner-small-image .banner-small-content .img-wrapper {
+  width: 50%;
+  position: relative;
+}
+@media (min-width: 992px) {
+  div.dxp.dxp-banner-small-image .banner-small-content .img-wrapper {
+    min-height: 415px;
+  }
+}
+div.dxp.dxp-banner-small-image .banner-small-content .content-wrapper {
+  width: 50%;
+  height: 100%;
+  padding: 2.5rem 2.5rem 6rem 2.5rem;
+  word-break: break-word;
+  white-space: pre-wrap;
+  white-space: normal;
+}
+div.dxp.dxp-banner-small-image .banner-small-content .banner-state {
+  display: flex;
+  flex-flow: row wrap;
+}
+div.dxp.dxp-banner-small-image .banner-small-content .banner-state.reverse {
+  flex-direction: row-reverse;
+}
+@media (max-width: 991px) {
+  div.dxp.dxp-banner-small-image .banner-small-content {
+    flex-direction: column;
+  }
+  div.dxp.dxp-banner-small-image .banner-small-content .img-wrapper,
+div.dxp.dxp-banner-small-image .banner-small-content .content-wrapper {
+    width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-table.table {
+  display: table;
+  width: 100%;
+}
+div.dxp.dxp-table ::slotted(dxp-tbl-row) {
+  display: flex;
+  width: 100%;
+}
+div.dxp.dxp-table ::slotted(dxp-tbl-row) {
+  width: 100%;
+}
+div.dxp.dxp-table dxp-tbl-row:nth-child(even) {
+  display: block;
+}
+
+.dxp.table-container {
+  max-width: 100%;
+  overflow: auto;
+}

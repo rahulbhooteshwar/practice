@@ -1,0 +1,18 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-pills {
+  display: inline-block;
+  background-color: transparent;
+}
+div.dxp.dxp-pills .pill {
+  padding: 5px 10px;
+  border-radius: 19.5px;
+}
+div.dxp.dxp-pills .pill .pill-text {
+  margin: 0px 5px;
+}
+div.dxp.dxp-pills .pill .icon-close {
+  margin: auto 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}

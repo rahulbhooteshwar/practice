@@ -1,0 +1,1 @@
+System.register([],(function(e){"use strict";return{execute:function(){var r=e("m",{en:{label:"Breadcrumb",Home:"Home"},es:{label:"Breadcrumb"}})}}}));

@@ -1,0 +1,14 @@
+div.dxp.dxp-head {
+  border-bottom: none;
+}
+div.dxp.dxp-head:host {
+  display: flex;
+}
+div.dxp.dxp-head .head-content {
+  height: 24px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  line-height: 24px;
+  word-break: break-word;
+}

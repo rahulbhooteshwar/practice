@@ -1,0 +1,6 @@
+div.dxp.dxp-message-text {
+  padding: 5px 60px 5px 15px;
+}
+div.dxp.dxp-message-text[dir=rtl] {
+  padding: 5px 15px 5px 60px;
+}

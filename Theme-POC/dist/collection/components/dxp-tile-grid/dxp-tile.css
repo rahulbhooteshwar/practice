@@ -1,0 +1,259 @@
+/* namespace all component styles to create then most specific rules */
+div.dxp.dxp-tile.tile-3 {
+  width: 50%;
+}
+div.dxp.dxp-tile .video-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+div.dxp.dxp-tile .overlay-video-block {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 998;
+  transition: opacity 0.3s ease-in 0s;
+}
+div.dxp.dxp-tile .overlay-video-block .align-middle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  padding: 0px 5%;
+}
+div.dxp.dxp-tile .overlay-video-block .btn-close {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  border: none;
+  cursor: pointer;
+  margin: 5px 5px 0 0;
+  z-index: 2;
+}
+div.dxp.dxp-tile .tile-container {
+  height: 100%;
+  position: relative;
+}
+div.dxp.dxp-tile .tile-container:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+div.dxp.dxp-tile .tile-container .media-container,
+div.dxp.dxp-tile .tile-container .content-background-img {
+  height: 536px;
+}
+div.dxp.dxp-tile .tile-container .media-container .play-icon,
+div.dxp.dxp-tile .tile-container .content-background-img .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+div.dxp.dxp-tile .tile-container .media-container .play-icon img,
+div.dxp.dxp-tile .tile-container .content-background-img .play-icon img {
+  width: 72px;
+  height: 72px;
+}
+div.dxp.dxp-tile .tile-container .badge {
+  padding-bottom: 14px;
+}
+div.dxp.dxp-tile .tile-container .badge-cont {
+  height: 25px;
+  width: 52px;
+  padding: 0.25rem 0.563rem;
+}
+div.dxp.dxp-tile .tile-container .badge-text {
+  height: 15px;
+  width: 36px;
+  text-align: center;
+}
+div.dxp.dxp-tile .tile-container .dxp-title-4 {
+  margin-bottom: 14px;
+}
+div.dxp.dxp-tile .tile-container .cta {
+  position: absolute;
+  bottom: 24px;
+  left: 32px;
+  right: 32px;
+}
+div.dxp.dxp-tile .tile-container .cta .dxp-title-eyebrow {
+  margin-bottom: 12px;
+}
+div.dxp.dxp-tile .tile-container .cta .desc {
+  margin-bottom: 15px;
+}
+div.dxp.dxp-tile.square,
+div.dxp.dxp-tile .square {
+  width: 100%;
+  height: 392px;
+  overflow: hidden;
+}
+div.dxp.dxp-tile.square .image,
+div.dxp.dxp-tile .square .image {
+  display: contents;
+}
+div.dxp.dxp-tile.square div.cta,
+div.dxp.dxp-tile .square div.cta {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+}
+div.dxp.dxp-tile.square div.cta .badge,
+div.dxp.dxp-tile .square div.cta .badge {
+  padding-bottom: 14px;
+}
+div.dxp.dxp-tile.square div.cta .badge-cont,
+div.dxp.dxp-tile .square div.cta .badge-cont {
+  height: 25px;
+  width: 52px;
+  padding: 0.25rem 0.563rem;
+}
+div.dxp.dxp-tile.square div.cta .badge-text,
+div.dxp.dxp-tile .square div.cta .badge-text {
+  height: 15px;
+  width: 36px;
+  text-align: center;
+}
+div.dxp.dxp-tile.square div.cta .dxp-title-eyebrow,
+div.dxp.dxp-tile .square div.cta .dxp-title-eyebrow {
+  margin-bottom: 20px;
+}
+div.dxp.dxp-tile.square div.cta .dxp-title-4,
+div.dxp.dxp-tile .square div.cta .dxp-title-4 {
+  margin-bottom: 24px;
+}
+div.dxp.dxp-tile .popup {
+  width: 100%;
+  height: 536px;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+div.dxp.dxp-tile .popup::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+div.dxp.dxp-tile .popup-contents {
+  height: 536px;
+  position: relative;
+  overflow-y: auto;
+}
+div.dxp.dxp-tile .popup h1 {
+  float: left;
+}
+div.dxp.dxp-tile .popup dxp-image {
+  float: right;
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+}
+div.dxp.dxp-tile .popup .dxp-icon-close {
+  position: absolute;
+  right: 32px;
+  top: 16px;
+  z-index: 9;
+  background: transparent;
+  border: none;
+}
+div.dxp.dxp-tile .popup .image-overlay dxp-image {
+  width: 100%;
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+div.dxp.dxp-tile .popup.fadeout {
+  animation: fadeout 1s ease-in forwards;
+  -webkit-animation: fadeout 1s ease-in forwards;
+  -moz-animation: fadeout 1s ease-in forwards;
+  -ms-animation: fadeout 1s ease-in forwards;
+  -o-animation: fadeout 1s ease-in forwards;
+  pointer-events: none;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+div.dxp.dxp-tile .popup.fadein {
+  animation: fadein 1s ease-in forwards;
+  -webkit-animation: fadein 1s ease-in forwards;
+  -moz-animation: fadein 1s ease-in forwards;
+  -ms-animation: fadein 1s ease-in forwards;
+  -o-animation: fadein 1s ease-in forwards;
+}
+div.dxp.dxp-tile.dxp-scrollable-container {
+  margin-top: 0;
+}
+div.dxp.dxp-tile.show-popup {
+  position: static;
+  z-index: 999;
+  left: 0;
+}
+div.dxp.dxp-tile.show-popup .popup {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  div.dxp.dxp-tile .tile-container .media-container {
+    height: 323px;
+  }
+  div.dxp.dxp-tile .tile-container .media-container .content-video, div.dxp.dxp-tile .tile-container .media-container img.content-background-img {
+    width: 100%;
+    height: 323px;
+  }
+  div.dxp.dxp-tile .tile-container .media-container .cta {
+    bottom: 30px;
+    left: 16px;
+    right: 16px;
+  }
+  div.dxp.dxp-tile .tile-container .media-container .cta .desc {
+    margin-bottom: 15px;
+  }
+  div.dxp.dxp-tile.square .media-container div.cta {
+    position: absolute;
+    bottom: 100px;
+    left: 16px;
+    right: 16px;
+  }
+}
+@media (min-width: 768px) {
+  div.dxp.dxp-tile.square .tile-container .media-container {
+    height: 392px;
+  }
+  div.dxp.dxp-tile.square .tile-container .content-video, div.dxp.dxp-tile.square .tile-container img.content-background-img {
+    width: 100%;
+    height: 392px;
+  }
+  div.dxp.dxp-tile .tile-container.media-container {
+    height: 347px;
+  }
+}
+@media (min-width: 992px) {
+  div.dxp.dxp-tile .tile-container .media-container {
+    height: 536px;
+  }
+  div.dxp.dxp-tile .tile-container .media-container .content-video, div.dxp.dxp-tile .tile-container .media-container img.content-background-img {
+    width: 100%;
+    height: 536px;
+  }
+}

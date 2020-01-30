@@ -1,0 +1,21 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-comments {
+  padding: 0.5rem;
+}
+div.dxp.dxp-comments .editable-block {
+  margin-top: 1rem;
+}
+div.dxp.dxp-comments .comment-count {
+  margin: 2rem 0;
+  clear: both;
+}
+div.dxp.dxp-comments .comment-count h3 {
+  direction: ltr;
+  display: inline-block;
+}
+div.dxp.dxp-comments .comment-hint {
+  margin: 0.5rem 0;
+}
+div.dxp.dxp-comments .comment-list {
+  margin-top: 1.25rem;
+}

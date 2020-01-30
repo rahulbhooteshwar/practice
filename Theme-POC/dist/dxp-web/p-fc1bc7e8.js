@@ -1,0 +1,1 @@
+const e={en:{label:"Breadcrumb",Home:"Home"},es:{label:"Breadcrumb"}};export{e as m};

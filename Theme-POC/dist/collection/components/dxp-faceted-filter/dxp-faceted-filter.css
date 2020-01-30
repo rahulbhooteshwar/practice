@@ -1,0 +1,82 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-faceted-filter .dxp-faceted-filter-item {
+  display: block;
+  width: 100%;
+}
+div.dxp.dxp-faceted-filter .dxp-faceted-filter-container {
+  width: 19%;
+}
+div.dxp.dxp-faceted-filter .dxp-faceted-filter-header {
+  position: relative;
+  top: 10px;
+}
+div.dxp.dxp-faceted-filter .text-margin {
+  margin-top: 5px;
+}
+div.dxp.dxp-faceted-filter .dxp-close-filter {
+  padding-bottom: 5px;
+}
+div.dxp.dxp-faceted-filter .dxp-close-text {
+  padding-left: 10px;
+}
+div.dxp.dxp-faceted-filter .dxp-filter-align {
+  padding-left: 0;
+  font-size: 1.05rem;
+}
+div.dxp.dxp-faceted-filter .toggle .title-wrapper {
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.dxp.dxp-faceted-filter .toggle .title-wrapper > span {
+  padding: 0;
+}
+div.dxp.dxp-faceted-filter .toggle .title-wrapper > span:last-child {
+  text-align: right;
+}
+div.dxp.dxp-faceted-filter .toggle .title-wrapper > span:only-child {
+  text-align: left;
+}
+div.dxp.dxp-faceted-filter .toggle .expand-all {
+  cursor: pointer;
+}
+div.dxp.dxp-faceted-filter .toggle .collapse-all {
+  cursor: pointer;
+  margin-left: 0.5625rem;
+}
+div.dxp.dxp-faceted-filter .pipe-separator:after {
+  content: "|";
+  padding-left: 0.75rem;
+}
+@media (max-width: 1024px) {
+  div.dxp.dxp-faceted-filter .dxp-faceted-filter-container {
+    width: 25%;
+  }
+}
+@media (max-width: 575px) {
+  div.dxp.dxp-faceted-filter .dxp-faceted-filter-container {
+    width: 100%;
+  }
+  div.dxp.dxp-faceted-filter .dxp-filter-align {
+    position: relative;
+    top: 22px;
+  }
+  div.dxp.dxp-faceted-filter .dxp-closewindow-align {
+    position: relative;
+    bottom: 15px;
+  }
+  div.dxp.dxp-faceted-filter .toggle .title-wrapper {
+    border: none;
+    margin-bottom: 1rem;
+  }
+  div.dxp.dxp-faceted-filter .toggle .title-wrapper > span:first-child {
+    padding-bottom: 2rem;
+  }
+}
+div.dxp.dxp-faceted-filter[dir=rtl] .toggle .title-wrapper > span:last-child {
+  text-align: left;
+}
+div.dxp.dxp-faceted-filter[dir=rtl] .toggle .title-wrapper > span:only-child {
+  text-align: right;
+}

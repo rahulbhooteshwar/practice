@@ -1,0 +1,11 @@
+div.dxp.dxp-cell {
+  background: none;
+  min-width: 10rem;
+}
+div.dxp.dxp-cell .cell-content {
+  text-align: left;
+  height: 1.625rem;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  word-break: break-word;
+}

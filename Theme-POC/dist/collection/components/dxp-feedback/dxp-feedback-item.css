@@ -1,0 +1,21 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-feedback-item .rating {
+  margin-bottom: 1rem;
+}
+div.dxp.dxp-feedback-item .rating span {
+  margin: 0.5rem 0.2rem;
+  cursor: pointer;
+}
+div.dxp.dxp-feedback-item .rating h4, div.dxp.dxp-feedback-item .rating h6 {
+  margin-bottom: 0;
+}
+div.dxp.dxp-feedback-item .dropdown-wrapper, div.dxp.dxp-feedback-item .radio-wrapper {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+div.dxp.dxp-feedback-item .select-tiltle {
+  margin-bottom: 0.75rem;
+}
+div.dxp.dxp-feedback-item .textarea-wrapper {
+  margin-top: 0.75rem;
+}

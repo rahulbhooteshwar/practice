@@ -1,0 +1,82 @@
+div.dxp.dxp-pagination .paging-panel {
+  line-height: 1.4rem;
+}
+@media (max-width: 993px) {
+  div.dxp.dxp-pagination .paging-panel > span {
+    font-size: 0.75rem;
+  }
+}
+div.dxp.dxp-pagination .paging-panel {
+  padding: 2rem 0 0.75rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.dxp.dxp-pagination .paging-panel.center {
+  justify-content: center;
+}
+div.dxp.dxp-pagination .paging-panel.right {
+  flex-direction: row-reverse;
+}
+div.dxp.dxp-pagination .paging-panel .item-icon {
+  display: inline-block;
+  width: 0.75rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+div.dxp.dxp-pagination .paging-panel .item-icon.item-disabled {
+  cursor: not-allowed;
+  outline: none;
+}
+div.dxp.dxp-pagination .paging-button {
+  position: relative;
+}
+div.dxp.dxp-pagination .paging-text input {
+  width: 100%;
+}
+div.dxp.dxp-pagination .paging-text dxp-input {
+  position: relative;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  bottom: 1.4rem;
+}
+div.dxp.dxp-pagination .paging-page-summary-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+div.dxp.dxp-pagination .paging-page-summary-panel.display-message {
+  padding: 0 1rem;
+}
+div.dxp.dxp-pagination .paging-page-summary-panel .paging-button {
+  position: relative;
+}
+div.dxp.dxp-pagination .paging-page-summary-panel .paging-button button {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+div.dxp.dxp-pagination .paging-page-summary-panel span {
+  padding: 0 0.5rem;
+}
+div.dxp.dxp-pagination .input-error {
+  font-size: 0.75rem;
+  float: right;
+}
+div.dxp.dxp-pagination .input {
+  display: inline-block;
+  width: 5rem;
+  height: 2.7rem;
+  overflow: hidden;
+}

@@ -1,0 +1,13 @@
+div.dxp-social-links-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  div.dxp-social-links-item {
+    margin-right: 16px;
+  }
+}

@@ -1,0 +1,30 @@
+/* namespace all component styles to create then most specific rule set */
+div.dxp.dxp-feedback-display {
+  margin-bottom: 2rem;
+}
+div.dxp.dxp-feedback-display .user-ratings {
+  margin: 0.5rem 0;
+}
+div.dxp.dxp-feedback-display .additional-text {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  clear: both;
+  word-break: break-word;
+}
+div.dxp.dxp-feedback-display .feedback-list {
+  display: flex;
+}
+div.dxp.dxp-feedback-display .feedback-list .profile-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.dxp.dxp-feedback-display .feedback-list .detail-block {
+  width: 100%;
+  flex: 1;
+  margin: 0 0.75rem;
+}
+div.dxp.dxp-feedback-display .feedback-list .detail-block .user-name, div.dxp.dxp-feedback-display .feedback-list .detail-block .time-stamp {
+  word-break: break-all;
+}

@@ -1,0 +1,49 @@
+div.dxp.dxp-sticky-footer .sticky-footer-cont {
+  margin: 0;
+}
+div.dxp.dxp-sticky-footer .sticky-footer-cont .sticky-footer-text {
+  font-size: 1.4rem;
+}
+div.dxp.dxp-sticky-footer .sticky-footer {
+  margin: 0;
+  padding: 10px 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+div.dxp.dxp-sticky-footer .sticky-footer .sticky-footer-text {
+  display: inline-block;
+  margin: 0 42px 0 0;
+}
+@media (max-width: 767px) {
+  div.dxp.dxp-sticky-footer .sticky-footer .sticky-footer-text {
+    margin: 0 0 20px 0;
+    display: block;
+  }
+}
+div.dxp.dxp-sticky-footer .sticky-footer .btn-cont {
+  display: inline-block;
+}
+div.dxp.dxp-sticky-footer .non-sticky-footer {
+  margin: 0;
+  padding: 10px 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+div.dxp.dxp-sticky-footer .non-sticky-footer .sticky-footer-text {
+  display: inline-block;
+  margin: 0 42px 0 0;
+}
+@media (max-width: 767px) {
+  div.dxp.dxp-sticky-footer .non-sticky-footer .sticky-footer-text {
+    margin: 0 0 20px 0;
+    display: block;
+  }
+}
+div.dxp.dxp-sticky-footer .non-sticky-footer .btn-cont {
+  display: inline-block;
+}

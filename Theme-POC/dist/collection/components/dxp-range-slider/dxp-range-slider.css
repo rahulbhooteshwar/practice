@@ -1,0 +1,74 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-range-slider .slider-container {
+  height: 30px;
+  margin-top: 12px;
+}
+div.dxp.dxp-range-slider .slider-container .aria-widget-slider {
+  height: 100%;
+}
+div.dxp.dxp-range-slider .slider-container .aria-widget-slider .track {
+  border: none;
+  position: relative;
+  height: 4px;
+  border-radius: 2px;
+  float: left;
+}
+div.dxp.dxp-range-slider .slider-container .aria-widget-slider .slider-thumb[role=slider] {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: -0.4375rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  margin-top: -0.25rem;
+}
+div.dxp.dxp-range-slider .slider-container .aria-widget-slider .min-value {
+  width: 2rem;
+  padding-right: 1rem;
+  float: left;
+  position: relative;
+  top: -0.5rem;
+}
+div.dxp.dxp-range-slider .slider-container .aria-widget-slider .max-value {
+  width: 2rem;
+  padding-left: 1rem;
+  float: left;
+  position: relative;
+  top: -0.5rem;
+}
+div.dxp.dxp-range-slider .slider-container .aria-widget-slider .single-thumb-min-value {
+  position: relative;
+  top: -0.5rem;
+  width: 2rem;
+  padding-right: 1rem;
+  float: left;
+}
+div.dxp.dxp-range-slider .slider-container .aria-widget-slider .single-thumb-max-value {
+  position: relative;
+  top: -0.5rem;
+  width: 2rem;
+  float: left;
+  padding-left: 1rem;
+}
+div.dxp.dxp-range-slider .slider-container .aria-widget-slider .inner-bar {
+  position: absolute;
+  height: 4px;
+}
+div.dxp.dxp-range-slider .slider-container .aria-widget-slider .single-thumb-inner-bar {
+  border-radius: 2px;
+}
+div.dxp.dxp-range-slider .slider-container .aria-widget-slider .thumb-current-value-wrapper {
+  position: relative;
+  top: -0.7rem;
+  float: left;
+  margin-left: 2rem;
+  width: 3rem;
+  height: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  vertical-align: middle;
+}
+div.dxp.dxp-range-slider .slider-container .aria-widget-slider .thumb-current-value-wrapper .single-thumb-value {
+  vertical-align: middle;
+}

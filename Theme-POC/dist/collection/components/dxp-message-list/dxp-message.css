@@ -1,0 +1,43 @@
+div.dxp.dxp-message.ui-messages {
+  border: 1px solid;
+  display: table;
+  margin: 0.5em 0;
+  border-radius: 4px;
+  width: 100%;
+  position: relative;
+}
+div.dxp.dxp-message.ui-messages p {
+  display: table-cell;
+  vertical-align: middle;
+}
+div.dxp.dxp-message.ui-messages .icon-wrapper {
+  border-radius: 2px 0 0 2px;
+  width: 60px;
+  position: relative;
+  text-align: center;
+}
+div.dxp.dxp-message.ui-messages .icon-wrapper + p {
+  padding: 10px 0;
+}
+div.dxp.dxp-message.ui-messages .ui-messages-icon {
+  display: inline-block;
+  padding: 0;
+  vertical-align: middle;
+  font-size: 2em;
+}
+div.dxp.dxp-message.ui-messages .dxp-icon-close {
+  font-size: 1em;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+div.dxp.dxp-message.ui-messages .pi {
+  height: 40px;
+  width: 32px;
+}
+div.dxp.dxp-message.ui-messages[dir=rtl] .dxp-icon-close {
+  right: auto;
+  left: 15px;
+}

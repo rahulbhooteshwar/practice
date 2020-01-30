@@ -1,0 +1,35 @@
+div.dxp.dxp-logo {
+  overflow: hidden;
+  display: flex;
+}
+div.dxp.dxp-logo a,
+div.dxp.dxp-logo p {
+  display: flex;
+  height: 40px;
+}
+div.dxp.dxp-logo p {
+  margin-bottom: 0;
+}
+div.dxp.dxp-logo img {
+  max-height: 40px;
+  width: auto;
+  height: 100%;
+}
+div.dxp.dxp-logo .separator {
+  font-size: 34px;
+  font-weight: 100;
+  line-height: 32px;
+  width: 32px;
+  height: 40px;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  div.dxp.dxp-logo img {
+    max-height: 30px;
+  }
+  div.dxp.dxp-logo .separator {
+    font-size: 25px;
+    line-height: 25px;
+    height: 30px;
+  }
+}

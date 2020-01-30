@@ -1,0 +1,21 @@
+div.dxp.dxp-language-item li {
+  cursor: pointer;
+  padding: 0 16px 12px 16px;
+}
+div.dxp.dxp-language-item li span,
+div.dxp.dxp-language-item li a {
+  padding: 12px 0;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+div.dxp.dxp-language-item li.active span,
+div.dxp.dxp-language-item li.active a,
+div.dxp.dxp-language-item li.active a:focus, div.dxp.dxp-language-item li:hover span,
+div.dxp.dxp-language-item li:hover a,
+div.dxp.dxp-language-item li:hover a:focus, div.dxp.dxp-language-item li:focus span,
+div.dxp.dxp-language-item li:focus a,
+div.dxp.dxp-language-item li:focus a:focus {
+  padding-bottom: 8px;
+  text-decoration: none;
+}

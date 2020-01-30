@@ -1,0 +1,12 @@
+div.dxp.dxp-radio-group {
+  margin: 16px 0px;
+}
+div.dxp.dxp-radio-group .dxp-radio-group-label,
+div.dxp.dxp-radio-group .dxp-error {
+  display: block;
+  margin: 0 0 0 10px;
+}
+div.dxp.dxp-radio-group[dir=rtl] .dxp-radio-group-label,
+div.dxp.dxp-radio-group[dir=rtl] .dxp-error {
+  margin: 0 10px 0 0;
+}

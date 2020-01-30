@@ -1,0 +1,55 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-comments-with-reply {
+  margin: 0.5rem 0 1.75rem;
+}
+div.dxp.dxp-comments-with-reply .reply-section {
+  margin-left: 4rem;
+  display: none;
+  transition: all 0.5s ease-in;
+}
+div.dxp.dxp-comments-with-reply .reply-section.is-visible {
+  display: block;
+}
+@media (max-width: 576px) {
+  div.dxp.dxp-comments-with-reply .reply-section {
+    margin-left: 2rem;
+  }
+}
+div.dxp.dxp-comments-with-reply .option-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+div.dxp.dxp-comments-with-reply .option-wrapper a {
+  display: flex;
+}
+div.dxp.dxp-comments-with-reply .option-wrapper a:hover {
+  text-decoration: underline;
+}
+div.dxp.dxp-comments-with-reply .option-wrapper a .caret-icon {
+  width: 1rem;
+  display: inline-block;
+  margin-left: 0.75rem;
+  transition: 0.2s transform linear;
+}
+div.dxp.dxp-comments-with-reply .option-wrapper a.hide-link .caret-icon {
+  transform: rotate(-180deg);
+}
+div.dxp.dxp-comments-with-reply .action-link {
+  display: block;
+  padding: 0.25rem 1.25rem;
+  transition: color, background-color 150ms ease-in;
+}
+div.dxp.dxp-comments-with-reply[dir=rtl] .reply-section {
+  margin-left: 0;
+  margin-right: 4rem;
+}
+@media (max-width: 576px) {
+  div.dxp.dxp-comments-with-reply[dir=rtl] .reply-section {
+    margin-left: 0;
+    margin-right: 2rem;
+  }
+}
+div.dxp.dxp-comments-with-reply[dir=rtl] .option-wrapper a .caret-icon {
+  margin-right: 0.75rem;
+  margin-left: 0;
+}

@@ -1,0 +1,1 @@
+const l={en:{expandAll:"Expand All",collapseAll:"Collapse All"},es:{expandAll:"Expand All",collapseAll:"Collapse All"}};export{l as m};

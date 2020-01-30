@@ -1,0 +1,74 @@
+/* namespace all component styles to create then most specific ruleset */
+nav.dxp.dxp-nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+nav.dxp.dxp-nav .overlay-container {
+  opacity: 0;
+  z-index: -1;
+}
+nav.dxp.dxp-nav .overlay,
+nav.dxp.dxp-nav .overlay-container,
+nav.dxp.dxp-nav .overlay-bg-img,
+nav.dxp.dxp-nav .overlay-bg-opacity {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+nav.dxp.dxp-nav .overlay-bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+nav.dxp.dxp-nav .expanded {
+  opacity: 1;
+  height: auto;
+  pointer-events: all;
+  visibility: visible;
+}
+nav.dxp.dxp-nav .nav-ul {
+  width: 100%;
+  left: 0;
+  margin-bottom: 0px;
+}
+@media (min-width: 992px) {
+  nav.dxp.dxp-nav .dxp-icon-close {
+    position: absolute;
+    cursor: pointer;
+    padding: 0.4375rem;
+    border: 0.0625rem solid transparent;
+    margin-top: 5.4rem;
+  }
+  nav.dxp.dxp-nav .nav-ul {
+    width: auto;
+    margin-top: 0;
+  }
+  nav.dxp.dxp-nav ::slotted(dxp-nav-menu) {
+    margin-right: 1.6rem;
+  }
+  nav.dxp.dxp-nav .dxp-nav-menu {
+    margin-right: 1.87rem;
+  }
+}
+@media (max-width: 767px) {
+  nav.dxp.dxp-nav .nav-ul {
+    padding: 12px 12px 16px 0px;
+  }
+}
+@media (max-width: 991px) {
+  nav.dxp.dxp-nav .dxp-icon-close,
+nav.dxp.dxp-nav .overlay-container {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  nav.dxp.dxp-nav[dir=rtl] .nav-ul {
+    padding: 12px 0px 16px 12px;
+  }
+}

@@ -1,0 +1,32 @@
+div.dxp.dxp-line hr {
+  padding: 0;
+  clear: both;
+  margin: 0;
+}
+div.dxp.dxp-line hr.solid {
+  border: 0.1px solid;
+  height: 1px;
+}
+div.dxp.dxp-line hr.double {
+  border: none;
+  background-color: transparent;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  height: 4px;
+}
+div.dxp.dxp-line hr.double-topdash {
+  border-top: 1px dashed;
+  border-bottom: 1px solid;
+}
+div.dxp.dxp-line hr.double-bottomdash {
+  border-top: 1px solid;
+  border-bottom: 1px dashed;
+}
+div.dxp.dxp-line hr.box {
+  border: 1px solid;
+  background-color: transparent;
+  height: 10px;
+}
+div.dxp.dxp-line hr.box-dash {
+  border: 1px dashed;
+}

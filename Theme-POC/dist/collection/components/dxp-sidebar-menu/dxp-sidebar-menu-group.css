@@ -1,0 +1,55 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-sidebar-menu-group .item-wrapper .child-menu {
+  overflow-y: scroll;
+}
+div.dxp.dxp-sidebar-menu-group .tool {
+  transform: translate3d(3.5rem, -3.25rem, 6.25rem);
+  position: absolute;
+  display: inline-block;
+  padding-left: 0.5rem;
+}
+div.dxp.dxp-sidebar-menu-group .tool .caret-icon {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+div.dxp.dxp-sidebar-menu-group .tool .sub-menu-wrapper {
+  display: inline-block;
+  min-width: 10rem;
+}
+div.dxp.dxp-sidebar-menu-group .tool .sub-menu-wrapper .item-heading {
+  padding: 0.75rem 1.2rem;
+}
+div.dxp.dxp-sidebar-menu-group .menu-item {
+  padding: 1.2rem;
+  display: flex;
+  cursor: pointer;
+}
+div.dxp.dxp-sidebar-menu-group .menu-item .item-icon {
+  width: 1.5rem;
+  background-size: contain;
+}
+div.dxp.dxp-sidebar-menu-group .menu-item .item-icon img {
+  width: 100%;
+  height: 100%;
+}
+div.dxp.dxp-sidebar-menu-group .menu-item .item-label {
+  padding-left: 0.88rem;
+  display: flex;
+  align-items: center;
+}
+div.dxp.dxp-sidebar-menu-group .menu-item .item-label .caret-icon {
+  width: 0.5rem;
+  height: 1rem;
+  transition: transform 0.2s ease-in;
+  margin-left: auto;
+}
+div.dxp.dxp-sidebar-menu-group .menu-item.item-expanded .caret-icon {
+  transform: rotate(90deg);
+}
+div.dxp.dxp-sidebar-menu-group .item-label {
+  padding-left: 0.93rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+}

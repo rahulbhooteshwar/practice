@@ -1,0 +1,187 @@
+/* namespace all component styles to create then most specific ruleset */
+.dxp.dxp-progressbar .progress-radial circle,
+.dxp.dxp-progressbar .progress-radial .svg-circles {
+  fill: transparent;
+}
+.dxp.dxp-progressbar .progress-radial-digit {
+  line-height: 1;
+}
+.dxp.dxp-progressbar .progress-radial-text {
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  letter-spacing: 0.125rem;
+}
+.dxp.dxp-progressbar .progress-linear {
+  display: block;
+}
+.dxp.dxp-progressbar .progress-meter, .dxp.dxp-progressbar .progress-value {
+  fill: none;
+}
+.dxp.dxp-progressbar .progress-bar {
+  position: relative;
+}
+.dxp.dxp-progressbar .progress-value {
+  transition: all 400ms ease-in-out;
+}
+.dxp.dxp-progressbar .progress-value.round {
+  stroke-linecap: round;
+}
+.dxp.dxp-progressbar .progress-container {
+  position: relative;
+  display: inline-block;
+  min-width: 150px;
+  width: 100%;
+}
+.radial-progressbar .dxp.dxp-progressbar .progress-info {
+  font-size: inherit;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.radial-progressbar .dxp.dxp-progressbar .progress-digit, .radial-progressbar .dxp.dxp-progressbar .progress-text {
+  line-height: 1;
+}
+.radial-progressbar .dxp.dxp-progressbar .progress-digit {
+  font-size: 0.3em;
+  line-height: 1;
+  margin-bottom: 0.3125rem;
+}
+.radial-progressbar .dxp.dxp-progressbar .progress-text {
+  font-weight: 600;
+  font-size: 0.05em;
+}
+.dxp.dxp-progressbar :host path,
+.dxp.dxp-progressbar svg path {
+  fill: none;
+  stroke-width: 0.375rem;
+  stroke-miterlimit: round;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 400ms ease-in-out;
+}
+.dxp.dxp-progressbar :host {
+  background: var(--sample-color);
+}
+.dxp.dxp-progressbar .progress-linear {
+  height: 6px;
+  width: 100%;
+  border-radius: 6.25rem;
+  position: relative;
+}
+.dxp.dxp-progressbar .progress-linear .progress-value {
+  display: block;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 6.25rem;
+}
+.dxp.dxp-progressbar .percent-right {
+  display: flex;
+  align-items: center;
+}
+.dxp.dxp-progressbar .percent-right .progress-info {
+  margin-top: 0;
+  margin-left: 0.75rem;
+  line-height: 0.375rem;
+}
+.dxp.dxp-progressbar .percent-right .progress-info .progress-digit {
+  margin-right: 0;
+}
+.dxp.dxp-progressbar text {
+  transform-origin: center;
+  font-size: 0.625rem;
+}
+.dxp.dxp-progressbar .svg-stats {
+  font-weight: 600;
+  font-size: 1.2875rem;
+  margin-bottom: 0.625rem;
+}
+.dxp.dxp-progressbar .svg-description {
+  text-transform: uppercase;
+  font-size: 0.375rem;
+}
+.dxp.dxp-progressbar .tooltip-container {
+  position: absolute;
+  display: none;
+  bottom: 100%;
+  right: 0;
+  padding: 0.3125rem;
+  line-height: 1;
+  border-radius: 0.1875rem;
+  transform: translate(50%, -30%);
+  font-size: 0.875rem;
+}
+.dxp.dxp-progressbar .tooltip-container:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.1875rem;
+  transform: rotate(45deg);
+  margin: auto;
+  z-index: -1;
+  transform-origin: center;
+  width: 10px;
+  height: 10px;
+  background: inherit;
+}
+.dxp.dxp-progressbar.tooltip-enabled {
+  padding-top: 2rem;
+}
+
+.linear-progressbar .progress-digit, .linear-progressbar .progress-text {
+  font-size: 0.75rem;
+  display: inline-block;
+  width: auto;
+  text-transform: lowercase;
+  line-height: 1;
+}
+.linear-progressbar .progress-digit {
+  margin-right: 0.3125rem;
+}
+.linear-progressbar .progress-info {
+  line-height: 1;
+  margin-top: 0.3125rem;
+}
+
+.svg-flex-inner {
+  position: relative;
+  padding-top: 100%;
+}
+.svg-flex svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-top: -100%;
+}
+
+.progress-container[dir=rtl].linear-progressbar .progress-digit {
+  margin-left: 0.3125rem;
+  margin-right: 0;
+}
+.progress-container[dir=rtl].linear-progressbar .progress-linear {
+  transform: rotate(180deg);
+}
+.progress-container[dir=rtl].linear-progressbar .progress-linear .tooltip-container {
+  transform: translate(50%, 135%) scale(-1);
+  bottom: 0;
+}
+.progress-container[dir=rtl].linear-progressbar .progress-bar.percent-right .progress-info {
+  margin-left: 0;
+  margin-right: 0.75rem;
+}
+.progress-container[dir=rtl].linear-progressbar .progress-bar.percent-right .progress-info .progress-digit {
+  margin-left: 0;
+  margin-right: 0.3125rem;
+}
+.progress-container[dir=rtl] .progress-radial {
+  transform: scale(-1, 1);
+}
+.progress-container[dir=rtl] .progress-radial .description-container {
+  transform: scale(-1, 1);
+  transform-origin: center;
+}

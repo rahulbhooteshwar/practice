@@ -1,0 +1,23 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-shape {
+  background: transparent;
+  display: inline-block;
+}
+div.dxp.dxp-shape .round {
+  border-radius: 50%;
+}
+div.dxp.dxp-shape .parallelogram {
+  transform: skew(20deg);
+}
+div.dxp.dxp-shape .vertical-align {
+  display: table-cell;
+}
+div.dxp.dxp-shape .vertical-align-top {
+  vertical-align: top;
+}
+div.dxp.dxp-shape .vertical-align-middle {
+  vertical-align: middle;
+}
+div.dxp.dxp-shape .vertical-align-bottom {
+  vertical-align: bottom;
+}

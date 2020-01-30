@@ -1,0 +1,1 @@
+System.register([],(function(e){"use strict";return{execute:function(){var s=e("m",{en:{prev:"previous slide",next:"next slide"},"en-US":{prev:"previous slide",next:"next slide"},es:{prev:"previous slide",next:"next slide"},"es-ES":{prev:"previous slide",next:"next slide"}})}}}));

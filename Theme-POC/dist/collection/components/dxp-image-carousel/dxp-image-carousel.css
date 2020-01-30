@@ -1,0 +1,126 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-image-carousel {
+  position: relative;
+  overflow: hidden;
+  /* Next & previous buttons */
+  /* progressbar, next/prev buttons */
+  /* rtl support */
+}
+div.dxp.dxp-image-carousel .carousel-container {
+  height: 0;
+}
+div.dxp.dxp-image-carousel .image-wrapper {
+  transform: translateX(0);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+div.dxp.dxp-image-carousel .image-wrapper:not(:first-child) {
+  width: 0;
+  transform: translateX(-100px);
+}
+div.dxp.dxp-image-carousel ::slotted(.image-wrapper) {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+div.dxp.dxp-image-carousel ::slotted(.image-wrapper:not(:first-child)) {
+  width: 0;
+  transform: translateX(-100px);
+}
+div.dxp.dxp-image-carousel .nav-controls {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  left: 0;
+}
+div.dxp.dxp-image-carousel .bar-container {
+  max-width: 808px;
+  margin: 24px auto 0;
+}
+div.dxp.dxp-image-carousel .bar-container > div {
+  float: left;
+}
+div.dxp.dxp-image-carousel .bar-container > div:last-child {
+  float: right;
+}
+div.dxp.dxp-image-carousel .bar-container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+div.dxp.dxp-image-carousel .carousel-progress-bar {
+  position: relative;
+  margin-left: 16px;
+  margin-top: 12px;
+  width: calc(100% - 135px);
+  height: 1px;
+}
+div.dxp.dxp-image-carousel .carousel-current-progress {
+  position: absolute;
+  height: 1px;
+  width: 0;
+}
+div.dxp.dxp-image-carousel .arrow-container {
+  display: flex;
+  margin-left: auto;
+  margin-top: 0;
+  padding-bottom: 1px;
+  padding-right: 1px;
+}
+div.dxp.dxp-image-carousel .prev-arrow,
+div.dxp.dxp-image-carousel .next-arrow {
+  cursor: pointer;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+div.dxp.dxp-image-carousel .next-arrow {
+  margin-left: 12px;
+}
+div.dxp.dxp-image-carousel .right {
+  right: 0;
+}
+div.dxp.dxp-image-carousel .left {
+  left: 0;
+}
+div.dxp.dxp-image-carousel .thumbnails {
+  text-align: center;
+}
+div.dxp.dxp-image-carousel .thumbnails .thumbnail {
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-block;
+  width: 90px;
+  height: 40px;
+  margin: 7px 3px;
+}
+@media (min-width: 768px) {
+  div.dxp.dxp-image-carousel .carousel-progress-bar {
+    width: calc(100% - 220px);
+    margin-left: 48px;
+  }
+  div.dxp.dxp-image-carousel .next-arrow {
+    margin-left: 32px;
+  }
+}
+div.dxp.dxp-image-carousel[dir=rtl] .next {
+  left: 0;
+  right: auto;
+}
+div.dxp.dxp-image-carousel[dir=rtl] .carousel-progress-bar {
+  margin-left: 0;
+  margin-right: 16px;
+}
+@media (min-width: 768px) {
+  div.dxp.dxp-image-carousel[dir=rtl] .carousel-progress-bar {
+    margin-left: 0;
+    margin-right: 48px;
+  }
+  div.dxp.dxp-image-carousel[dir=rtl] .next-arrow {
+    margin-left: 0;
+    margin-right: 32px;
+  }
+}

@@ -1,0 +1,13 @@
+div.dxp-site-map-group .group-heading {
+  width: 100%;
+  margin-bottom: 2.1875rem;
+}
+div.dxp-site-map-group .disable {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+@media (max-width: 576px) {
+  div.dxp-site-map-group .group-heading p {
+    line-height: 2rem;
+  }
+}

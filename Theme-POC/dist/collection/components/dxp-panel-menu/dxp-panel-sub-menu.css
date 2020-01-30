@@ -1,0 +1,8 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-panel-sub-menu .panel-item-content {
+  display: none;
+}
+div.dxp.dxp-panel-sub-menu .panel-item-content.panel-item-active {
+  overflow-x: auto;
+  display: block;
+}

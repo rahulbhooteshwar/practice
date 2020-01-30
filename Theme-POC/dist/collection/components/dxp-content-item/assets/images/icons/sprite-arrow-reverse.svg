@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="142px" viewBox="0 0 25 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>sprite-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sprite-arrow" transform="translate(12.000000, 71.000000) scale(-1, 1) translate(-12.000000, -71.000000) translate(-1.000000, 0.000000)" fill-rule="nonzero">
+            <g id="Symbols" transform="translate(0.000000, 32.000000)" fill="#F36F3F">
+                <g id="cta_x2F_ltr_x2F_forward_x2F_black_x2F_hover">
+                    <g id="icon_x2F_cta-arrow-for-cta-link_x2F_black_x2F_hover">
+                        <polygon id="Line" points="0.945559 6.554443 23.945557 6.554443 23.945557 5.554443 0.945559 5.554443"></polygon>
+                        <polygon id="arrowhead" points="18.945559 11.349075 19.692764 12.054443 24.945557 6.054443 19.692764 0.054443 18.945559 0.759808 23.58083 6.054443"></polygon>
+                    </g>
+                </g>
+            </g>
+            <g id="Symbols_1_" transform="translate(1.000000, 0.000000)" fill="#161615">
+                <g id="cta_x2F_ltr_x2F_forward_x2F_black_x2F_rest">
+                    <g id="icon_x2F_cta-arrow-for-cta-link_x2F_black_x2F_rest">
+                        <polygon id="Line_1_" points="0 6.5 23 6.5 23 5.5 0 5.5"></polygon>
+                        <polygon id="arrowhead_1_" points="18 11.294632 18.747206 12 24 6 18.747206 0 18 0.705367 22.635269 6"></polygon>
+                        <polygon id="arrowhead_1_" points="18 108.294632 18.747206 109 24 103 18.747206 97 18 97.705367 22.635269 103"></polygon>
+                    </g>
+                </g>
+            </g>
+            <g id="Symbols_2_" transform="translate(1.000000, 64.000000)" fill="#FFFFFF">
+                <g id="cta_x2F_ltr_x2F_forward_x2F_white_x2F_rest">
+                    <g id="icon_x2F_cta-arrow-for-cta-link_x2F_white_x2F_rest">
+                        <polygon id="Line_2_" points="0.04871 6.5 23.04871 6.5 23.04871 5.5 0.04871 5.5"></polygon>
+                        <polygon id="arrowhead_2_" points="18.04871 11.294632 18.795916 12 24.04871 6 18.795916 0 18.04871 0.705368 22.683983 6"></polygon>
+                        <polygon id="arrowhead_2_" points="18.04871 77.294632 18.795916 78 24.04871 72 18.795916 66 18.04871 66.705368 22.683983 72"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

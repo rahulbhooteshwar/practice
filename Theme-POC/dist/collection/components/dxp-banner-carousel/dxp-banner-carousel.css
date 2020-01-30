@@ -1,0 +1,270 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-banner-carousel {
+  position: relative;
+  /* Fading animation */
+  /* The dots/bullets/indicators */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* badge alignment */
+  /* show progress as bar */
+  /* rtl support */
+}
+div.dxp.dxp-banner-carousel .carousel-container {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+div.dxp.dxp-banner-carousel .carousel-container.card {
+  box-shadow: 0 2px 10px 0 rgba(20, 20, 19, 0.2);
+  border-radius: 4px;
+}
+div.dxp.dxp-banner-carousel .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+div.dxp.dxp-banner-carousel .dot {
+  cursor: pointer;
+  height: 10px;
+  z-index: 10;
+  width: 10px;
+  margin-right: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+div.dxp.dxp-banner-carousel .nav-controls {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  left: 0;
+}
+div.dxp.dxp-banner-carousel .prev,
+div.dxp.dxp-banner-carousel .next {
+  position: absolute;
+  cursor: pointer;
+  width: 48px;
+  height: 108px;
+  transition: 0.6s ease;
+  border-radius: 0 8px 8px 0;
+  user-select: none;
+}
+div.dxp.dxp-banner-carousel .next {
+  right: 0;
+  border-radius: 8px 0 0 8px;
+}
+div.dxp.dxp-banner-carousel .indicators {
+  position: absolute;
+  text-align: center;
+  line-height: 1;
+}
+div.dxp.dxp-banner-carousel .indicators.center {
+  width: 100%;
+}
+div.dxp.dxp-banner-carousel .bar-container {
+  display: flex;
+  position: absolute;
+  width: 50%;
+  right: 0;
+  bottom: 0;
+  padding: 0 2.5rem 2.5rem;
+  line-height: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+div.dxp.dxp-banner-carousel .bar-container.set-to-left {
+  right: auto;
+  left: 0;
+}
+div.dxp.dxp-banner-carousel .bar-container .carousel-progress-bar {
+  display: none;
+}
+div.dxp.dxp-banner-carousel .bar-container.benefits-indicator {
+  padding-left: 128px;
+  padding-right: 0;
+  justify-content: flex-start;
+}
+div.dxp.dxp-banner-carousel .bar-container.benefits-indicator .carousel-progress-bar {
+  display: block;
+  margin-top: 0;
+  margin-left: 2.75rem;
+}
+@media (max-width: 768px) {
+  div.dxp.dxp-banner-carousel .bar-container.benefits-indicator .carousel-progress-bar {
+    margin-left: 1.5rem;
+  }
+}
+div.dxp.dxp-banner-carousel .bar-container.benefits-indicator .arrow-container {
+  margin-left: 1.875rem;
+}
+div.dxp.dxp-banner-carousel .bar-container.benefits-indicator .prev-arrow, div.dxp.dxp-banner-carousel .bar-container.benefits-indicator .prev-arrow:after,
+div.dxp.dxp-banner-carousel .bar-container.benefits-indicator .next-arrow,
+div.dxp.dxp-banner-carousel .bar-container.benefits-indicator .next-arrow:after {
+  width: 26px;
+}
+@media (min-width: 992px) {
+  div.dxp.dxp-banner-carousel .bar-container.benefits-indicator .prev-arrow {
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  div.dxp.dxp-banner-carousel .bar-container.benefits-indicator {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+@media (max-width: 767px) {
+  div.dxp.dxp-banner-carousel .bar-container.benefits-indicator {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width: 991px) {
+  div.dxp.dxp-banner-carousel .bar-container {
+    width: 100%;
+  }
+}
+div.dxp.dxp-banner-carousel .arrow-container {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  margin: 0;
+}
+div.dxp.dxp-banner-carousel .carousel-progress-bar {
+  position: relative;
+  margin-top: 10px;
+  width: 39.5%;
+  height: 2px;
+}
+div.dxp.dxp-banner-carousel .carousel-progress-values {
+  color: inherit;
+  margin: 0;
+  min-width: 60px;
+}
+div.dxp.dxp-banner-carousel .carousel-current-progress {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+div.dxp.dxp-banner-carousel .next-arrow:before {
+  right: 0;
+  border-width: 1px 1px 0 0;
+  transform: translate(-2px, -50%) rotate(45deg);
+}
+div.dxp.dxp-banner-carousel .next-arrow:after {
+  right: 0;
+  transform: translate(-1px, -50%);
+}
+div.dxp.dxp-banner-carousel .prev-arrow {
+  margin-right: 16px;
+}
+div.dxp.dxp-banner-carousel .prev-arrow:before {
+  left: 0;
+  border-width: 0 0 1px 1px;
+  transform: translate(2px, -50%) rotate(45deg);
+}
+div.dxp.dxp-banner-carousel .prev-arrow:after {
+  left: 0;
+  transform: translate(1px, -50%);
+}
+div.dxp.dxp-banner-carousel .prev-arrow,
+div.dxp.dxp-banner-carousel .next-arrow {
+  display: inline-block;
+  background: none;
+  padding: 0;
+  background: none;
+  height: 24px;
+  width: 20px;
+  position: relative;
+  cursor: pointer;
+}
+div.dxp.dxp-banner-carousel .prev-arrow:before,
+div.dxp.dxp-banner-carousel .next-arrow:before {
+  content: "";
+  display: block;
+  height: 9px;
+  width: 9px;
+  position: absolute;
+  top: 50%;
+  border-color: inherit;
+  border-style: solid;
+}
+div.dxp.dxp-banner-carousel .prev-arrow:after,
+div.dxp.dxp-banner-carousel .next-arrow:after {
+  content: "";
+  display: block;
+  height: 0;
+  border-top: 1px solid;
+  width: 19px;
+  position: absolute;
+  top: 50%;
+}
+div.dxp.dxp-banner-carousel .disable-prev-arrow {
+  pointer-events: none;
+  opacity: 0.6;
+}
+div.dxp.dxp-banner-carousel .thumbnails {
+  text-align: center;
+}
+div.dxp.dxp-banner-carousel .thumbnails .thumbnail {
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-block;
+  width: 90px;
+  height: 40px;
+  margin: 7px 3px;
+}
+div.dxp.dxp-banner-carousel[dir=rtl] .next {
+  left: 0;
+  right: auto;
+}
+div.dxp.dxp-banner-carousel[dir=rtl] .arrow-container {
+  flex-direction: row-reverse;
+}
+div.dxp.dxp-banner-carousel[dir=rtl] .arrow-container .next-arrow,
+div.dxp.dxp-banner-carousel[dir=rtl] .arrow-container .prev-arrow {
+  background: none;
+}
+div.dxp.dxp-banner-carousel[dir=rtl] .benefits-indicator {
+  padding-left: 0;
+  padding-right: 128px;
+}
+div.dxp.dxp-banner-carousel[dir=rtl] .benefits-indicator .carousel-progress-bar {
+  margin-left: 0;
+  margin-right: 2.75rem;
+}
+div.dxp.dxp-banner-carousel[dir=rtl] .benefits-indicator .arrow-container {
+  margin-left: 0;
+  margin-right: 1.875rem;
+}
+@media (max-width: 991px) {
+  div.dxp.dxp-banner-carousel[dir=rtl] .benefits-indicator {
+    padding-right: 36px;
+  }
+}
+@media (max-width: 767px) {
+  div.dxp.dxp-banner-carousel[dir=rtl] .benefits-indicator {
+    padding-right: 16px;
+  }
+}

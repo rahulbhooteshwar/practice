@@ -1,0 +1,9 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-autowriter .blinking-cursor {
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+  margin-right: -14px;
+}

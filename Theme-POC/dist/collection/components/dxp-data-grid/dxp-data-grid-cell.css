@@ -1,0 +1,25 @@
+div.dxp.dxp-data-grid-cell {
+  background: none;
+  word-break: break-word;
+  word-wrap: break-word;
+  padding: 1rem 0 1rem 0.625rem;
+  display: flex;
+}
+div.dxp.dxp-data-grid-cell.data-grid-cell {
+  text-align: left;
+  line-height: 26px;
+}
+div.dxp.dxp-data-grid-cell .filter-wrapper {
+  position: relative;
+  left: -100%;
+}
+div.dxp.dxp-data-grid-cell span {
+  padding-right: 0.625rem;
+  flex: 1;
+  max-width: 100%;
+}
+div.dxp.dxp-data-grid-cell .sort-icon, div.dxp.dxp-data-grid-cell .filter-icon {
+  height: 1.5rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}

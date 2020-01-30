@@ -1,0 +1,139 @@
+div.dxp.dxp-data-grid {
+  margin-bottom: 20px;
+  display: block;
+}
+div.dxp.dxp-data-grid ::slotted(dxp-data-grid-row) {
+  display: inline-flex;
+}
+div.dxp.dxp-data-grid ::slotted(dxp-data-grid-row:nth-child(odd)) dxp-data-grid-row:nth-child(odd) {
+  display: block;
+}
+div.dxp.dxp-data-grid ::slotted(dxp-data-grid-row:nth-child(odd)) ::slotted(dxp-data-grid-row:first-child) {
+  background-color: none;
+}
+div.dxp.dxp-data-grid .grid-options {
+  padding: 0.5rem 0.75rem 1rem;
+  flex-wrap: wrap;
+}
+div.dxp.dxp-data-grid .grid-options .cta-block {
+  padding-bottom: 0.5rem;
+  min-width: 40%;
+}
+div.dxp.dxp-data-grid .grid-options .search-block {
+  flex: 1;
+}
+div.dxp.dxp-data-grid .grid-options .search-block .search-wrapper {
+  position: relative;
+  max-width: 30rem;
+  min-width: 20rem;
+  width: 100%;
+  float: right;
+}
+div.dxp.dxp-data-grid .grid-options .search-block .search-wrapper .search-input {
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+  border-radius: 2rem;
+}
+div.dxp.dxp-data-grid .grid-options .search-block .search-wrapper .dxp-icon-search, div.dxp.dxp-data-grid .grid-options .search-block .search-wrapper .dxp-icon-close {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+div.dxp.dxp-data-grid .grid-options .search-block .search-wrapper .dxp-icon-search {
+  left: 1rem;
+}
+div.dxp.dxp-data-grid .grid-options .search-block .search-wrapper .dxp-icon-close {
+  cursor: pointer;
+  right: 1rem;
+}
+div.dxp.dxp-data-grid .grid-options .printer-icon {
+  padding-left: 1rem;
+}
+div.dxp.dxp-data-grid .grid-options .action-menu {
+  position: relative;
+}
+div.dxp.dxp-data-grid .grid-options .action-menu .action-list-wrapper {
+  z-index: 5;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: -0.5rem;
+  top: 100%;
+  transition: all 200ms ease-in;
+  padding-top: 0.5rem;
+}
+div.dxp.dxp-data-grid .grid-options .action-menu .action-list-wrapper .action-list {
+  border-radius: 0.25rem;
+  padding: 0.5rem 0;
+  z-index: 5;
+  width: 8.5rem;
+}
+div.dxp.dxp-data-grid .grid-options .action-menu .action-list-wrapper .action-list .action-link {
+  display: block;
+  padding: 0.45rem 1.25rem;
+}
+div.dxp.dxp-data-grid .grid-options .action-menu .action-list-wrapper .action-list .action-link a {
+  display: flex;
+}
+div.dxp.dxp-data-grid .grid-options .action-menu .action-list-wrapper .action-list .action-link a:hover {
+  text-decoration: underline;
+}
+div.dxp.dxp-data-grid .grid-options .action-menu .action-list-wrapper .action-list .action-link a .btn-icon {
+  display: inline-block;
+  width: 1rem;
+  margin-right: 0.75rem;
+}
+div.dxp.dxp-data-grid .grid-options .action-menu .action-list-wrapper .action-list .action-arrow {
+  height: 0;
+  width: 0;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+}
+div.dxp.dxp-data-grid .grid-options .action-menu .action-list-wrapper.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+div.dxp.dxp-data-grid .grid-options .action-menu a {
+  display: flex;
+  align-items: center;
+}
+div.dxp.dxp-data-grid .grid-options .action-menu a:hover span {
+  text-decoration: underline;
+}
+div.dxp.dxp-data-grid .grid-options .action-menu a i {
+  margin-left: 0.75rem;
+  transition: 0.2s transform linear;
+}
+div.dxp.dxp-data-grid .grid-options .action-menu a.hide-link i {
+  transform: rotate(-180deg);
+}
+div.dxp.dxp-data-grid .grid-options .align-center {
+  align-items: center;
+}
+
+.table-wrapper {
+  overflow: auto;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  min-height: 40rem;
+}
+.table-wrapper .header-wrapper {
+  z-index: 4;
+}
+.table-wrapper .header-wrapper.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.table-wrapper .no-result-found {
+  padding: 2rem;
+  text-align: center;
+}
+
+.dxp-data-grid-table {
+  overflow: scroll;
+  display: table;
+}

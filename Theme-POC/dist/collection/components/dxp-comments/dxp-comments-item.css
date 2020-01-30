@@ -1,0 +1,156 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-comments-item .comment-section {
+  clear: both;
+  margin-bottom: 1.75rem;
+}
+div.dxp.dxp-comments-item .comment-section .added-comment {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  clear: both;
+  word-break: break-word;
+}
+div.dxp.dxp-comments-item .comment-section .added-comment .seperated-user-id {
+  border-radius: 3px;
+  padding: 0.3rem 0.5rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+div.dxp.dxp-comments-item .comment-section .comment-header-block {
+  display: flex;
+}
+div.dxp.dxp-comments-item .comment-section .comment-header-block .profile-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.dxp.dxp-comments-item .comment-section .comment-header-block .detail-block {
+  flex: 1;
+  margin: 0 0.75rem;
+}
+div.dxp.dxp-comments-item .comment-section .comment-header-block .detail-block .comment-user,
+div.dxp.dxp-comments-item .comment-section .comment-header-block .detail-block .comment-time {
+  word-break: break-all;
+}
+div.dxp.dxp-comments-item .comment-section .comment-header-block .detail-block .comment-time {
+  display: inline-block;
+  direction: ltr;
+}
+div.dxp.dxp-comments-item .comment-section .options-wrapper {
+  display: flex;
+}
+div.dxp.dxp-comments-item .comment-section .options-wrapper .count {
+  margin: 0 0.75rem;
+}
+div.dxp.dxp-comments-item .comment-section .options-wrapper .arrange-right {
+  margin-left: auto;
+}
+div.dxp.dxp-comments-item .comment-section .action-menu {
+  position: relative;
+}
+div.dxp.dxp-comments-item .comment-section .action-menu .action-list-wrapper {
+  z-index: 5;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  right: -0.5rem;
+  top: 100%;
+  transition: all 200ms ease-in;
+  padding-top: 0.5rem;
+}
+div.dxp.dxp-comments-item .comment-section .action-menu .action-list-wrapper .action-list {
+  border-radius: 0.25rem;
+  padding: 0.5rem 0;
+  z-index: 5;
+  width: 11rem;
+}
+div.dxp.dxp-comments-item .comment-section .action-menu .action-list-wrapper .action-list .action-link {
+  display: block;
+  padding: 0.45rem 1.25rem;
+}
+div.dxp.dxp-comments-item .comment-section .action-menu .action-list-wrapper .action-list .action-link a {
+  display: flex;
+}
+div.dxp.dxp-comments-item .comment-section .action-menu .action-list-wrapper .action-list .action-link a:hover {
+  text-decoration: underline;
+}
+div.dxp.dxp-comments-item .comment-section .action-menu .action-list-wrapper .action-list .action-link a .btn-icon {
+  display: inline-block;
+  width: 1rem;
+  margin-right: 0.75rem;
+}
+div.dxp.dxp-comments-item .comment-section .action-menu .action-list-wrapper .action-list .action-arrow {
+  height: 0;
+  width: 0;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+}
+div.dxp.dxp-comments-item .comment-section .action-menu .action-list-wrapper.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+div.dxp.dxp-comments-item .comment-section .reply-textarea {
+  margin-bottom: 1.75rem;
+  margin-top: 1rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.dxp.dxp-comments-item .comment-section .reply-textarea .textarea-wrapper {
+  flex: 1 1 auto;
+  position: relative;
+}
+div.dxp.dxp-comments-item .comment-section .reply-textarea textarea.comment-edit {
+  padding: 1rem 3rem 1rem 1rem;
+  flex: 1;
+}
+div.dxp.dxp-comments-item .comment-section .reply-textarea .send-btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0.3rem;
+}
+div.dxp.dxp-comments-item .comment-section .reply-textarea .cancel-btn {
+  position: absolute;
+  right: 0.75rem;
+  top: 0.75rem;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0.25rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+div.dxp.dxp-comments-item .comment-section .reply-textarea .reply-to-user-id {
+  margin-bottom: 0.3rem;
+  flex: 0 0 100%;
+}
+div.dxp.dxp-comments-item[dir=rtl] .comment-section .added-comment .seperated-user-id {
+  margin-right: 0;
+  margin-left: 0.5rem;
+  display: inline-block;
+}
+div.dxp.dxp-comments-item[dir=rtl] .comment-section .action-menu .action-list-wrapper {
+  right: unset;
+  left: -0.5rem;
+}
+div.dxp.dxp-comments-item[dir=rtl] .comment-section .action-menu .action-list-wrapper .action-list .action-link a .btn-icon {
+  margin-right: 0;
+  margin-left: 0.75rem;
+}
+div.dxp.dxp-comments-item[dir=rtl] .comment-section .action-menu .action-list-wrapper .action-list .action-arrow {
+  right: unset;
+  left: 0.5rem;
+}
+div.dxp.dxp-comments-item[dir=rtl] .comment-section textarea.comment-edit {
+  padding: 1rem 1rem 1rem 3rem;
+}
+div.dxp.dxp-comments-item[dir=rtl] .comment-section .cancel-btn {
+  right: unset;
+  left: 4rem;
+}

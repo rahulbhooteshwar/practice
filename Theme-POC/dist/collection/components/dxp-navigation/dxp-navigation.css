@@ -1,0 +1,87 @@
+/* namespace all component styles to create then most specific ruleset */
+.dxp.dxp-navigation {
+  width: 100%;
+  display: block;
+  background: none;
+  align-items: center;
+}
+.dxp.dxp-navigation.pos-relative {
+  position: relative;
+}
+.dxp.dxp-navigation.nav-primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  order: 1;
+  margin-right: 0;
+  padding: 0;
+  width: 100%;
+  right: 0;
+}
+.dxp.dxp-navigation a {
+  font-size: 14px;
+  letter-spacing: 1.57px;
+  line-height: 24px;
+  text-decoration: none;
+}
+.dxp.dxp-navigation a:hover {
+  text-decoration: none;
+}
+.dxp.dxp-navigation .nav {
+  padding: 20px 28px 0 38px;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 992px) {
+  .dxp.dxp-navigation.nav-primary {
+    width: 100%;
+    flex-direction: row;
+    margin: 0;
+    right: auto;
+    padding: 0;
+    order: 0;
+    height: 100%;
+  }
+  .dxp.dxp-navigation a {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .dxp.dxp-navigation .nav {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+}
+@media (max-width: 991px) {
+  .dxp.dxp-navigation.nav-primary {
+    overflow-y: hidden;
+    max-height: 0;
+    transition: max-height 0.35s ease;
+  }
+  .dxp.dxp-navigation.nav-height {
+    max-height: 100vh;
+    transition: max-height 0.6s ease;
+  }
+  .dxp.dxp-navigation.overflow-y-auto {
+    overflow-y: auto;
+  }
+  .dxp.dxp-navigation .nav {
+    margin-top: 0;
+    padding-bottom: 40px;
+  }
+}
+.dxp.dxp-navigation[dir=rtl].nav-primary {
+  text-align: right;
+  align-items: flex-start;
+}
+@media (min-width: 992px) {
+  .dxp.dxp-navigation[dir=rtl].nav-primary {
+    margin-left: auto;
+  }
+  .dxp.dxp-navigation[dir=rtl] .nav {
+    padding: 0;
+  }
+}

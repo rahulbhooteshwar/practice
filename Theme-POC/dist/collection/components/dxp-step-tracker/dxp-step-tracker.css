@@ -1,0 +1,23 @@
+/* namespace all component styles to create then most specific ruleset */
+ul.dxp.dxp-step-tracker {
+  padding: 2px;
+}
+ul.dxp.dxp-step-tracker.horizontal {
+  display: flex;
+}
+ul.dxp.dxp-step-tracker.horizontal dxp-step,
+ul.dxp.dxp-step-tracker.horizontal ::slotted(dxp-step) {
+  flex: 1;
+}
+ul.dxp.dxp-step-tracker.horizontal dxp-step:last-child,
+ul.dxp.dxp-step-tracker.horizontal ::slotted(dxp-step:last-child) {
+  flex: unset;
+}
+ul.dxp.dxp-step-tracker dxp-step {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+ul.dxp.dxp-step-tracker dxp-step:last-child {
+  flex: unset;
+}

@@ -1,0 +1,79 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-image-grid .image-grid-container {
+  display: flex;
+  flex-flow: column wrap;
+  -webkit-flex-flow: column wrap;
+  -moz-flex-flow: column wrap;
+  max-width: 100%;
+  height: 600px;
+}
+div.dxp.dxp-image-grid .image-grid-container .image-panel {
+  width: 25%;
+  overflow: hidden;
+  height: 300px;
+}
+div.dxp.dxp-image-grid .image-grid-container .image-panel.blank-panel {
+  background-color: #5b6770;
+}
+div.dxp.dxp-image-grid .size-2x2--l .image-panel:nth-child(1) {
+  height: 600px;
+  width: 50%;
+}
+div.dxp.dxp-image-grid .size-2x2--c .image-panel:nth-child(3) {
+  height: 600px;
+  width: 50%;
+}
+div.dxp.dxp-image-grid .size-2x2--r .image-panel:nth-child(5) {
+  height: 600px;
+  width: 50%;
+}
+div.dxp.dxp-image-grid .size-2x2 .image-panel {
+  height: 600px;
+  width: 50%;
+}
+@media (max-width: 1200px) {
+  div.dxp.dxp-image-grid .dxp-image-grid-container {
+    display: flex;
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    width: 100%;
+    flex-flow: nowrap;
+  }
+  div.dxp.dxp-image-grid .dxp-image-grid-container .image-grid-container {
+    overflow: auto;
+    height: 320px;
+    -webkit-overflow-scrolling: touch;
+  }
+  div.dxp.dxp-image-grid .dxp-image-grid-container .image-grid-container .image-panel {
+    width: 300px;
+  }
+  div.dxp.dxp-image-grid .dxp-image-grid-container .image-grid-container.size-1x1 {
+    width: 2400px;
+    max-width: 2400px;
+  }
+  div.dxp.dxp-image-grid .dxp-image-grid-container .image-grid-container.size-2x2--l, div.dxp.dxp-image-grid .dxp-image-grid-container .image-grid-container.size-2x2--c, div.dxp.dxp-image-grid .dxp-image-grid-container .image-grid-container.size-2x2--r {
+    width: 1500px;
+    max-width: 1500px;
+  }
+  div.dxp.dxp-image-grid .dxp-image-grid-container .image-grid-container.size-2x2 {
+    width: 600px;
+    max-width: 600px;
+  }
+  div.dxp.dxp-image-grid .size-2x2--l .image-panel:nth-child(1) {
+    height: 300px;
+    width: 300px;
+  }
+  div.dxp.dxp-image-grid .size-2x2--c .image-panel:nth-child(3) {
+    height: 300px;
+    width: 300px;
+  }
+  div.dxp.dxp-image-grid .size-2x2--r .image-panel:nth-child(5) {
+    height: 300px;
+    width: 300px;
+  }
+  div.dxp.dxp-image-grid .size-2x2 .image-panel {
+    height: 300px;
+    width: 300px;
+  }
+}

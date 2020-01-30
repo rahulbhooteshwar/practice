@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="19px" viewBox="0 0 22 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>component-white</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Designs-on-Invision" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02)-Sidebar-dropdown" transform="translate(-407.000000, -429.000000)" stroke="#FFFFFF" stroke-width="1.2">
+            <g id="component-white" transform="translate(407.000000, 429.000000)">
+                <ellipse id="Oval" cx="4.84210526" cy="4.84848485" rx="4.24210526" ry="4.24848485"></ellipse>
+                <rect id="Rectangle" x="12.9157895" y="0.6" width="8.48421053" height="8.4969697"></rect>
+                <path d="M5.51912252,17.8250347 L14.0922555,17.8250347 L10.0105818,10.5199335 L5.51912252,17.8250347 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

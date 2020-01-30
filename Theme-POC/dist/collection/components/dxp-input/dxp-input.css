@@ -1,0 +1,68 @@
+div.dxp.dxp-input .input-container {
+  position: relative;
+  width: 100%;
+}
+div.dxp.dxp-input .dxp-inputbox-label {
+  font-size: 12px;
+  margin-bottom: 0.25rem;
+}
+div.dxp.dxp-input .input-icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.75rem;
+}
+div.dxp.dxp-input .icon-inputs {
+  background: transparent url("process.env.DXP_COMPONENT_ASSET_PATH/dxp-input/card-icons-sprite.svg") no-repeat;
+  background-size: 650%;
+  background-position-y: 5px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  width: 30px;
+  height: 30px;
+}
+div.dxp.dxp-input.visa, div.dxp.dxp-input.amex, div.dxp.dxp-input.unionpay, div.dxp.dxp-input.discover, div.dxp.dxp-input.jcp, div.dxp.dxp-input.hide-pass-icon, div.dxp.dxp-input.view-pass-icon {
+  display: block;
+}
+div.dxp.dxp-input .mastercard {
+  background-position-x: 0;
+}
+div.dxp.dxp-input .visa {
+  background-position-x: -32px;
+}
+div.dxp.dxp-input .amex {
+  background-position-x: -100px;
+}
+div.dxp.dxp-input .unionpay {
+  background-position-x: -65px;
+}
+div.dxp.dxp-input .discover {
+  background-position-x: -165px;
+}
+div.dxp.dxp-input .jcb {
+  background-position-x: -132px;
+}
+div.dxp.dxp-input .hide-pass-icon {
+  background: transparent url("process.env.DXP_COMPONENT_ASSET_PATH/dxp-input/hide-pass.svg") 2px 9px no-repeat;
+}
+div.dxp.dxp-input .view-pass-icon {
+  background: transparent url("process.env.DXP_COMPONENT_ASSET_PATH/dxp-input/show-pass.svg") 2px 9px no-repeat;
+}
+div.dxp.dxp-input [dir=rtl] .view-pass-mask,
+div.dxp.dxp-input [dir=rtl] .hide-pass-mask {
+  right: auto;
+  left: 5px;
+}
+div.dxp.dxp-input .input-box {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.625rem 3.25rem 0.625rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+div.dxp.dxp-input .input-box::-ms-clear {
+  display: none;
+}

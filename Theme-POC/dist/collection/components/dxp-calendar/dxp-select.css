@@ -1,0 +1,30 @@
+div.dxp.dxp-select select {
+  border-radius: 0;
+  outline: 0;
+  height: 26px;
+  background-position: calc(100% - 10px) calc(1em + 2px), calc(100% - 5px) calc(1em + 2px);
+  background-position-y: center;
+  padding: 0 5px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+div.dxp.dxp-select select:focus {
+  border: 1px solid;
+  border-radius: 0px;
+}
+div.dxp.dxp-select select.fix-height {
+  height: auto;
+  background-image: none;
+  border: 0.5px solid;
+  border-radius: 0;
+  outline: 0;
+}
+div.dxp.dxp-select[dir=rtl] select:focus {
+  padding-right: 9px;
+}
+div.dxp.dxp-select[dir=rtl] select.month-list-select {
+  background-position: calc(100% - 100px) calc(1em + -4px), calc(100% - 95px) calc(1em + -4px);
+}
+div.dxp.dxp-select[dir=rtl] select.year-list-select {
+  background-position: calc(100% - 60px) calc(1em + -4px), calc(100% - 55px) calc(1em + -4px);
+}

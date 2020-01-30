@@ -1,0 +1,10 @@
+ul.dxp.dxp-site-map-list {
+  display: block;
+  list-style: none;
+}
+[dir=ltr] ul.dxp.dxp-site-map-list {
+  margin-left: 1.5rem;
+}
+[dir=rtl] ul.dxp.dxp-site-map-list {
+  margin-right: 1.5rem;
+}

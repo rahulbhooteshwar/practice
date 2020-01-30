@@ -1,0 +1,419 @@
+/* namespace all component styles to create then most specific rules */
+div.dxp.dxp-tab-item {
+  /* Styles for Horizontal default view */
+  /* Styles for Vertical default view */
+}
+div.dxp.dxp-tab-item .horizontal .scrollable-horizontal {
+  overflow: auto;
+}
+div.dxp.dxp-tab-item .horizontal .content-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+div.dxp.dxp-tab-item .horizontal .default-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+div.dxp.dxp-tab-item .horizontal.tab-item-content {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+div.dxp.dxp-tab-item .horizontal.tab-item-content .content-wrapper {
+  position: relative;
+  padding: 50px 0;
+}
+div.dxp.dxp-tab-item .horizontal.tab-item-content .button-container {
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+div.dxp.dxp-tab-item .horizontal.tab-item-content.tab-item-active {
+  overflow-x: auto;
+  display: block;
+}
+div.dxp.dxp-tab-item .horizontal.tab-item-content.tab-item-active.tab-item-default {
+  position: relative;
+}
+div.dxp.dxp-tab-item .horizontal.tab-item-content.tab-item-active.tab-item-default .button-container {
+  display: none;
+}
+div.dxp.dxp-tab-item .horizontal.tab-item-content.tab-item-active.tab-item-default .content-overlay {
+  position: absolute;
+}
+div.dxp.dxp-tab-item .vertical .default-view > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+div.dxp.dxp-tab-item .vertical .content-overlay {
+  position: relative;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background: #ffffff;
+  padding: 0px;
+  overflow: hidden;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.pos-relative {
+  position: relative;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.pos-absolute {
+  position: absolute;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content .button-container {
+  cursor: pointer;
+  position: absolute;
+  top: 48px;
+  right: 46px;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-active {
+  overflow-x: auto;
+  display: block;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-active.tab-item-default {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-active.tab-item-default .button-container {
+  display: none;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-active.tab-item-default.pos-relative {
+  position: relative;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-active.tab-item-default.pos-absolute {
+  position: absolute;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-active.content-view .content-overlay {
+  z-index: 20;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-default .sc-dxp-tab-item.content-overlay {
+  position: static;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-default .content-overlay {
+  position: unset;
+  padding: 0;
+  background: none;
+  visibility: visible;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-default .content-overlay.initabsolute {
+  position: absolute;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-default .content-overlay.hide {
+  visibility: hidden;
+  position: absolute;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-default.pos-relative {
+  position: relative;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-default.pos-absolute {
+  position: absolute;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content:not(.tab-item-default) .content-overlay.left-fix {
+  right: 0;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content:not(.tab-item-default) .content-overlay.fade-in {
+  -webkit-animation: fadein 3s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 3s;
+  /* Internet Explorer */
+  -o-animation: fadein 3s;
+  /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content:not(.tab-item-default) .content-overlay.fade-out {
+  -webkit-animation: fadeout 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeout 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadeout 2s;
+  /* Internet Explorer */
+  -o-animation: fadeout 2s;
+  /* Opera < 12.1 */
+  animation: fadeout 2s;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content:not(.tab-item-default) .content-overlay.left-to-right-animation {
+  -webkit-animation: slideout 2s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards;
+  /* Safari 4.0 - 8.0 */
+  animation: slideout 2s;
+  animation-fill-mode: forwards;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content:not(.tab-item-default) .content-overlay.right-to-left-animation {
+  -webkit-animation: slidein 2s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards;
+  /* Safari 4.0 - 8.0 */
+  animation: slidein 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes slidein {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+@-webkit-keyframes slidein {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes slideout {
+  from {
+    right: 0;
+  }
+  to {
+    right: -100%;
+  }
+}
+@-webkit-keyframes slideout {
+  from {
+    right: 0;
+  }
+  to {
+    right: -100%;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@media (max-width: 991px) {
+  div.dxp.dxp-tab-item .vertical .tab-wrapper-vertical {
+    z-index: 1;
+  }
+  div.dxp.dxp-tab-item .vertical.content-view.tab-item-active .content-overlay {
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    z-index: 1;
+    padding: 0px;
+  }
+  div.dxp.dxp-tab-item .vertical.content-view.tab-item-active .tab-wrapper-vertical {
+    z-index: -1;
+  }
+  div.dxp.dxp-tab-item .vertical.content-view.tab-item-active.tab-item-default {
+    position: relative;
+  }
+  div.dxp.dxp-tab-item .vertical.content-view.tab-item-active.tab-item-default.pos-relative {
+    position: relative;
+  }
+  div.dxp.dxp-tab-item .vertical.content-view.tab-item-active.tab-item-default.pos-absolute {
+    position: absolute;
+  }
+  div.dxp.dxp-tab-item .vertical.default-view .content-overlay {
+    position: relative;
+  }
+}
+@media (max-width: 767px) {
+  div.dxp.dxp-tab-item .vertical .tab-wrapper-vertical {
+    z-index: 1;
+  }
+  div.dxp.dxp-tab-item .vertical .content-overlay {
+    padding: 48px;
+  }
+  div.dxp.dxp-tab-item .vertical.content-view.tab-item-active .content-overlay {
+    padding: 16px;
+  }
+  div.dxp.dxp-tab-item .vertical.tab-item-content .button-container {
+    top: 16px;
+    right: 16px;
+  }
+}
+@media (min-width: 767px) {
+  div.dxp.dxp-tab-item .vertical.content-view.tab-item-active .content-overlay {
+    padding: 40px 35px 35px;
+  }
+  div.dxp.dxp-tab-item .vertical.tab-item-content .button-container {
+    top: 40px;
+  }
+}
+@media (min-width: 992px) {
+  div.dxp.dxp-tab-item .vertical.content-view.tab-item-active .content-overlay {
+    padding: 0px;
+  }
+  div.dxp.dxp-tab-item .vertical.tab-item-content .button-container {
+    top: 0px;
+    right: 15px;
+  }
+}
+
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-tab-item {
+  /* Styles for Horizontal tabs content */
+  /* Styles for Vertical tabs content */
+}
+div.dxp.dxp-tab-item .button-container.hide {
+  display: none;
+}
+div.dxp.dxp-tab-item .button-container.show {
+  display: block;
+}
+div.dxp.dxp-tab-item.horizontal .tab-item-content {
+  display: none;
+}
+div.dxp.dxp-tab-item.horizontal .tab-item-content.tab-item-active {
+  overflow-x: auto;
+  display: block;
+}
+div.dxp.dxp-tab-item.horizontal .tab-item-content.tab-item-active.default-view .content-wrapper {
+  padding: 0;
+}
+@media (max-width: 991px) {
+  div.dxp.dxp-tab-item.horizontal .tab-item-content.content-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  div.dxp.dxp-tab-item.horizontal .tab-item-content.content-view .content-wrapper {
+    padding: 35px;
+  }
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content {
+  display: none;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-active {
+  overflow-x: auto;
+  display: block;
+}
+@media (min-width: 992px) and (orientation: landscape) {
+  div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-active {
+    overflow: hidden;
+  }
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-active.default-view .content-wrapper {
+  padding: 0;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-active .content-wrapper {
+  padding: 0;
+  overflow-x: hidden;
+}
+div.dxp.dxp-tab-item .vertical.tab-item-content.accordion-innerHeight {
+  max-height: 65vh;
+}
+div.dxp.dxp-tab-item .vertical .dxp-scrollable-container {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  margin-top: 30px;
+}
+div.dxp.dxp-tab-item .vertical .dxp-scrollable {
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  div.dxp.dxp-tab-item .vertical.default-view .dxp-scrollable-container {
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  div.dxp.dxp-tab-item .vertical.default-view .dxp-scrollable {
+    max-height: 85vh;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  div.dxp.dxp-tab-item .vertical .dxp-scrollable {
+    padding-right: 0;
+  }
+  div.dxp.dxp-tab-item .vertical.content-view .content-overlay {
+    max-height: calc(100vh - 176px);
+  }
+  div.dxp.dxp-tab-item .vertical.content-view .dxp-scrollable-container {
+    max-height: calc(100vh - 176px);
+  }
+  div.dxp.dxp-tab-item .vertical.content-view .dxp-scrollable {
+    max-height: calc(100vh - 176px);
+  }
+  div.dxp.dxp-tab-item .vertical.content-view .default-scrollable-container {
+    max-height: 100vh;
+  }
+  div.dxp.dxp-tab-item .vertical.content-view .default-scrollable {
+    max-height: 100vh;
+  }
+}
+@media (max-width: 991px) {
+  div.dxp.dxp-tab-item .vertical.default-view .dxp-scrollable-container {
+    max-height: 85vh;
+  }
+  div.dxp.dxp-tab-item .vertical.content-view .dxp-scrollable-container {
+    max-height: calc(85vh - 176px);
+  }
+  div.dxp.dxp-tab-item .vertical.tab-item-content.tab-item-active .content-wrapper {
+    padding: 35px;
+  }
+  div.dxp.dxp-tab-item .vertical.tab-item-content.content-view {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+@media (max-width: 991px) and (orientation: portrait) {
+  div.dxp.dxp-tab-item .vertical.tab-item-content.content-view {
+    position: relative;
+  }
+}
+@media (max-width: 812px) {
+  div.dxp.dxp-tab-item .vertical.tab-item-content.content-view {
+    position: relative;
+  }
+  div.dxp.dxp-tab-item .vertical.tab-item-content.content-view .dxp-scrollable-container {
+    max-height: 90vh;
+    padding-top: 0px;
+    margin-top: 30px;
+  }
+  div.dxp.dxp-tab-item .vertical.tab-item-content.content-view .accordion-scrollable-container {
+    max-height: 90vh;
+    padding-top: 0px;
+  }
+  div.dxp.dxp-tab-item .vertical.content-view .dxp-scrollable-container {
+    max-height: 90vh;
+  }
+}

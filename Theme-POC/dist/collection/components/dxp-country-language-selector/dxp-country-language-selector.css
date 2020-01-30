@@ -1,0 +1,18 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-country-language-selector a > span {
+  display: table-cell;
+}
+div.dxp.dxp-country-language-selector a > span:last-child {
+  padding-left: 0.532rem;
+}
+div.dxp.dxp-country-language-selector a:focus {
+  outline: 1px solid;
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  div.dxp.dxp-country-language-selector .country {
+    width: 115px;
+  }
+}
+div.dxp.dxp-country-language-selector[dir=rtl] a > span:last-child {
+  padding: 0 0.532rem 0 0;
+}

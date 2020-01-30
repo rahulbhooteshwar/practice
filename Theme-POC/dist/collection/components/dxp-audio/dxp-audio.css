@@ -1,0 +1,48 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-audio {
+  background-color: transparent;
+  z-index: 100;
+  /* background color will be same for all theme */
+}
+div.dxp.dxp-audio .audio-control {
+  cursor: pointer;
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+  bottom: 0.9375rem;
+  right: 0.9375rem;
+  margin: 0.125rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(60, 60, 60, 0.35);
+  -webkit-backdrop-filter: blur(1.25rem);
+  backdrop-filter: blur(1.25rem);
+}
+div.dxp.dxp-audio .audio-control i {
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+div.dxp.dxp-audio.top-left {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+div.dxp.dxp-audio.top-right {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+div.dxp.dxp-audio.bottom-left {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+div.dxp.dxp-audio.bottom-right {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+div.dxp.dxp-audio .hide-default {
+  display: none;
+}

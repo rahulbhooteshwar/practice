@@ -1,0 +1,138 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-pull-quote {
+  width: 100%;
+}
+div.dxp.dxp-pull-quote h2 {
+  quotes: inherit;
+}
+div.dxp.dxp-pull-quote .pull-quote-content {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+div.dxp.dxp-pull-quote .pull-quote-state {
+  width: 100%;
+  position: inherit;
+}
+div.dxp.dxp-pull-quote .content-wrap {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+div.dxp.dxp-pull-quote .img-wrap {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+}
+div.dxp.dxp-pull-quote .eyebrow-margin {
+  margin-left: 22px;
+}
+div.dxp.dxp-pull-quote .text-para {
+  padding-top: 0.125rem;
+}
+div.dxp.dxp-pull-quote .text-para-pad {
+  padding-left: 22px;
+  line-height: 18px;
+}
+div.dxp.dxp-pull-quote .dxp-pull-quote-name {
+  margin-bottom: 16px;
+  line-height: 26px;
+}
+div.dxp.dxp-pull-quote .dxp-pull-quote-details {
+  margin-bottom: 16px;
+  line-height: 18px;
+}
+div.dxp.dxp-pull-quote .dxp-pull-quote-heading {
+  padding-left: 16px;
+}
+div.dxp.dxp-pull-quote .dxp-pull-quote-description {
+  text-decoration: underline;
+}
+div.dxp.dxp-pull-quote .cta-pad {
+  padding-left: 22px;
+  margin-top: 2.5rem;
+}
+@media (min-width: 768px) {
+  div.dxp.dxp-pull-quote .content-wrap .dxp-title-eyebrow {
+    margin-bottom: 24px;
+  }
+  div.dxp.dxp-pull-quote .content-wrap .dxp-pull-quote-heading {
+    margin-bottom: 32px;
+  }
+  div.dxp.dxp-pull-quote .img-wrap {
+    height: 768px;
+  }
+}
+@media (min-width: 992px) {
+  div.dxp.dxp-pull-quote .pull-quote-content {
+    flex-direction: row;
+  }
+  div.dxp.dxp-pull-quote .pull-quote-state {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+  }
+  div.dxp.dxp-pull-quote .pull-quote-state.with-image {
+    width: 50%;
+  }
+  div.dxp.dxp-pull-quote .pull-quote-state .content-wrap .dxp-title-eyebrow {
+    margin-bottom: 32px;
+  }
+  div.dxp.dxp-pull-quote .pull-quote-state .content-wrap .eyebrow-margin {
+    margin-left: 30px;
+  }
+  div.dxp.dxp-pull-quote .pull-quote-state .content-wrap .dxp-pull-quote-heading {
+    padding-left: 24px;
+    margin-bottom: 40px;
+  }
+  div.dxp.dxp-pull-quote .pull-quote-state .content-wrap h2:before {
+    content: open-quote;
+  }
+  div.dxp.dxp-pull-quote .pull-quote-state .content-wrap h2:after {
+    content: close-quote;
+  }
+  div.dxp.dxp-pull-quote .pull-quote-state .content-wrap .cta-pad {
+    padding-left: 30px;
+  }
+  div.dxp.dxp-pull-quote .pull-quote-state .content-wrap .text-para-pad {
+    padding-left: 30px;
+  }
+  div.dxp.dxp-pull-quote .pull-quote-state .content-wrap .dxp-pull-quote-description {
+    line-height: 18px;
+  }
+  div.dxp.dxp-pull-quote .pull-quote-state .content-wrap .dxp-pull-quote-description p {
+    margin-bottom: 0;
+  }
+  div.dxp.dxp-pull-quote .img-wrap {
+    height: 708px;
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+div.dxp.dxp-pull-quote[dir=rtl] .content-wrap .eyebrow-margin {
+  margin-right: 22px;
+}
+div.dxp.dxp-pull-quote[dir=rtl] .content-wrap .text-para-pad {
+  padding-right: 22px;
+}
+div.dxp.dxp-pull-quote[dir=rtl] .content-wrap .dxp-pull-quote-heading {
+  padding-right: 16px;
+}
+div.dxp.dxp-pull-quote[dir=rtl] .content-wrap .cta-pad {
+  padding-right: 22px;
+}
+@media (min-width: 992px) {
+  div.dxp.dxp-pull-quote[dir=rtl] .content-wrap .dxp-pull-quote-heading {
+    padding-right: 24px;
+  }
+  div.dxp.dxp-pull-quote[dir=rtl] .content-wrap .text-para-pad {
+    padding-right: 30px;
+  }
+  div.dxp.dxp-pull-quote[dir=rtl] .content-wrap .eyebrow-margin {
+    margin-right: 30px;
+  }
+  div.dxp.dxp-pull-quote[dir=rtl] .content-wrap .cta-pad {
+    padding-right: 30px;
+  }
+}

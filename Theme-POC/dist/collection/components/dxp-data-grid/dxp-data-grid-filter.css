@@ -1,0 +1,28 @@
+div.dxp.dxp-data-grid-filter {
+  position: absolute;
+  top: 100%;
+  transform: translateY(1.25rem);
+  left: -0.625rem;
+  z-index: 5;
+  width: 300px;
+}
+div.dxp.dxp-data-grid-filter .options-wrapper {
+  padding: 1rem 1.5rem 0.12rem;
+  word-break: break-word;
+}
+div.dxp.dxp-data-grid-filter .options-wrapper .option-section, div.dxp.dxp-data-grid-filter .options-wrapper .sort-btn {
+  margin-bottom: 1rem;
+}
+div.dxp.dxp-data-grid-filter .options-wrapper .dropdown-label {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+div.dxp.dxp-data-grid-filter .options-wrapper .sort-btn {
+  display: flex;
+}
+div.dxp.dxp-data-grid-filter .options-wrapper .sort-btn .btn-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}

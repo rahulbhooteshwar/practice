@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Event Detail Template</title>
+
+  <link rel="stylesheet" href="https://asset.mastercard.com/dxp-styles/latest/css/dxp-fonts.min.css">
+  <link rel="stylesheet" href="https://asset.mastercard.com/dxp-styles/latest/css/dxp.min.css">
+  <link rel="stylesheet" href="https://asset.mastercard.com/dxp-styles/latest/css/themes/dxp-theme-b2b/dxp-theme-b2b.min.css">
+  <link rel="stylesheet" href="https://asset.mastercard.com/dxp-styles/latest/css/themes/dxp-theme-black/dxp-theme-black.min.css">
+  <link rel="stylesheet" href="https://asset.mastercard.com/dxp-styles/latest/css/themes/dxp-theme-light-grey/dxp-theme-light-grey.min.css">
+  <link rel="stylesheet" href="https://asset.mastercard.com/dxp-styles/latest/css/themes/dxp-theme-rich-grey/dxp-theme-rich-grey.min.css">
+  <link rel="stylesheet" href="https://asset.mastercard.com/dxp-styles/latest/css/themes/dxp-theme-white/dxp-theme-white.min.css">
+
+  <script nomodule="" src="https://asset.mastercard.com/dxp-ui/dxp-web@latest/dxp-web/dxp-web.js"></script>
+  <script type="module" src="https://asset.mastercard.com/dxp-ui/dxp-web@latest/dxp-web/dxp-web.js"></script>
+  
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .dxp-tabs-container ul,
+    .accommodations-ul ul {
+      list-style: disc;
+      list-style-position: outside;
+    }
+    .topics-us ul,
+    .accommodations-ul ul {
+      margin-left: 17px;
+    }    
+    .dxp-tabs-container li {
+      margin-bottom: 15px;
+    }
+    .info-container .underline {
+      text-decoration: underline;
+    }
+    .dxp.dxp-title-eyebrow.dxp-font-size-sm {
+      margin-bottom: 9px;
+    }
+    .info-container .dxp.dxp-title-1 {
+      margin-bottom: 18px;
+    }
+    .info-container .dxp.dxp-font-size-lg,
+    .dxp-tabs-container .dxp.dxp-font-size-lg {
+      margin-bottom: 26px;
+    }
+    .info-container .dxp.dxp-font-size-lg.dxp-bold,
+    .dxp-tabs-container .dxp.dxp-font-size-lg.dxp-bold {
+      margin-bottom: 3px;
+    }
+    .info-container .dxp-font-size-lg,
+    .dxp-tabs-container .dxp-font-size-lg {
+      font-weight: 500;
+    }    
+    .img-container {
+      margin-top: 32px;
+      display: block;
+    }
+    .event-detail-container {
+      padding-top: 44px;
+      padding-bottom: 20px;
+    }
+    .event-detail-container .info-container {
+      margin-bottom: 37px;
+    }
+    .dxp-content-main.dxp-tabs-container {
+      padding-bottom: 40px;
+    }
+    .cybersecurity-tab-row {
+      margin-top: 48px;
+      margin-bottom: 7px;
+    }
+    .cybersecurity-tab-row:first-child {
+      margin-top: 50px;
+    }
+    .dxp-content-main.sponsors-container {
+      padding-top: 64px;
+    }   
+    .dxp-content-main.dubrovnik-register-container {
+      padding-top: 55px;
+      padding-bottom: 64px;
+    }
+    .dxp-content-main.proposals-sponsor-items-container {
+      padding-top: 48px;
+      padding-bottom: 33px;
+    }
+    .dxp-content-main.conference-details-download {
+      padding-bottom: 47px;
+    }
+    .conference-details-download h3 {
+      margin-bottom: 26px;
+    }
+    /* Tabs */
+    .track-container {
+      background: #F8F7F5;
+      height: 88px;
+      align-content: center;
+    }
+    .track-container h5 {
+      margin-bottom: 0;
+    }
+    /* AGENDA Tab Container */
+    .agenda-tab-container {
+      padding-top: 12px;
+    }
+    .agenda-tab-container .dxp-row {
+      margin-bottom: 17px;
+      margin-top: 38px;
+    }
+    .agenda-tab-container .dxp-row:last-child {
+      margin-bottom: 0;
+    }
+    .agenda-tab-container .track {
+      margin-top: 37px;
+    }
+    .agenda-tab-container .track:first-child {
+      margin-top: 20px;
+    }
+    .agenda-tab-container dxp-line {
+      display: block;
+      margin-bottom: 18px;
+    }
+    /* PRICING Tab Container */
+    .price-tab-item .dxp-row:not(:first-child) > .dxp-col-12::before {
+      content: "";
+      display: block;
+      margin-bottom: 28px;
+      width: 100%;
+      height: 1px;
+      background: #96918B;
+    } 
+    .session-date.dxp-eyebrow-lg {
+      margin-bottom: 26px;
+    }
+    .pricing-caption > .dxp-eyebrow-lg {
+      margin-top: 42px;
+      margin-bottom: 33px;
+    }
+    /* Accommodations tab */
+    .accommodations-container .dxp-row + .dxp-row {
+      margin-top: 24px;
+    }
+    .address h3 {
+      margin-bottom: 16px;
+    }
+    .accommodations-ul a {
+      text-decoration: underline;
+    }
+    .address .dxp-font-size-lg:first-of-type {
+      margin-bottom: 27px;
+    }
+    .alternatives.dxp-theme-light-grey {
+      padding: 0;
+    }
+    .general-information-tab .dxp-bold {
+      margin-bottom: 19px;
+    }
+    .general-information-tab .dxp-bold + p {
+      margin-bottom: 27px;
+    }
+    /* SPEAKER NOTES Tabs */
+    .speaker-notes-container dxp-cta {
+      margin-bottom: 20px;
+      display: block;
+    }
+    @media (min-width: 992px) {
+      .info-container .dxp.dxp-title-1 {
+        margin-bottom: 23px;
+      }
+      .info-container .dxp.dxp-font-size-lg.dxp-bold,
+      .dxp-tabs-container .dxp.dxp-font-size-lg.dxp-bold {
+        margin-bottom: 11px;
+      }
+      .img-container {
+        margin-top: 80px;
+      }
+      .event-detail-container {
+        padding-top: 78px;
+        padding-bottom: 56px;
+      }
+      .event-detail-container .info-container {
+        margin-bottom: 0;
+      }
+      .dxp-tabs-container.dxp-content-main {
+        padding-bottom: 76px;
+      }
+      .sponsors-container.dxp-content-main {
+        padding-top: 80px;
+      }
+      .dubrovnik-register-container.dxp-content-main {
+        padding-top: 88px;
+        padding-bottom: 88px;
+      }
+      .proposals-sponsor-items-container.dxp-content-main {
+        padding-top: 88px;
+        padding-bottom: 54px;
+      }
+      .conference-details-download.dxp-content-main {
+        padding-bottom: 32px;
+      }
+      .conference-details-download h3 {
+        margin-bottom: 32px;
+      }
+
+      /* AGENDA Tab Container */
+      .agenda-tab-container {
+        padding-top: 23px;
+      }
+      .agenda-tab-container .track {
+        margin-top: 75px;
+      }
+      .agenda-tab-container .track:first-child {
+        margin-top: 42px;
+      }
+      .agenda-tab-container dxp-line {
+        margin-top: 2px;
+        margin-bottom: 38px;
+      }
+      /* PRICING Tab Container */
+      .price-tab-item .dxp-row > .dxp-col-12::before {
+        margin-bottom: 38px;
+      }
+      .pricing-caption > .dxp-eyebrow-lg {
+        margin-top: 60px;
+      }
+      /* Accommodations tab */
+      .accommodations-container .dxp-row + .dxp-row {
+        margin-top: 48px;
+      }
+      .accommodations-container .address {
+        display: flex;
+        align-items: center;
+      } 
+      .alternatives.dxp-theme-light-grey {
+        padding: 41px 48px 48px;
+      }
+      /* SPEAKER NOTES Tabs */
+      .speaker-notes-container dxp-cta {
+        margin-bottom: 36px;
+      }    
+    }
+    @media (max-width: 991px) {
+      .event-detail-template.dxp-content-main {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .pricing-tabs-container .dxp-col-12 + .dxp-col-12  {
+        margin-top: 28px;
+      }
+    }
+  </style>
+
+</head>
+
+<body data-theme="dxp-theme-white">
+  <!-- Header -->
+  <div class="header-container dxp dxp-theme-black">
+    <dxp-header-rich background-type="solid" data-theme="dxp-theme-black">
+      <dxp-logo slot="logo"
+        src="./images/logos/mastercard_circles_92px_2x.png?at=refs%2Fheads%2Fmaster"
+        src-sm="https://asset.mastercard.com/dxp-ui/assets/dxp-logo/mc-logo-sm.svg"
+        href="http://www.mastercard.com" 
+        alt="Go to Mastercard">
+      </dxp-logo>
+      <dxp-nav content-id="nav" slot="nav"></dxp-nav>
+      <dxp-search 
+        slot="search" 
+        placeholder="Search" 
+        suggest-count=4 
+        cfq="/content/mccom/"
+        suggest-api-url="/services/dxp/suggest/" 
+        cfq-locale="en-us" 
+        suggest-dictionary="contentSuggester"
+        suggest-collection="dm-mccom" 
+        search-type="advance" 
+        show-suggestions="true">
+          <dxp-cta-list title-text="With Mastercard in your wallet, life is full of priceless possibilities" title-style="dxp-title-sm" slot="cta" orientation="vertical">
+            <dxp-cta type="link" text="Contact Us" href="https://google.com" icon-align="left" src="./images/icons/icon-facebook-white.svg" open-in-new-tab="false"></dxp-cta>
+            <dxp-cta type="link" src="./images/icons/icon-facebook-white.svg" icon-align="left" text="Get support" href="https://google.com" open-in-new-tab="false"></dxp-cta>
+            <dxp-cta type="link" src="./images/icons/icon-facebook-white.svg" icon-align="left" text="Report a card missing" href="https://google.com" open-in-new-tab="false"></dxp-cta>
+          </dxp-cta-list>
+      </dxp-search>
+    </dxp-header-rich>
+  </div>
+  <!-- Image -->
+  <div class="event-detail-template dxp-content-main img-container">
+    <dxp-image
+      src="./images/banner/event-overview-template-1836-675.jpg?at=8e59a3b4128d23c3fdca2f104af480e63fa1077e"
+      image-title="Title for Image" alt="Alt Text for Image" aria-label="Aria-Label for link" responsive="true">
+    </dxp-image>
+  </div>
+  <!-- Event  Detail -->
+  <div class="event-detail-container">
+    <div class="event-detail-template dxp-content-main dxp dxp-theme-white">
+      <div class="dxp-row">
+        <div class="dxp dxp dxp-col-12">
+          <p class="dxp dxp-title-eyebrow dxp-font-size-sm margin-bottom-9">conference</p>
+        </div>
+        <div class="dxp dxp dxp-col-12 dxp-col-lg-6 info-container">
+          <h2>GRL Cybersecurity & Risk Summit – Europe</h2>
+          <p class="dxp dxp-font-size-lg dxp-bold">September 30 – October 3, 2019</p>
+          <p class="dxp dxp-font-size-lg">Dubrovnik, Croatia</p>
+
+          <dxp-cta-list content-id="register-cta-list" data-theme="dxp-theme-white" orientation="horizontal"></dxp-cta-list>
+
+          <div>
+            <dxp-modal id="event-registration-form"  modal-title="Request to attend this event" footer-type="one-button" primary-button-text="Submit" accessibility-text-footer-primary="abc">
+              <dxp-input content-id="textbox" is-required=true type="text" label="First name*" accessibility-text="Enter your first name" enable-autocomplete="off"></dxp-input>
+              <dxp-input content-id="textbox" is-required=true type="text" label="Last name*" accessibility-text="Enter your last name" enable-autocomplete="off"></dxp-input>
+              <dxp-input content-id="textbox" is-required=true type="email" label="Email Label*" accessibility-text="Insert Enter Text" enable-autocomplete="off" readonly="false" validation-message="enter the valid email" disabled="false"></dxp-input>
+              <dxp-input content-id="textbox" is-required=true type="text" label="Company*" accessibility-text="Enter your company name" enable-autocomplete="off"></dxp-input>
+              <dxp-input content-id="textbox" is-required=true type="text" label="Position*" accessibility-text="Enter your position" enable-autocomplete="off"></dxp-input>
+              <br />
+              <p class="dxp-font-size-sm">(*Required field)</p>
+              <p class="dxp-font-size-sm">By clicking submit, I am requesting that Mastercard send me information about Mastercard business products and services. I acknowledge and agree that my personal data may be processed in accordance with Mastercard's 
+                <a class="underline" href="#">Global Privacy Notic</a> and 
+                <a class="underline" href="#">Terms of Use.</a></p>
+            </dxp-modal>
+          </div>
+          <div>
+            <dxp-modal id="successful-registration" modal-subtitle="Thank you!" modal-description="If your request is approved, our team will email you a link to register for our event.">
+              <dxp-image slot="logo" src="./images/icons/process-complete.svg?at=116b7d452acbe51a1b7427530891e52b74f4d3c4" 
+                alt="Go to Mastercard">
+              </dxp-image>
+            </dxp-modal>
+          </div>   
+        </div>        
+        <div class="dxp dxp-col-12 dxp-col-lg-6">
+          <h3 class="dxp-title-3">Connect, collaborate and share best practices</h3>
+          <p>The Mastercard GRL Series offers a thought-provoking and informative forum to learn about the latest tools and techniques for minimizing fraud risk and maximizing profitability. Join us for the opportunity to connect, collaborate and share best practices with future partners and industry peers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- hr -->
+  <div class="event-detail-template dxp-content-main">
+    <dxp-line border-color="#96918B"></dxp-line>
+  </div>
+  <!-- Content Item Grid -->
+  <div class="event-detail-template dxp-content-main dxp proposals-sponsor-items-container">
+    <dxp-content-item-grid content-id='proposals-sponsor-item-grid' column=2 header-alignment="left"></dxp-content-item-grid>
+  </div>
+  <!-- Download cta  -->
+  <div class="conference-details-download event-detail-template dxp-content-main dxp dxp-theme-white">
+    <!-- <h3>Conference details</h3> -->
+    <!-- <dxp-cta  type="link" link-type="dxp-btn-download-link" text="Download full agenda PDF"></dxp-cta> -->
+    <dxp-cta-list title-text="Conference details" title-style="dxp-title-md" content-id="conference-details-cta-list"  data-theme="dxp-theme-white" orientation="horizontal"></dxp-cta-list>
+  </div>
+  <!-- dxp tabs -->
+  <div class="dxp-tabs-container pricing-tabs-container event-detail-template dxp-content-main dxp dxp-theme-white">
+    <dxp-tabs data-theme="dxp-theme-white">
+      <dxp-tab-item active=true tab-title="WELCOME">
+        <div class="dxp-row">
+          <div class="dxp-col-12 dxp-col-lg-6">
+            <p class="dxp-text-lg dxp-font-size-lg dxp-bold">What Topics Are Covered?</p>
+            <div class="dxp-text-lg topics-us">
+              <ul>
+                <li>Securing commerce by leveraging strong authentication</li>
+                <li>Intelligence and technology to address the latest cyber threats</li>
+                <li>The growing role of Artificial Intelligence in reducing fraud and risk</li>
+                <li>Interoperability and the importance of building and maintaining trust</li>
+                <li>Embracing disruption, challenge and change in the payments ecosystem</li>
+                <li>Impact of EMV-3DS on the fraud landscape</li>
+                <li>Biometrics and the growing importance of digital identity</li>
+                <li>Establishing high industry standards that benefit all</li>
+                <li>Developing trends in compliance, fraud and risk management</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dxp-col-12 dxp-col-lg-6">
+            <p class="dxp-text-lg dxp-font-size-lg dxp-bold">The GRLC Series is a platform that can help you:</p>
+            <div class="dxp-text-lg topics-us">
+              <ul>
+                <li>Build your network and develop partnerships</li>
+                <li>Learn more about the smartest products and solutions to address fraud and risk in the payments ecosystem</li>
+                <li>Strategic thinking on how to manage risk through open discussions and pre and post conference workshops lead by experts</li>
+              </ul>
+              <p>Who should attend?</p>
+              <p>Open to stakeholders in the payments ecosystem</p>
+            </div>
+          </div>
+        </div>
+      </dxp-tab-item>
+      <dxp-tab-item tab-title="AGENDA">
+        <dxp-accordion heading="Mastercard" is-header-required=false>
+          <dxp-accordion-item item-title="Cybersecurity & Risk Summit I Tuesday, October 1, 2019 I 9:00am - 5:30pm" show-expanded=false>
+            <div class="agenda-tab-container">
+              <div class="dxp-row">
+                <div class="dxp-col-12">
+                  <p class="dxp-font-size-sm">9:00am - 9:05am</p>
+                  <h3>Conference Welcome</h3>
+                  <p><span class="dxp-bold">Speaker</span>: Paul Trueman, Senior Vice President, Product Advancement, Mastercard</p>
+                </div>
+              </div>
+              <!-- hr -->
+              <dxp-line border-color="#96918B"></dxp-line>
+              <div class="dxp-row">
+                <div class="dxp-col-12">
+                  <p class="dxp-font-size-sm">9:05am - 9:45am</p>
+                  <h3>Conference Keynote: Thriving in Challenging Environments</h3>
+                  <p><span class="dxp-bold">Speaker</span>: Ben Saunders, World Record-Breaking Polar Explorer</p>
+                </div>
+              </div>
+              <!-- hr -->
+              <dxp-line border-color="#96918B"></dxp-line>
+              <div class="dxp-row">
+                <div class="dxp-col-12">
+                  <p class="dxp-font-size-sm">9:45am - 10:10am</p>
+                  <h3>The Evolving World of Payments</h3>
+                  <p><span class="dxp-bold">Speaker</span>: Johan Gerber, Executive Vice President, Cyber & Security Products, Mastercard</p>
+                </div>
+              </div>
+              <!-- hr -->
+              <dxp-line border-color="#96918B"></dxp-line>
+              <div class="dxp-row">
+                <div class="dxp-col-12">
+                  <p class="dxp-font-size-sm">10:10am - 10:50am</p>
+                  <h3>Keynote: Demystifying Artificial Intelligence</h3>
+                  <p><span class="dxp-bold">Speaker</span>: John Ridpath, Head of Product, Decoded</p>
+                </div>
+              </div>
+              <!-- hr -->
+              <dxp-line border-color="#96918B"></dxp-line>
+              <div class="dxp-row">
+                <div class="dxp-col-12">
+                  <p class="dxp-font-size-sm">10:50am - 11:20am</p>
+                  <h3>Networking Break & Vendor Showcase</h3>
+                </div>
+              </div>
+              <!-- hr -->
+              <dxp-line border-color="#96918B"></dxp-line>
+              <div class="dxp-row">
+                <div class="dxp-col-12">
+                  <p class="dxp-font-size-sm">11:20am - 12:30pm</p>
+                  <h3>AI Leadership in a Digital World</h3>
+                  <p><span class="dxp-bold">Speaker</span>: Sudhir Jha, Head of Brighterion – A Mastercard Company <br>
+                    Sandy Pentland, Director, MIT Connection Science and Human Dynamics Labs, MIT <br>
+                    <span class="dxp-bold">Moderator</span>: Paul Trueman, Senior Vice President, Product Advancement, Mastercard
+                  </p>
+                </div>
+              </div>
+              <!-- hr -->
+              <dxp-line border-color="#96918B"></dxp-line>
+              <div class="dxp-row">
+                <div class="dxp-col-12">
+                  <p class="dxp-font-size-sm">12:30pm - 1:00pm</p>
+                  <h3>Conference Keynote: Thriving in Challenging Environments</h3>
+                  <p><span class="dxp-bold">Speaker</span>: Ben Saunders, World Record-Breaking Polar Explorer</p>
+                </div>
+              </div>
+
+              <!-- Track 1 -->
+              <div class="track">
+                <p class="dxp-text-lg dxp-bold">Track 1</p>
+                  <!-- hr -->
+                <dxp-line border-color="#96918B"></dxp-line>
+                <p class="dxp-font-size-sm">9:45am - 10:10am</p>
+                <h3>The Evolving World of Payments</h3>
+                <p><span class="dxp-bold">Speaker</span>: Johan Gerber, Executive Vice President, Cyber & Security Products, Mastercard</p>
+              </div>
+              <!-- Track 2 -->
+              <div class="track">
+                <p class="dxp-text-lg dxp-bold">Track 2</p>
+                  <!-- hr -->
+                <dxp-line border-color="#96918B"></dxp-line>
+                <p class="dxp-font-size-sm">9:45am - 10:10am</p>
+                <h3>The Evolving World of Payments</h3>
+                <p><span class="dxp-bold">Speaker</span>: Johan Gerber, Executive Vice President, Cyber & Security Products, Mastercard</p>
+              </div>
+              <!-- Track 3 -->
+              <div class="track">
+                <p class="dxp-text-lg dxp-bold">Track 3</p>
+                  <!-- hr -->
+                <dxp-line border-color="#96918B"></dxp-line>
+                <p class="dxp-font-size-sm">9:45am - 10:10am</p>
+                <h3>The Evolving World of Payments</h3>
+                <p><span class="dxp-bold">Speaker</span>: Johan Gerber, Executive Vice President, Cyber & Security Products, Mastercard</p>
+              </div>
+            </div>
+          </dxp-accordion-item>
+          <dxp-accordion-item item-title="Cybersecurity & Risk Summit I Wednesday, October 2, 2019 I 9:00am - 5:00pm" show-expanded=false>
+            <div class="dxp-row cybersecurity-tab-row">
+              <div class="dxp-col-12 dxp-col-lg-4"><h5 class="dxp-bold">9:00am - 5:30pm</h5></div>
+              <div class="dxp-col-12 dxp-col-lg-7"><h3>General session</h3></div>
+            </div>
+            <!-- hr -->
+            <dxp-line border-color="#96918B"></dxp-line>
+            <div class="dxp-row cybersecurity-tab-row">
+              <div class="dxp-col-12 dxp-col-lg-4"><h5 class="dxp-bold">9:00am - 9:40am</h5></div>
+              <div class="dxp-col-12 dxp-col-lg-7">
+                <h3>Keynote Panel: Digital Futures</h3>
+                <p class="dxp dxp-title-eyebrow dxp-font-size-sm margin-bottom-9">SPEAKERS</p>
+                <p class="dxp-text-article"><span class="dxp-bold">Ajay Bhalla</span>, President, Cyber & Intelligence Solutions, Mastercard<br>
+                  <span class="dxp-bold">Bhaskar Chakravorti</span>, Dean of Global Business at The Fletcher School, Tufts University</p>
+                <p class="dxp-text-article"><i>Moderator: Paul Trueman, Senior Vice President, Product Advancement, Mastercard</i></p>
+              </div>
+            </div>
+            <!-- hr -->
+            <dxp-line border-color="#96918B"></dxp-line>
+            <div class="dxp-row cybersecurity-tab-row">
+              <div class="dxp-col-12 dxp-col-lg-4"><h5 class="dxp-bold">9:40am - 10:10am</h5></div>
+              <div class="dxp-col-12 dxp-col-lg-7">
+                <h3>Update and Insights from the EBA and National Authorities</h3>
+                <p class="dxp-text-article">A pan-European overview of the positions adopted by the various National Competent Authorities (NCA) across the European Union in response to the EBA Opinion on the elements of SCA of 21 June 2019 allowing NCA to provide ‘limited additional time’ to issuers and acquirers to migrate their customers to compliant authentication solutions.</p>
+                <p class="dxp dxp-title-eyebrow dxp-font-size-sm margin-bottom-9">SPEAKERS</p>
+                <p class="dxp-text-article"><span class="dxp-bold">Christoph Baert</span>, Senior Managing Counsel, Regulatory Affairs – Europe, Mastercard</p>
+              </div>
+            </div>
+            <!-- hr -->
+            <dxp-line border-color="#96918B"></dxp-line>
+            <div class="dxp-row cybersecurity-tab-row">
+              <div class="dxp-col-12 dxp-col-lg-4"><h5 class="dxp-bold">10:10am - 10:40pm</h5></div>
+              <div class="dxp-col-12 dxp-col-lg-7"><h3>Networking Break & Vendor Showcase</h3></div>
+            </div>
+            <!-- hr -->
+            <dxp-line border-color="#96918B"></dxp-line>
+            <div class="dxp-row cybersecurity-tab-row">
+              <div class="dxp-col-12 dxp-col-lg-4"><h5 class="dxp-bold">12:30am - 1:30pm</h5></div>
+              <div class="dxp-col-12 dxp-col-lg-7"><h3>Lunch</h3></div>
+            </div>
+            <!-- Track 1 -->
+            <div class="dxp-row track-container">
+              <div class="dxp-col-4"><h5 class="dxp-bold">Track 1</h5></div>
+              <div class="dxp-col-8"><h5>1:30am - 3:00pm</h5></div>
+            </div>
+
+            <div class="dxp-row cybersecurity-tab-row">
+              <div class="dxp-col-12 dxp-col-lg-4"><h5 class="dxp-bold">1:30pm - 2:00pm</h5></div>
+              <div class="dxp-col-12 dxp-col-lg-7">
+                <h3>SafetyNet for Acquirers</h3>
+                <p class="dxp-text-article">Lorem ipsum dolar sit amet consectuar bien lorem dolar sit amet. Large-scale fraud attacks can lead to massive financial losses and reputational damage. Preventing these types of attacks is extremely important for both issuers and acquirers alike. Join this session to hear a discussion with an industry player, along with a leader in cybersecurity, providing insights into how criminals are accessing merchant websites to carry out attacks and how this impacts acquirers and their merchants and what Mastercard is doing to help drive awareness.</p>
+                <p class="dxp dxp-title-eyebrow dxp-font-size-sm margin-bottom-9">SPEAKERS</p>
+                <p class="dxp-text-article"><span class="dxp-bold">Christoph Baert</span>, Senior Managing Counsel, Regulatory Affairs – Europe, Mastercard</p>
+              </div>
+            </div>
+            <!-- hr -->
+            <dxp-line border-color="#96918B"></dxp-line>
+            <div class="dxp-row cybersecurity-tab-row">
+              <div class="dxp-col-12 dxp-col-lg-4"><h5 class="dxp-bold">2:00pm - 2:30pm</h5></div>
+              <div class="dxp-col-12 dxp-col-lg-7">
+                <h3>Securing the Future of Commerce</h3>
+                <p class="dxp-text-article">Lorem ipsum dolar sit amet consectuar bien lorem dolar sit amet. Large-scale fraud attacks can lead to massive financial losses and reputational damage. Preventing these types of attacks is extremely important for both issuers and acquirers alike. Join this session to hear a discussion with an industry player, along with a leader in cybersecurity, providing insights into how criminals are accessing merchant websites to carry out attacks and how this impacts acquirers and their merchants and what Mastercard is doing to help drive awareness.</p>
+                <p class="dxp dxp-title-eyebrow dxp-font-size-sm margin-bottom-9">SPEAKERS</p>
+                <p class="dxp-text-article"><span class="dxp-bold">Christoph Baert</span>, Senior Managing Counsel, Regulatory Affairs – Europe, Mastercard</p>
+              </div>
+            </div>
+
+            <!-- Track 2 -->
+            <div class="dxp-row track-container">
+              <div class="dxp-col-4"><h5 class="dxp-bold">Track 2</h5></div>
+              <div class="dxp-col-8"><h5>1:30am - 3:00pm</h5></div>
+            </div>
+            <div class="dxp-row cybersecurity-tab-row">
+              <div class="dxp-col-12 dxp-col-lg-4"><h5 class="dxp-bold">1:30pm - 2:00pm</h5></div>
+              <div class="dxp-col-12 dxp-col-lg-7">
+                <h3>Managing 'Your' Risk in Open Banking</h3>
+                <p class="dxp-text-article">Lorem ipsum dolar sit amet consectuar bien lorem dolar sit amet. Large-scale fraud attacks can lead to massive financial losses and reputational damage. Preventing these types of attacks is extremely important for both issuers and acquirers alike. Join this session to hear a discussion with an industry player, along with a leader in cybersecurity, providing insights into how criminals are accessing merchant websites to carry out attacks and how this impacts acquirers and their merchants and what Mastercard is doing to help drive awareness.</p>
+                <p class="dxp dxp-title-eyebrow dxp-font-size-sm margin-bottom-9">SPEAKERS</p>
+                <p class="dxp-text-article"><span class="dxp-bold">Christoph Baert</span>, Senior Managing Counsel, Regulatory Affairs – Europe, Mastercard</p>
+              </div>
+            </div>
+            <!-- hr -->
+            <dxp-line border-color="#96918B"></dxp-line>
+            <div class="dxp-row cybersecurity-tab-row">
+              <div class="dxp-col-12 dxp-col-lg-4"><h5 class="dxp-bold">2:00pm - 2:30pm</h5></div>
+              <div class="dxp-col-12 dxp-col-lg-7">
+                <h3>Financial Fraud Across Payment Networks</h3>
+                <p class="dxp-text-article">Lorem ipsum dolar sit amet consectuar bien lorem dolar sit amet.  Large-scale fraud attacks can lead to massive financial losses and reputational damage. Preventing these types of attacks is extremely important for both issuers and acquirers alike. Join this session to hear a discussion with an industry player, along with a leader in cybersecurity, providing insights into how criminals are accessing merchant websites to carry out attacks and how this impacts acquirers and their merchants and what Mastercard is doing to help drive awareness.</p>
+                <p class="dxp dxp-title-eyebrow dxp-font-size-sm margin-bottom-9">SPEAKERS</p>
+                <p class="dxp-text-article"><span class="dxp-bold">Christoph Baert</span>, Senior Managing Counsel, Regulatory Affairs – Europe, Mastercard</p>
+              </div>
+            </div>
+            <!-- hr -->
+            <dxp-line border-color="#96918B"></dxp-line>
+            <div class="dxp-row cybersecurity-tab-row">
+              <div class="dxp-col-12 dxp-col-lg-4"><h5 class="dxp-bold">3:00pm - 3:30pm</h5></div>
+              <div class="dxp-col-12 dxp-col-lg-7"><h3>Networking Break & Vendor Showcase</h3></div>
+            </div>
+            <!-- hr -->
+            <dxp-line border-color="#96918B"></dxp-line>
+            <div class="dxp-row cybersecurity-tab-row">
+              <div class="dxp-col-12 dxp-col-lg-4"><h5 class="dxp-bold">4:00pm - 4:30pm</h5></div>
+              <div class="dxp-col-12 dxp-col-lg-7">
+                <h3>A Perfect Applicant Called Human Farm</h3>
+                <p class="dxp-text-article">Large-scale fraud attacks can lead to massive financial losses and reputational damage. Preventing these types of attacks is extremely important for both issuers and acquirers alike. Join this session to hear a discussion with an industry player, along with a leader in cybersecurity, providing insights into how criminals are accessing merchant websites to carry out attacks and how this impacts acquirers and their merchants and what Mastercard is doing to help drive awareness.</p>
+                <p class="dxp dxp-title-eyebrow dxp-font-size-sm margin-bottom-9">SPEAKERS</p>
+                <p class="dxp-text-article"><span class="dxp-bold">Christoph Baert</span>, Senior Managing Counsel, Regulatory Affairs – Europe, Mastercard</p>
+              </div>
+            </div>
+          </dxp-accordion-item>
+        </dxp-accordion>          
+      </dxp-tab-item>
+      <dxp-tab-item class="price-tab-item" tab-title="PRICING">
+        <div class="dxp-row">
+          <div class="dxp-col-12 dxp-col-lg-4">
+            <p class="dxp-eyebrow-lg session-date">REGISTRATION DATES</p>
+            <p><span class="dxp-font-size-lg">Early Bird Pricing: </span><span class="dxp-text-lg">September 15, 2019</span></p>
+            <p><span class="dxp-font-size-lg">Regular Pricing: </span><span class="dxp-text-lg">September 16, 2019</span></p>
+          </div>
+        </div>
+        <div class="pricing-caption"><p class="dxp-eyebrow-lg">PRE-CONFERENCE SESSION</p></div>
+        <div class="dxp-row">
+          <div class="dxp-col-12 dxp-col-lg-4">
+            <p class="dxp-eyebrow-lg session-date">MONDAY, SEPTEMBER 30</p>
+            <h3>The Future of Authentication</h3>
+            <p class="dxp-text-lg">9:00am – 5:00pm</p>
+            <p class="dxp-text-lg">Early Bird Pricing: €550</p>
+            <p class="dxp-text-lg">Regular Pricing: €700</p>
+            <dxp-cta type="link" link-type="dxp-btn-internal-link" text="Workshop agenda" href="#" open-in-new-tab="false"></dxp-cta>
+          </div>
+          <div class="dxp-col-12 dxp-col-lg-4">
+            <p class="dxp-eyebrow-lg session-date">MONDAY, SEPTEMBER 30</p>
+            <h3>Mastercard Fraud Simulator</h3>
+            <p class="dxp-text-lg">9:00am – 3:00pm</p>
+            <p class="dxp-text-lg">Early Bird Pricing: €550</p>
+            <p class="dxp-text-lg">Regular Pricing: €700</p>
+            <dxp-cta type="link" link-type="dxp-btn-internal-link" text="Workshop agenda" href="#" open-in-new-tab="false"></dxp-cta>
+          </div>
+        </div>
+        <div class="pricing-caption"><p class="dxp-eyebrow-lg">NETWORKING EVENTS</p></div>
+        <div class="dxp-row">
+          <div class="dxp-col-12 dxp-col-lg-4">
+            <p class="dxp-eyebrow-lg session-date">MONDAY, SEPTEMBER 30</p>
+            <h3>Welcome Reception</h3>
+            <p class="dxp-text-lg">6:30pm-8:30pm</p>
+          </div>
+          <div class="dxp-col-12 dxp-col-lg-4">
+            <p class="dxp-eyebrow-lg session-date">MONDAY, SEPTEMBER 30</p>
+            <h3>Gala Dinner</h3>
+            <p class="dxp-text-lg">6:30pm-8:30pm</p>
+          </div>
+        </div>
+        <div class="pricing-caption"><p class="dxp-eyebrow-lg">POST-CONFERENCE SESSION</p></div>
+        <div class="dxp-row">
+          <div class="dxp-col-12 dxp-col-lg-4">
+            <p class="dxp-eyebrow-lg session-date">THURSDAY, OCTOBER 3</p>
+            <h3>European Chargeback Forum – Rule Changes, MasterCom Claims Manager and Merchant Collaboration</h3>
+            <p class="dxp-text-lg">9:00am – 5:00pm</p>
+            <p class="dxp-text-lg">Early Bird Pricing: €550</p>
+            <p class="dxp-text-lg">Regular Pricing: €700</p>
+            <dxp-cta type="link" link-type="dxp-btn-internal-link" text="Chargeback forum agenda" href="#" open-in-new-tab="false"></dxp-cta>
+          </div>
+        </div>        
+      </dxp-tab-item>
+      <dxp-tab-item class="accommodations-container" tab-title="ACCOMMODATIONS">
+        <div class="dxp-row">
+          <div class="dxp-col-12 dxp-col-lg-6 address">
+            <div>
+              <h3>Rixos Libertas Dubrovnik</h3>
+              <div class="dxp-font-size-lg">
+                <p>Liechtensteinov put 3<br> 20000, Dubrovnik, Croati<br> Tel: +385 20 200 000</p>
+                <p>Room Rates: 190€ <br>(breakfast included in room rate)</p>
+              </div>
+            </div>
+          </div>
+          <div class="dxp-col-12 dxp-col-lg-6">            
+            <dxp-image 
+              src="./images/accommodations.jpg?at=252aec763e57e7b9e489b2d086df4e9125688d53" 
+              alt="Rixos Libertas Dubrovnik"
+              image-title="Rixos Libertas Dubrovnik"
+              href="https://www.mastercard.com"
+              open-in-new-tab=true
+              responsive=true>
+            </dxp-image>
+          </div>
+        </div>
+        <div class="dxp-row">
+          <div class="dxp-col-12 dxp-col-lg-6">
+            <p class="dxp-font-size-lg dxp-bold">To secure accommodations:</p>
+            <div class="dxp-text-lg accommodations-ul">
+              <ul>
+                <li>Go to the ACCOR website: accorhotels.com (must be done in Google Chrome)</li>
+                <li>Enter the hotel name: Rixos Libertas Dubrovnik followed by check-in & check-out date and room number, number of people in the room</li>
+                <li>Click on the arrow where it says “Special Rates”</li>
+                <li>Enter the code MC2019 where it asks for the Preferential code</li>
+                <li>Click on Select for either Classic Room or Standard Room</li>
+                <li>Look for ‘MC EUROPE RISK CONFERENCE’ listed once you select the room type</li>
+                <li>Click on View details and Book button</li>
+                <li>Provide your contact details  and confirm your reservation</li>
+              </ul>
+              <p>**If you book outside of the process, the hotel will not grant the room rate**</p>
+              <p>For any issues booking hotel rooms, please call the reservations desk at +385 20 200 110Call: +385 20 200 110 or +385 20 200 115Call: +385 20 200 115. Make sure to mention that you are part of the Mastercard Global Risk Conference to ensure proper rates are received.</p>
+              <p>Please Note: Attendees are responsible for their own hotel reservations, payment for their transportation, hotel accommodations and incidentals.</p>
+            </div>
+          </div>
+          <div class="dxp-col-12 dxp-col-lg-6">
+            <div class="dxp-theme-light-grey alternatives accommodations-ul">
+              <p>**Please note: there is limited availability at the hotel for Sunday, Monday and Tuesday. At this time, both Wednesday and Thursday night’s are sold out.</p>
+              <p>Additional hotels near by include:</p>
+              <ul>
+                <li><a href="#">Hilton Imperial</a></li>
+                <li><a href="#">Hotel Bellevue</a></li>
+                <li><a href="#">Hotel Lero</a></li>
+                <li><a href="#">Sheraton Dub</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </dxp-tab-item>
+      <dxp-tab-item class="general-information-tab" tab-title="GENERAL INFORMATION">
+        <div class="dxp-row">
+          <div class="dxp-col-12 dxp-col-lg-6">
+            <p class="dxp-font-size-lg dxp-bold">Getting there</p>
+            <p class="dxp-font-size-lg">The closest airport to the Rixos Libertas Hotel is the Dubrovnik International Airport. It is about a 25 minute drive from the airport to the hotel with the average cost of a taxi about $25 – $30USD. Additional modes of transportation include both Uber and shuttle services.</p>
+            <p class="dxp-font-size-lg dxp-bold">Dress code</p>
+            <p class="dxp-font-size-lg">Business casual attire is appropriate for all conference sessions, Welcome Reception and Gala Dinner.</p>
+            <p class="dxp-font-size-lg dxp-bold">Weather</p>
+            <p class="dxp-font-size-lg">Average weather in late September is around 22°C during the day and around 20°C at night.</p>
+          </div>
+        </div>
+      </dxp-tab-item>
+      <dxp-tab-item tab-title="SPEAKER NOTES">
+        <div class="dxp-row">
+          <div class="dxp-col-12 dxp-col-lg-6">
+            <div class="speaker-notes-container">
+              <p class="dxp-font-size-lg dxp-bold">Speaker One:</p>
+              <p class="dxp-font-size-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <dxp-cta data-theme="dxp-theme-white" type="link" link-type="dxp-btn-download-link" text="Download full agenda PDF"></dxp-cta>
+            </div>
+          </div>
+          <div class="dxp-col-12 dxp-col-lg-6">
+            <div class="speaker-notes-container">
+              <p class="dxp-font-size-lg dxp-bold">Speaker Two:</p>
+              <p class="dxp-font-size-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <dxp-cta data-theme="dxp-theme-white" type="link" link-type="dxp-btn-download-link" text="Download full agenda PDF"></dxp-cta>
+            </div>
+          </div>
+          <div class="dxp-col-12 dxp-col-lg-6">
+            <div class="speaker-notes-container">
+              <p class="dxp-font-size-lg dxp-bold">Speaker Three:</p>
+              <p class="dxp-font-size-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <dxp-cta data-theme="dxp-theme-white" type="link" link-type="dxp-btn-download-link" text="Download full agenda PDF"></dxp-cta>
+            </div>          
+          </div>
+          <div class="dxp-col-12 dxp-col-lg-6">
+            <div class="speaker-notes-container">
+              <p class="dxp-font-size-lg dxp-bold">Speaker Four:</p>
+              <p class="dxp-font-size-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <dxp-cta data-theme="dxp-theme-white" type="link" link-type="dxp-btn-download-link" text="Download full agenda PDF"></dxp-cta>
+            </div>          
+          </div>
+        </div>
+      </dxp-tab-item>
+      <dxp-tab-item class="general-information-tab" tab-title="ARTICLES">
+        <div class="dxp-row">
+          <div class="dxp-col-12 dxp-col-lg-6">
+            <p class="dxp-font-size-lg dxp-bold">Articles info</p>
+          </div>
+        </div>
+      </dxp-tab-item>
+    </dxp-tabs>
+  </div>
+  <!-- Our Sponsors -->
+  <div class="sponsors-container event-detail-template dxp-content-main dxp dxp-theme-light-grey">
+    <dxp-content-item-grid data-theme="dxp-theme-light-grey" content-id='our-sponsors-list' column=6 grid-description="OUR SPONSORS"  header-alignment="left"></dxp-content-item-grid>    
+  </div>
+  <!-- Join Us Dubrovnik! -->
+  <div class="dxp dubrovnik-register-container event-detail-template dxp-content-main dxp-theme-black">
+    <div class="dxp-row">
+      <div class="dxp-col-12 dxp-col-lg-7">
+        <h2>Join us in Dubrovnik!</h2>
+      </div>
+      <div class="dxp-col-12 dxp-col-lg-5">
+        <dxp-content-item indentation="false" data-theme="dxp-theme-black" orientation="vertical" header-type="none"
+          description="Learn about the latest tools and techniques for minimizing fraud risk and maximizing profitability.">
+          <dxp-cta type="button" button-type="secondary" text="Register"></dxp-cta>
+          </dxp-content-item>
+      </div>
+    </div>
+  </div>  
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-container">
+    <div class="event-detail-template dxp-content-main dxp dxp-theme-rich-grey">
+      <dxp-breadcrumb data-theme="dxp-theme-rich-grey" show-nav-item=true content-id="breadcrumb"></dxp-breadcrumb>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="event-detail-template dxp-content-main dxp dxp-theme-black">
+      <dxp-footer content-id="dxp-footer" data-theme="dxp-theme-black" enable-logo="true" enable-quicklink="true"
+        enable-contentlist="true" enable-footerlink="true" enable-socialfollow="true"
+        enable-countrylanguageselectors="true" enable-copyright="true"></dxp-footer>
+    </div>
+  </div>
+  <script>
+    // Accesss Model method to open the model
+    // Get dxp cta reference
+    const eventRegistrationForm = document.querySelector('#event-registration-form');
+    const body = document.querySelector('body');
+    const successfulRegistration = document.querySelector('#successful-registration');
+    let modelSubmitBtn;
+
+    window.onload = function() {
+      modelSubmitBtn = eventRegistrationForm.shadowRoot.querySelector('#primaryButton');
+      if(modelSubmitBtn) {
+        modelSubmitBtn.addEventListener('click', function() {
+          openModel(successfulRegistration);
+          closeModel(eventRegistrationForm);
+        });
+      }
+    };
+
+    function openModel (modal) {
+      // Call dxp modal openModal method to open the model
+      modal.openModal();
+    }
+    function closeModel(modal) {
+      modal.closeModal();
+    }
+    // Nav data
+    const navigation = {
+      "navigationData": [
+        {
+          "navigationTitle": "Mastercard for you",
+          "menuRouteLink": "/content/mccom/en-us/about-mastercard/DXP-QA-Test-Pages/DXP-DD-QA/QuickLinksHeaderRich/MastercardForYou.html",
+          "linkTitle": "Mastercard for you",
+          "overlayBgImage": "./images/banner/2500X1406_laptop.jpg?at=refs%2Fheads%2Fmaster",
+          "description": "",
+          "quickLinks": [
+            {
+              "quickLinkDescription": "With Mastercard in your wallet, life is full of priceless possibilities",
+              "ctaList": [
+                {
+                  "title": "Get Support",
+                  "link": "#",
+                  "image": "./images/icons/contact-us-grey-22x22.svg",
+                  "imageAltText": "Get Support"
+                },
+                {
+                  "title": "Report a missing card",
+                  "link": "#",
+                  "image": "./images/icons/credit-card-grey-23x15.svg",
+                  "imageAltText": "Report a missing card"
+                },
+                {
+                  "title": "Find ATM",
+                  "link": "#",
+                  "image": "./images/icons/location-grey-15x23.svg",
+                  "imageAltText": "Find ATM"
+                }
+              ]
+            }
+          ],
+          "child": [
+            {
+              "navigationTitle": "Get Started",
+              "menuRouteLink": "/content/mccom/en-us/about-mastercard/DXP-QA-Test-Pages/DXP-DD-QA/QuickLinksHeaderRich/MastercardForYou/GetStarted.html",
+              "linkTitle": "Get Started",
+              "description": "Find new ways to pay, explore new trending technologies and discover all that is priceless"
+            },
+            {
+              "navigationTitle": "Find a card",
+              "menuRouteLink": "/content/mccom/en-us/about-mastercard/DXP-QA-Test-Pages/DXP-DD-QA/QuickLinksHeaderRich/MastercardForYou/FindACard.html",
+              "linkTitle": "Find a card",
+              "description": "Find the right credit, debit or prepaid card for your needs and lifestyle. "
+            },
+            {
+              "navigationTitle": "Cardholder Benefits",
+              "menuRouteLink": "/content/mccom/en-us/about-mastercard/DXP-QA-Test-Pages/DXP-DD-QA/QuickLinksHeaderRich/MastercardForYou/CardholderBenefits.html",
+              "linkTitle": "Cardholder Benefits",
+              "description": "Learn more about the features, offers and perks that comes with your Mastercard"
+            }
+          ]
+        },
+        {
+          "navigationTitle": "Mastercard For Business",
+          "menuRouteLink": "/content/mccom/en-us/about-mastercard/DXP-QA-Test-Pages/DXP-DD-QA/QuickLinksHeaderRich/MastercardForBusiness.html",
+          "linkTitle": "Mastercard For Business",
+          "overlayBgImage": "./images/banner/2500X1406_laptop2.jpg?at=refs%2Fheads%2Fmaster",
+          "description": "",
+          "child": [
+            {
+              "navigationTitle": "Businesses",
+              "menuRouteLink": "/content/mccom/en-us/about-mastercard/DXP-QA-Test-Pages/DXP-DD-QA/QuickLinksHeaderRich/MastercardForBusiness/Businesses.html",
+              "linkTitle": "Businesses",
+              "description": "Whether you\u0027re a small shop or global enterprise, find payment solutions and tools to grow your business. "
+            }
+          ]
+        },
+        {
+          "navigationTitle": "Our Vision",
+          "menuRouteLink": "/content/mccom/en-us/about-mastercard/DXP-QA-Test-Pages/DXP-DD-QA/QuickLinksHeaderRich/OurVision.html",
+          "linkTitle": "Our Vision",
+          "overlayBgImage": "./images/banner/2500X1406_deconomy.jpg?at=refs%2Fheads%2Fmaster",
+          "description": "",
+          "child": [
+            {
+              "navigationTitle": "Global impact",
+              "menuRouteLink": "/content/mccom/en-us/about-mastercard/DXP-QA-Test-Pages/DXP-DD-QA/QuickLinksHeaderRich/OurVision/GlobalImpact.html",
+              "linkTitle": "Global impact",
+              "description": "Whether you\u0027re a small shop or global enterprise, find payment solutions and tools to grow your business. "
+            }
+          ]
+        }
+      ]
+    };
+    var nav = document.querySelector('[content-id ="nav"]');
+    document.addEventListener("DOMContentLoaded", function () {
+      nav['navData'] = navigation
+    });
+    // Registration Event
+    var ctaList = [{
+      "type": "button",
+      "button-type": "primary",
+      "text": "Register"
+    }, {
+      "type": "link",
+      "button-type": "primary",
+      "text": "Add to calendar"
+    }]
+    var ref = document.querySelector("[content-id = \"register-cta-list\"]");
+    document.addEventListener("DOMContentLoaded", function () {
+      ref.ctaList = ctaList
+    });
+    
+    // Conference Details download button
+    var conferenceCtaList = [{
+      "type": "link",
+      "link-type": "dxp-btn-download-link",
+      "button-type": "primary",
+      "disabled": false,
+      "openInNewTab": false,
+      "text": "Download full agenda PDF"
+    }];
+    var registerCtaList = document.querySelector("[content-id = \"conference-details-cta-list\"]");
+    document.addEventListener("DOMContentLoaded", function () {
+      registerCtaList.ctaList = conferenceCtaList
+    });
+
+    // proposals sponsor items
+    const contentItems = [
+          {
+            "data-theme" : "dxp-theme-light-grey",
+            "eyebrowText": "2019 CALL FOR PROPOSALS",
+            "contentItemTitle": "Want to speak at our conference?",
+            "contentItemTitleUrl": "https://mastercard.com",
+            "buttonOneLinkText": "OK",
+            "buttonOneUrl": "https://mastercard.com",
+            "buttonOneOpenInNewTab": false,
+            "buttonOneDisplayAs": "link",
+            "ctaData":[{
+              "title-text": "",
+              "orientation": "horizontal",
+              "ctaList": [
+                {
+                  "type":"link",
+                  "button-type":"dxp-btn-external-link",
+                  "text":"Contact us",
+                  "href": "https://www.mastercard.co.in",
+                  "open-in-new-tab": "true"
+                }
+              ]
+            }]
+          },
+          {
+            "data-theme" : "dxp-theme-rich-grey",
+            "eyebrowText": "BECOME A SPONSOR",
+            "contentItemTitle": "Sponsor our 2019 GRL Series",
+            "contentItemTitleUrl": "https://mastercard.com",
+            "buttonOneLinkText": "Learn more",
+            "buttonOneUrl": "https://mastercard.com",
+            "buttonOneOpenInNewTab": false,
+            "buttonOneDisplayAs": "link",
+            "ctaData":[{
+              "title-text": "",
+              "orientation": "horizontal",
+              "ctaList": [
+                {
+                  "type":"link",
+                  "button-type":"dxp-btn-external-link",
+                  "text":"Learn more",
+                  "href": "https://www.mastercard.co.in",
+                  "open-in-new-tab": "true"
+                }
+              ]
+            }]
+          },
+          {
+            "data-theme" : "dxp-theme-light-grey",
+            "eyebrowText": "2019 CALL FOR PROPOSALS",
+            "contentItemTitle": "Want to speak at our conference?",
+            "contentItemTitleUrl": "https://mastercard.com",
+            "buttonOneLinkText": "OK",
+            "buttonOneUrl": "https://mastercard.com",
+            "buttonOneOpenInNewTab": false,
+            "buttonOneDisplayAs": "link",
+            "ctaData":[{
+              "title-text": "",
+              "orientation": "horizontal",
+              "ctaList": [
+                {
+                  "type":"link",
+                  "button-type":"dxp-btn-external-link",
+                  "text":"Contact us",
+                  "href": "https://www.mastercard.co.in",
+                  "open-in-new-tab": "true"
+                }
+              ]
+            }]
+          },
+          {
+            "data-theme" : "dxp-theme-rich-grey",
+            "eyebrowText": "BECOME A SPONSOR",
+            "contentItemTitle": "Sponsor our 2019 GRL Series",
+            "contentItemTitleUrl": "https://mastercard.com",
+            "buttonOneLinkText": "Learn more",
+            "buttonOneUrl": "https://mastercard.com",
+            "buttonOneOpenInNewTab": false,
+            "buttonOneDisplayAs": "link",
+            "ctaData":[{
+              "title-text": "",
+              "orientation": "horizontal",
+              "ctaList": [
+                {
+                  "type":"link",
+                  "button-type":"dxp-btn-external-link",
+                  "text":"Learn more",
+                  "href": "https://www.mastercard.co.in",
+                  "open-in-new-tab": "true"
+                }
+              ]
+            }]
+          }
+        ];
+    const proposalsSponsorItems = document.querySelector("[content-id = \"proposals-sponsor-item-grid\"]");
+    document.addEventListener("DOMContentLoaded", function() {
+      proposalsSponsorItems.contentData = contentItems
+    });
+
+    // Our Sponsors
+    var sponsorsItems = [
+    {
+      "src": "./images/logos/broadcom-logo.jpg?at=refs%2Fheads%2Fmaster",
+      "alt": "broadcom logo",
+      "imageTitle": "broadcom logo",
+      "href": "https://www.mastercard.com",
+      "openInNewTab": true,
+      "responsive": true
+    },
+    {
+      "src": "./images/logos/future-space-logo.jpg?at=refs%2Fheads%2Fmaster",
+      "alt": "future space logo",
+      "imageTitle": "future space",
+      "href": "https://www.mastercard.com",
+      "openInNewTab": true,
+      "responsive": true
+    },
+    {
+      "src": "./images/logos/gemini-logo.jpg?at=refs%2Fheads%2Fmaster",
+      "alt": "gemini logo",
+      "imageTitle": "gemini logo",
+      "href": "https://www.mastercard.com",
+      "openInNewTab": true,
+      "responsive": true
+    },
+    {
+      "src": "./images/logos/securitymetrics-logo.jpg?at=refs%2Fheads%2Fmaster",
+      "alt": "securitymetrics logo",
+      "imageTitle": "securitymetrics",
+      "href": "https://www.mastercard.com",
+      "openInNewTab": true,
+      "responsive": true
+    },
+    {
+      "src": "./images/logos/chargeback-logo.jpg?at=refs%2Fheads%2Fmaster",
+      "alt": "chargeback logo",
+      "imageTitle": "chargeback logo",
+      "href": "https://www.mastercard.com",
+      "openInNewTab": true,
+      "responsive": true
+    },
+    {
+      "src": "./images/logos/wibmo-logo.jpg?at=refs%2Fheads%2Fmaster",
+      "alt": "wibmo logo",
+      "imageTitle": "wibmo logo",
+      "href": "https://www.mastercard.com",
+      "openInNewTab": true,
+      "responsive": true
+    }
+  ];
+    var ourSponsors = document.querySelector("[content-id = \"our-sponsors-list\"]");
+    document.addEventListener("DOMContentLoaded", function() {
+      ourSponsors.contentData = sponsorsItems
+    });
+
+    // Breadcrumb data
+    const breadcrumbItems = [{
+      "linkId": "libraries",
+      "title": "Libraries",
+      "link": "#/libraries",
+      "hideInNav": false,
+      "child": [{
+        "linkId": "components",
+        "title": "Components",
+        "link": "#/libraries/components",
+        "hideInNav": true,
+        "child": [{
+          "linkId": "web",
+          "title": "Web",
+          "link": "#/libraries/components/web",
+          "hideInNav": false,
+          "child": [{
+            "linkId": "dxp-breadcrumb",
+            "title": "Dxp-breadcrumb",
+            "link": "#/libraries/components/web/dxp-breadcrumb",
+            "hideInNav": false
+          }]
+        }]
+      }]
+    }];
+    const element = document.querySelector(
+      "[content-id = \"breadcrumb\"]");
+    document.addEventListener("DOMContentLoaded", function () {
+      element.breadcrumbItemsData = breadcrumbItems
+    });
+
+    // Footer data
+    const logoData = {
+      "src": "./images/logos/mclogo-for-footer.svg?at=refs%2Fheads%2Fmaster",
+      "srcSm": "./images/logos/mclogo-for-footer.svg?at=refs%2Fheads%2Fmaster",
+      "alt": "Go to Partner Brand",
+      "href": "https://www.mastercard.com/",
+      "target": false,
+      "NESTED:dxp-logo": {
+        "src": "./images/logos/partner-logo.svg",
+        "srcSm": "./images/logos/partner-logo.svg",
+        "alt": "Go to Partner Brand",
+        "href": "https://www.mastercard.com/",
+        "target": false
+      }
+    };
+
+    const footerlinkData = {
+      "titleText": "",
+      "ariaLabel": "",
+      "headerSize": "",
+      "href": "",
+      "orientation": "horizontal",
+      "target": false,
+      "contentListItems": [
+        {
+          "subTitle": "Privacy",
+          "href": "http://www.mastercard.com",
+          "ariaLabel": "Privacy",
+          "target": true
+        },
+        {
+          "subTitle": "Accessibility",
+          "href": "http://www.mastercard.com",
+          "ariaLabel": "Accessibility",
+          "target": true
+        },
+        {
+          "subTitle": "Terms",
+          "href": "http://www.mastercard.com",
+          "ariaLabel": "Terms",
+          "target": true
+        },
+        {
+          "subTitle": "Sitemap",
+          "href": "http://www.mastercard.com",
+          "ariaLabel": "Sitemap",
+          "target": true
+        }
+      ]
+    };
+
+    const ctaListData = {
+      "show-heading": "true",
+      "titleText": "Need help? We’re always here when you need us",
+      "title-style": "dxp-title-sm",
+      "orientation": "vertical",
+      "ctaList": [
+        {
+          "type": "link",
+          "linkType": "dxp-btn-internal-link",
+          "text": "Get Support",
+          "disabled": false,
+          "src": "./images/icons/contact-us-grey-22x22.svg?at=refs%2Fheads%2Fmaster",
+          "alt": null,
+          "iconAlign": "left",
+          "href": "http://www.mastercard.com",
+          "ariaLabel": "Get support",
+          "width": "200px",
+          "height": "50px",
+          "openinnewTab": false,
+          "iconBadge": "10",
+          "accentColor": "#b1ada6"
+        },
+        {
+          "type": "link",
+          "linkType": "dxp-btn-internal-link",
+          "text": "Report a missing card",
+          "disabled": false,
+          "src": "./images/icons/credit-card-grey-23x15.svg?at=refs%2Fheads%2Fmaster",
+          "alt": null,
+          "iconAlign": "left",
+          "href": "http://www.mastercard.com",
+          "ariaLabel": "Report a missing card",
+          "width": "200px",
+          "height": "50px",
+          "openinnewTab": false,
+          "iconBadge": "10",
+          "accentColor": "#b1ada6"
+        },
+        {
+          "type": "link",
+          "linkType": "dxp-btn-internal-link",
+          "text": "Find ATM",
+          "disabled": false,
+          "src": "./images/icons/location-grey-15x23.svg?at=refs%2Fheads%2Fmaster",
+          "alt": null,
+          "iconAlign": "left",
+          "ariaLabel": "Find ATM",
+          "width": "200px",
+          "height": "50px",
+          "openinnewTab": false,
+          "iconBadge": "10",
+          "href": "http://www.mastercard.com",
+          "accentColor": "#b1ada6"
+        }
+      ]
+    };
+
+    const contentListData = [
+      {
+        "contentId": "contentLinkList",
+        "titleText": "Support",
+        "href": "http://www.mastercard.com",
+        "aria-label": "Support",
+        "target": "true",
+        "contentListItems": [
+          {
+            "subTitle": "What we do",
+            "href": "What we do",
+            "ariaLabel": "What we do",
+            "target": false
+          },
+          {
+            "subTitle": "Who we are ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Who we are ",
+            "target": false
+          },
+          {
+            "subTitle": "Careers ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Careers ",
+            "target": true
+          },
+          {
+            "subTitle": "Newsroom ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Newsroom ",
+            "target": false
+          },
+          {
+            "subTitle": "Investors ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Investors ",
+            "target": false
+          }
+        ]
+      },
+      {
+        "content-id": "contentLinkList",
+        "ariaLabel": "Resources",
+        "headerSize": "h2",
+        "href": "http://www.mastercard.com",
+        "orientation": "vertical",
+        "target": "true",
+        "titleText": "Resources",
+        "contentListItems": [
+          {
+            "subTitle": "Mastercard Data and Services ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Mastercard Brand Center",
+            "target": false
+          },
+          {
+            "subTitle": "Mastercard Brand Center ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Mastercard Brand Center",
+            "target": false
+          },
+          {
+            "subTitle": "Mastercard Marketing Center ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Mastercard Marketing Center ",
+            "target": true
+          },
+          {
+            "subTitle": "Mastercard Connect ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Mastercard Connect ",
+            "target": false
+          },
+          {
+            "subTitle": "Developer Zone",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Developer Zone",
+            "target": false
+          }
+        ]
+      }];
+
+    const socialFollowData = {
+      "follow-us-label": "Follow Us",
+      "orientation": "vertical",
+      "socialFollowItems": [
+        {
+          "type": "facebook",
+          "socialTitle": "Facebook",
+          "ariaLabel": "Facebook",
+          "alt": "Facebook",
+          "href": "https://www.facebook.com/MasterCardUS?brand_redir=1",
+          "target": "true"
+
+        },
+        {
+          "type": "linkedin",
+          "socialTitle": "linkedin",
+          "ariaLabel": "linkedin",
+          "alt": "LinkedIn",
+          "href": "http://www.linkedin.com/company/mastercard",
+          "target": "true"
+        },
+        {
+          "type": "twitter",
+          "socialTitle": "Twitter",
+          "ariaLabel": "Twitter",
+          "alt": "Twitter",
+          "href": "https://twitter.com/mastercardnews",
+          "target": "true"
+        },
+        {
+          "type": "youtube",
+          "socialTitle": "Youtube",
+          "ariaLabel": "Youtube",
+          "alt": "Youtube",
+          "href": "http://www.youtube.com/user/MasterCard",
+          "target": "true"
+        }
+      ]
+    };
+
+    const countryLanguageData = {
+      "end-point-url": "https://api.myjson.com/bins/stsqh",
+      "target-url": "https://publicis.invisionapp.com/d/#/console/17070181/360919589/preview"
+    };
+
+    const copyrightData = {
+      "text": "© 1994-2018 Mastercard."
+    };
+
+    const footerRef = document.querySelector("[content-id = \"dxp-footer\"]");
+
+    document.addEventListener("DOMContentLoaded", function () {
+      footerRef.logoData = logoData;
+      footerRef.copyrightData = copyrightData;
+      footerRef.contentListData = contentListData;
+      footerRef.socialFollowData = socialFollowData;
+      footerRef.countryLanguageData = countryLanguageData;
+      footerRef.footerlinkData = footerlinkData;
+      footerRef.ctaListData = ctaListData;
+    });
+  </script>
+
+</body>
+
+</html>

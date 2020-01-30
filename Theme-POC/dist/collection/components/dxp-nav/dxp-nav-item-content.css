@@ -1,0 +1,35 @@
+/* namespace all component styles to create then most specific ruleset */
+li a {
+  display: block;
+}
+@media (max-width: 991px) {
+  li .dxp-hidden-md-down {
+    visibility: hidden;
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  li a {
+    display: inline-block;
+  }
+  li .menu-description {
+    display: block;
+  }
+  li .sub-nav-item {
+    margin-bottom: 0;
+  }
+  li .sub-nav-item + .menu-description {
+    margin-top: 0.41rem;
+    padding-left: 0.4rem;
+  }
+  li .dxp-lg-block {
+    display: block;
+    visibility: visible;
+  }
+}
+@media (min-width: 992px) {
+  li[dir=rtl] .sub-nav-item + .menu-description {
+    padding-left: 0;
+    padding-right: 0.4rem;
+  }
+}

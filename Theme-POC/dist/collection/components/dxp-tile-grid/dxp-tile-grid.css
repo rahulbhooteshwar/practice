@@ -1,0 +1,68 @@
+div.dxp.dxp-tile-grid {
+  transition-delay: 10s;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50px;
+  /* On hover, add a black background color with a little bit see-through */
+  /* Next & previous buttons */
+}
+div.dxp.dxp-tile-grid .center {
+  text-align: center;
+}
+div.dxp.dxp-tile-grid .tile-grid-title {
+  padding-bottom: 5px;
+}
+div.dxp.dxp-tile-grid .cta-panel {
+  display: flex;
+  padding-top: 25px;
+}
+div.dxp.dxp-tile-grid .button-panel {
+  margin-left: auto;
+}
+div.dxp.dxp-tile-grid .button-panel::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+div.dxp.dxp-tile-grid .button-panel .prev,
+div.dxp.dxp-tile-grid .button-panel .next {
+  float: right;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  border: none;
+}
+div.dxp.dxp-tile-grid .button-panel .prev.disable,
+div.dxp.dxp-tile-grid .button-panel .next.disable {
+  pointer-events: none;
+  opacity: 0.5;
+}
+div.dxp.dxp-tile-grid .button-panel .next {
+  margin-left: 36px;
+}
+div.dxp.dxp-tile-grid .prev:hover,
+div.dxp.dxp-tile-grid .next:hover {
+  width: 24px;
+  height: 24px;
+}
+div.dxp.dxp-tile-grid .dxp-tile-grid-container {
+  left: 0;
+  transition: left 1s;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
+div.dxp.dxp-tile-grid .dxp-tile-grid-container .dxp-col-12 {
+  position: static;
+}
+div.dxp.dxp-tile-grid .dxp-tile-grid-container ::slotted(div) {
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 575px) {
+  div.dxp.dxp-tile-grid .dxp-tile-grid-container .full-width {
+    width: 100%;
+  }
+}

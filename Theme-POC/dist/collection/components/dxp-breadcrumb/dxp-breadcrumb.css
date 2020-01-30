@@ -1,0 +1,46 @@
+div.dxp.dxp-breadcrumb {
+  padding: 30px 0 32px 0;
+  /* On screens that are 991px or less, hide the breadcrumb component */
+}
+div.dxp.dxp-breadcrumb.breadcrumb-nav .dxp-breadcrumb-list {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+div.dxp.dxp-breadcrumb.breadcrumb-nav dxp-breadcrumb-item:last-child li:hover {
+  background: none;
+}
+@media all and (-ms-high-contrast: none) {
+  div.dxp.dxp-breadcrumb *::-ms-backdrop, div.dxp.dxp-breadcrumb .dxp-breadcrumb-item.sc-dxp-breadcrumb a,
+div.dxp.dxp-breadcrumb .dxp-breadcrumb-item span {
+    padding-top: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  div.dxp.dxp-breadcrumb .dxp-breadcrumb-item div li {
+    padding-left: 10px;
+  }
+  div.dxp.dxp-breadcrumb .dxp-breadcrumb-item div li a {
+    position: relative;
+  }
+  div.dxp.dxp-breadcrumb .dxp-breadcrumb-item div li a::before, div.dxp.dxp-breadcrumb .dxp-breadcrumb-item div li a::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 10px;
+    height: 1px;
+    transform: rotate(-45deg);
+    top: -3px;
+  }
+  div.dxp.dxp-breadcrumb .dxp-breadcrumb-item div li a::after {
+    transform: rotate(45deg);
+    top: 3px;
+  }
+  div.dxp.dxp-breadcrumb .dxp-breadcrumb-item div li a span {
+    display: none;
+  }
+  div.dxp.dxp-breadcrumb *::-ms-backdrop, div.dxp.dxp-breadcrumb .dxp-breadcrumb-item.sc-dxp-breadcrumb a,
+div.dxp.dxp-breadcrumb .dxp-breadcrumb-item span {
+    padding-top: 6px;
+  }
+}

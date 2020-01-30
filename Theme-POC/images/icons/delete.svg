@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="18px" viewBox="0 0 13 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>delete copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="comment-component@1440px---Normal-12-Columns-24px-Gutters" transform="translate(-1152.000000, -1675.000000)">
+            <g id="Group-4" transform="translate(1133.000000, 1610.000000)">
+                <g id="Group-3">
+                    <g id="delete-copy" transform="translate(20.000000, 66.000000)">
+                        <rect id="Rectangle" stroke="#141413" stroke-width="0.847058824" x="0.6875" y="5.43193277" width="9.625" height="10.3529412"></rect>
+                        <rect id="Rectangle-Copy-2" stroke="#141413" stroke-width="0.847058824" x="2.75" y="0" width="5.5" height="2.35294118"></rect>
+                        <rect id="Rectangle" stroke="#141413" stroke-width="0.847058824" x="0" y="2.59047619" width="11" height="2.82352941"></rect>
+                        <path d="M3.4375,6.67787115 L3.4375,13.8487395 L3.4375,6.67787115 Z M5.5,6.67787115 L5.5,13.8487395 L5.5,6.67787115 Z M7.5625,6.67787115 L7.5625,13.8487395 L7.5625,6.67787115 Z" id="Combined-Shape" stroke="#000000" stroke-width="0.717086835"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

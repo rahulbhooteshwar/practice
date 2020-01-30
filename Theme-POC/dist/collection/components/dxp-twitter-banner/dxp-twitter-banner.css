@@ -1,0 +1,119 @@
+div.dxp.dxp-twitter-banner .twitter-logo-link {
+  padding-right: 0;
+  display: block;
+}
+div.dxp.dxp-twitter-banner .twitter-carousel .slides {
+  font-size: 21px;
+  line-height: 32px;
+}
+div.dxp.dxp-twitter-banner .twitter-carousel .slides.fade {
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+div.dxp.dxp-twitter-banner .twitter-carousel .slides a {
+  word-wrap: break-word;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-size: 21px;
+  line-height: 32px;
+}
+div.dxp.dxp-twitter-banner .twitter-carousel .slides a::before, div.dxp.dxp-twitter-banner .twitter-carousel .slides a::after, div.dxp.dxp-twitter-banner .twitter-carousel .slides a:hover::before, div.dxp.dxp-twitter-banner .twitter-carousel .slides a:hover::after {
+  background: none;
+}
+div.dxp.dxp-twitter-banner .twitter-carousel .logo-wrapper {
+  padding: 0;
+}
+div.dxp.dxp-twitter-banner .twitter-carousel .logo-wrapper a {
+  align-self: center;
+  margin: 0;
+}
+div.dxp.dxp-twitter-banner .twitter-carousel .logo-wrapper a:last-child {
+  display: inline-block;
+  margin-top: 16px;
+}
+div.dxp.dxp-twitter-banner .twitter-carousel .logo-wrapper .twitter-logo {
+  height: 64px;
+  width: 64px;
+  display: block;
+}
+div.dxp.dxp-twitter-banner .twitter-carousel .logo-wrapper .btn-link {
+  display: block;
+  margin-top: 16px;
+}
+div.dxp.dxp-twitter-banner .twitter-carousel .next {
+  cursor: pointer;
+  height: 32px;
+  width: 16px;
+  background-size: 100%;
+  float: right;
+}
+div.dxp.dxp-twitter-banner .twitter-carousel .prev {
+  cursor: pointer;
+  height: 32px;
+  width: 16px;
+  background-size: 100%;
+  float: left;
+}
+div.dxp.dxp-twitter-banner .twitter-carousel .btn-wrapper {
+  margin-top: 12px;
+  padding-right: 15px;
+}
+div.dxp.dxp-twitter-banner .twitter-carousel .btn-wrapper button {
+  display: inline-block;
+  width: 50%;
+  background-color: transparent;
+  border: none;
+}
+@media (min-width: 768px) {
+  div.dxp.dxp-twitter-banner .twitter-carousel .slides,
+div.dxp.dxp-twitter-banner .twitter-carousel .slides a {
+    font-size: 30px;
+    line-height: 48px;
+  }
+}
+@media (min-width: 576px) {
+  div.dxp.dxp-twitter-banner .logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  div.dxp.dxp-twitter-banner .logo-wrapper .twitter-link {
+    padding-left: 24px;
+  }
+  div.dxp.dxp-twitter-banner .logo-wrapper a:last-child {
+    margin-top: 0;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+div.dxp.dxp-twitter-banner[dir=rtl] .twitter-carousel .prev {
+  float: right;
+}
+div.dxp.dxp-twitter-banner[dir=rtl] .twitter-carousel .next {
+  float: left;
+}
+div.dxp.dxp-twitter-banner[dir=rtl] .twitter-carousel .btn-wrapper {
+  padding-right: 0;
+  padding-left: 15px;
+}
+div.dxp.dxp-twitter-banner[dir=rtl] .logo-wrapper .twitter-link {
+  padding-left: 32px;
+}
+@media (min-width: 576px) {
+  div.dxp.dxp-twitter-banner[dir=rtl] .logo-wrapper .twitter-link {
+    padding-right: 24px;
+    padding-left: 32px;
+  }
+}
+@media (max-width: 991px) {
+  div.dxp.dxp-twitter-banner[dir=rtl] .twitter-carousel > div:first-child p {
+    left: 0;
+  }
+}

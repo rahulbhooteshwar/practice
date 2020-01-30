@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Event Overview Template</title>
+  
+  <link rel="stylesheet" href="./event-overview.css">
+
+  <link rel="stylesheet" href="https://stage.asset.mastercard.com/dxp-styles/latest/css/dxp-fonts.min.css">
+  <link rel="stylesheet" href="http://localhost:8888/dxp-styles/latest/css/dxp.min.css">
+  <link rel="stylesheet" href="http://localhost:8888/dxp-styles/latest/css/themes/dxp-theme-b2b/dxp-theme-b2b.min.css">
+  <link rel="stylesheet" href="http://localhost:8888/dxp-styles/latest/css/themes/dxp-theme-black/dxp-theme-black.min.css">
+  <link rel="stylesheet" href="http://localhost:8888/dxp-styles/latest/css/themes/dxp-theme-light-grey/dxp-theme-light-grey.min.css">
+  <link rel="stylesheet" href="http://localhost:8888dxp-styles/latest/css/themes/dxp-theme-rich-grey/dxp-theme-rich-grey.min.css">
+  <link rel="stylesheet" href="http://localhost:8888/dxp-styles/latest/css/themes/dxp-theme-white/dxp-theme-white.min.css">
+
+  <script nomodule="" src="./dist/dxp-web/dxp-web.js"></script>
+  <script type="module" src="./dist/dxp-web/dxp-web.esm.js"></script>
+
+</head>
+
+<body data-theme="dxp-theme-white">
+  <!-- Header -->
+  <div class="header-container dxp dxp-theme-black">
+    <dxp-header-rich background-type="solid" data-theme="dxp-theme-black">
+      <dxp-logo slot="logo"
+        src="./images/logos/mastercard_circles_92px_2x.png?at=refs%2Fheads%2Fmaster"
+        src-sm="https://stage.asset.mastercard.com/dxp-ui/assets/dxp-logo/mc-logo-sm.svg"
+        href="http://www.mastercard.com" 
+        alt="Go to Mastercard">
+      </dxp-logo>
+      <dxp-nav content-id="nav" slot="nav"></dxp-nav>
+      <dxp-search 
+        slot="search" 
+        placeholder="Search" 
+        suggest-count=4 
+        cfq="/content/mccom/"
+        suggest-api-url="/services/dxp/suggest/" 
+        cfq-locale="en-us" 
+        suggest-dictionary="contentSuggester"
+        suggest-collection="dm-mccom" 
+        search-type="advance" 
+        show-suggestions="true">
+          <dxp-cta-list title-text="With Mastercard in your wallet, life is full of priceless possibilities" title-style="dxp-title-sm" slot="cta" orientation="vertical">
+            <dxp-cta type="link" text="Contact Us" href="https://google.com" icon-align="left" src="./images/icons/icon-facebook-white.svg" open-in-new-tab="false"></dxp-cta>
+            <dxp-cta type="link" src="./images/icons/icon-facebook-white.svg" icon-align="left" text="Get support" href="https://google.com" open-in-new-tab="false"></dxp-cta>
+            <dxp-cta type="link" src="./images/icons/icon-facebook-white.svg" icon-align="left" text="Report a card missing" href="https://google.com" open-in-new-tab="false"></dxp-cta>
+          </dxp-cta-list>
+      </dxp-search>
+    </dxp-header-rich>
+  </div>
+  <!-- Image -->
+  <div class="dxp-content-main overview-template image-container">
+    <dxp-image
+      src="./images/banner/event-overview-template-1836-675.jpg?at=8e59a3b4128d23c3fdca2f104af480e63fa1077e"
+      image-title="Title for Image" alt="Alt Text for Image" aria-label="Aria-Label for link" responsive="true">
+    </dxp-image>
+  </div>
+  <!-- event overview container -->
+  <div class="event-overview-container">
+    <div class="dxp-content-main overview-template dxp dxp-theme-white">
+      <div class="dxp-row">
+        <div class="dxp dxp dxp-col-12">
+          <p class="dxp dxp-title-eyebrow dxp-font-size-sm">conference</p>
+        </div>
+        <div class="dxp dxp dxp-col-12 dxp-col-lg-6 info-container">
+          <h2 class="dxp dxp-title-1">GRL Cybersecurity & Risk Summit – Europe</h2>
+          <p class="dxp dxp-font-size-lg dxp-bold">September 30 – October 3, 2019</p>
+          <p class="dxp dxp-font-size-lg">Dubrovnik, Croatia</p>
+
+          <dxp-cta onclick="openModel(eventRegistrationForm)" type="button" button-type="primary" text="Request access" open-in-new-tab="false"></dxp-cta>
+          
+          <div>
+            <dxp-modal id="event-registration-form" class="event-registration-form"  modal-title="Request to attend this event" footer-type="one-button" primary-button-text="Submit" accessibility-text-footer-primary="abc">
+              <dxp-input content-id="textbox" is-required=true type="text" label="First name*" accessibility-text="Enter your first name" enable-autocomplete="off"></dxp-input>
+              <dxp-input content-id="textbox" is-required=true type="text" label="Last name*" accessibility-text="Enter your last name" enable-autocomplete="off"></dxp-input>
+              <dxp-input content-id="textbox" is-required=true type="email" label="Email Label*" accessibility-text="Insert Enter Text" enable-autocomplete="off" readonly="false" validation-message="enter the valid email" disabled="false"></dxp-input>
+              <dxp-input content-id="textbox" is-required=true type="text" label="Company*" accessibility-text="Enter your company name" enable-autocomplete="off"></dxp-input>
+              <dxp-input content-id="textbox" is-required=true type="text" label="Position*" accessibility-text="Enter your position" enable-autocomplete="off"></dxp-input>
+              <br />
+              <p class="dxp-font-size-sm">(*Required field)</p>
+              <p class="dxp-font-size-sm">By clicking submit, I am requesting that Mastercard send me information about Mastercard business products and services. I acknowledge and agree that my personal data may be processed in accordance with Mastercard's 
+                <a class="underline" href="#">Global Privacy Notic</a> and  
+                <a class="underline" href="#">Terms of Use.</a></p>
+            </dxp-modal>
+          </div>
+          <div>
+            <dxp-modal id="successful-registration" modal-subtitle="Thank you!" modal-description="If your request is approved, our team will email you a link to register for our event.">
+              <dxp-image slot="logo" src="./images/icons/process-complete.svg?at=116b7d452acbe51a1b7427530891e52b74f4d3c4" 
+                alt="Go to Mastercard">
+              </dxp-image>
+            </dxp-modal>
+          </div>   
+        </div>
+        <div class="dxp dxp-col-12 dxp-col-lg-6">
+          <h3>Connect, collaborate and share best practices</h3>
+          <p>We are living at a pivotal moment in history. Economic power is shifting dramatically from the West to new economies. New markets and new leaders are exercising unprecedented influence over the course of economic change on the global scale. While complex challenges persist, new opportunities are presenting themselves each day. It will take a new community of leaders thinking, innovating and working together to create the thriving, inclusive global economy of the future.</p>
+          <p>Participants in the forum span the globe—East to West—fully embracing its inclusive vision. From the burgeoning nations of the Asia-Pacific region to the bustling metropolises of Africa and South America, representatives bring with them a range of valuable, essential perspectives.</p>
+          <p>Former U.S. Secretary of Treasury Hank Paulson, Alibaba Group Chairman Jack Ma and Former Chair of the U.S. Federal Reserve Janet Yellen are just a few of the leaders who have accepted this unique opportunity to collaborate with their peers on devising solutions to the issues facing the global economy in the year ahead.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-container">
+    <div class="dxp-content-main overview-template dxp dxp-theme-rich-grey">
+      <dxp-breadcrumb data-theme="dxp-theme-rich-grey" show-nav-item=true content-id="breadcrumb"></dxp-breadcrumb>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="dxp-content-main overview-template dxp dxp-theme-black">
+      <dxp-footer content-id="dxp-footer" data-theme="dxp-theme-black" enable-logo="true" enable-quicklink="true"
+        enable-contentlist="true" enable-footerlink="true" enable-socialfollow="true"
+        enable-countrylanguageselectors="true" enable-copyright="true"></dxp-footer>
+    </div>
+  </div>
+  <script>
+    // Accesss Model method to open the model
+    // Get dxp cta reference
+      // Get dxp modal reference
+    const eventRegistrationForm = document.querySelector('#event-registration-form');
+    const body = document.querySelector('body');
+    const successfulRegistration = document.querySelector('#successful-registration');
+    let modelSubmitBtn;
+
+    window.onload = function() {
+      modelSubmitBtn = eventRegistrationForm.shadowRoot.querySelector('#primaryButton');
+      if(modelSubmitBtn) {
+        modelSubmitBtn.addEventListener('click', function() {
+          openModel(successfulRegistration);
+          closeModel(eventRegistrationForm);
+        });
+      }
+    };  
+
+    function openModel (modal) {
+      // Call dxp modal openModal method to open the model
+      modal.openModal();
+    }
+    function closeModel(modal) {
+      modal.closeModal();
+    }
+
+    // Nav data
+    const navigation = {
+      "navigationData": [
+        {
+          "navigationTitle": "Mastercard for you",
+          "menuRouteLink": "/content/mccom/en-us/about-mastercard/DXP-QA-Test-Pages/DXP-DD-QA/QuickLinksHeaderRich/MastercardForYou.html",
+          "linkTitle": "Mastercard for you",
+          "overlayBgImage": "./images/banner/2500X1406_laptop.jpg?at=refs%2Fheads%2Fmaster",
+          "description": "",
+          "quickLinks": [
+            {
+              "quickLinkDescription": "With Mastercard in your wallet, life is full of priceless possibilities",
+              "ctaList": [
+                {
+                  "title": "Event Details",
+                  "link": "./event-detail-template-local.html",
+                  "image": "./images/icons/contact-us-grey-22x22.svg",
+                  "imageAltText": "Get Support"
+                },
+                {
+                  "title": "Report a missing card",
+                  "link": "https://amazon.com",
+                  "image": "./images/icons/credit-card-grey-23x15.svg",
+                  "imageAltText": "Report a missing card"
+                },
+                {
+                  "title": "Find ATM",
+                  "link": "https://findARM.com",
+                  "image": "./images/icons/location-grey-15x23.svg",
+                  "imageAltText": "Find ATM"
+                }
+              ]
+            }
+          ],
+          "child": [
+            {
+              "navigationTitle": "Event Details",
+              "menuRouteLink": "./event-detail-template-local.html",
+              "linkTitle": "Get Started",
+              "description": "Find new ways to pay, explore new trending technologies and discover all that is priceless"
+            },
+            {
+              "navigationTitle": "Find a card",
+              "menuRouteLink": "/QuickLinksHeaderRich/MastercardForYou/FindACard.html",
+              "linkTitle": "Find a card",
+              "description": "Find the right credit, debit or prepaid card for your needs and lifestyle. "
+            },
+            {
+              "navigationTitle": "Cardholder Benefits",
+              "menuRouteLink": "/content/mccom/en-us/about-mastercard/DXP-QA-Test-Pages/DXP-DD-QA/QuickLinksHeaderRich/MastercardForYou/CardholderBenefits.html",
+              "linkTitle": "Cardholder Benefits",
+              "description": "Learn more about the features, offers and perks that comes with your Mastercard"
+            }
+          ]
+        },
+        {
+          "navigationTitle": "Mastercard For Business",
+          "menuRouteLink": "/content/mccom/en-us/about-mastercard/DXP-QA-Test-Pages/DXP-DD-QA/QuickLinksHeaderRich/MastercardForBusiness.html",
+          "linkTitle": "Mastercard For Business",
+          "overlayBgImage": "./images/banner/2500X1406_laptop2.jpg?at=refs%2Fheads%2Fmaster",
+          "description": "",
+          "child": [
+            {
+              "navigationTitle": "Businesses",
+              "menuRouteLink": "./Sample-local.html",
+              "linkTitle": "Businesses",
+              "description": "Whether you\u0027re a small shop or global enterprise, find payment solutions and tools to grow your business. "
+            }
+          ]
+        },
+        {
+          "navigationTitle": "Our Vision",
+          "menuRouteLink": "/QuickLinksHeaderRich/OurVision.html",
+          "linkTitle": "Our Vision",
+          "overlayBgImage": "./images/banner/2500X1406_deconomy.jpg?at=refs%2Fheads%2Fmaster",
+          "description": "",
+          "child": [
+            {
+              "navigationTitle": "Global impact",
+              "menuRouteLink": "/content/mccom/en-us/about-mastercard/DXP-QA-Test-Pages/DXP-DD-QA/QuickLinksHeaderRich/OurVision/GlobalImpact.html",
+              "linkTitle": "Global impact",
+              "description": "Whether you\u0027re a small shop or global enterprise, find payment solutions and tools to grow your business. "
+            }
+          ]
+        }
+      ]
+    };
+    var nav = document.querySelector('[content-id ="nav"]');
+    document.addEventListener("DOMContentLoaded", function () {
+      nav['navData'] = navigation
+    });
+
+    // Breadcrumb data
+    const breadcrumbItems = [{
+      "linkId": "libraries",
+      "title": "Libraries",
+      "link": "#/libraries",
+      "hideInNav": false,
+      "child": [{
+        "linkId": "components",
+        "title": "Components",
+        "link": "#/libraries/components",
+        "hideInNav": true,
+        "child": [{
+          "linkId": "web",
+          "title": "Web",
+          "link": "#/libraries/components/web",
+          "hideInNav": false,
+          "child": [{
+            "linkId": "dxp-breadcrumb",
+            "title": "Dxp-breadcrumb",
+            "link": "#/libraries/components/web/dxp-breadcrumb",
+            "hideInNav": false
+          }]
+        }]
+      }]
+    }];
+    const element = document.querySelector(
+      "[content-id = \"breadcrumb\"]");
+    document.addEventListener("DOMContentLoaded", function () {
+      element.breadcrumbItemsData = breadcrumbItems
+    });
+
+    // Footer data
+    const logoData = {
+      "src": "./images/logos/mclogo-for-footer.svg?at=refs%2Fheads%2Fmaster",
+      "srcSm": "./images/logos/mclogo-for-footer.svg?at=refs%2Fheads%2Fmaster",
+      "alt": "Go to Partner Brand",
+      "href": "https://www.mastercard.com/",
+      "target": false,
+      "NESTED:dxp-logo": {
+        "src": "./images/logos/partner-logo.svg",
+        "srcSm": "./images/logos/partner-logo.svg",
+        "alt": "Go to Partner Brand",
+        "href": "https://www.mastercard.com/",
+        "target": false
+      }
+    };
+
+    const footerlinkData = {
+      "titleText": "",
+      "ariaLabel": "",
+      "headerSize": "",
+      "href": "",
+      "orientation": "horizontal",
+      "target": false,
+      "contentListItems": [
+        {
+          "subTitle": "Privacy",
+          "href": "http://www.mastercard.com",
+          "ariaLabel": "Privacy",
+          "target": true
+        },
+        {
+          "subTitle": "Accessibility",
+          "href": "http://www.mastercard.com",
+          "ariaLabel": "Accessibility",
+          "target": true
+        },
+        {
+          "subTitle": "Terms",
+          "href": "http://www.mastercard.com",
+          "ariaLabel": "Terms",
+          "target": true
+        },
+        {
+          "subTitle": "Sitemap",
+          "href": "http://www.mastercard.com",
+          "ariaLabel": "Sitemap",
+          "target": true
+        }
+      ]
+    };
+
+    const ctaListData = {
+      "show-heading": "true",
+      "titleText": "Need help? We’re always here when you need us",
+      "title-style": "dxp-title-sm",
+      "orientation": "vertical",
+      "ctaList": [
+        {
+          "type": "link",
+          "linkType": "dxp-btn-internal-link",
+          "text": "Get Support",
+          "disabled": false,
+          "src": "./images/icons/contact-us-grey-22x22.svg?at=refs%2Fheads%2Fmaster",
+          "alt": null,
+          "iconAlign": "left",
+          "href": "http://www.mastercard.com",
+          "ariaLabel": "Get support",
+          "width": "200px",
+          "height": "50px",
+          "openinnewTab": false,
+          "iconBadge": "10",
+          "accentColor": "#b1ada6"
+        },
+        {
+          "type": "link",
+          "linkType": "dxp-btn-internal-link",
+          "text": "Report a missing card",
+          "disabled": false,
+          "src": "./images/icons/credit-card-grey-23x15.svg?at=refs%2Fheads%2Fmaster",
+          "alt": null,
+          "iconAlign": "left",
+          "href": "http://www.mastercard.com",
+          "ariaLabel": "Report a missing card",
+          "width": "200px",
+          "height": "50px",
+          "openinnewTab": false,
+          "iconBadge": "10",
+          "accentColor": "#b1ada6"
+        },
+        {
+          "type": "link",
+          "linkType": "dxp-btn-internal-link",
+          "text": "Find ATM",
+          "disabled": false,
+          "src": "./images/icons/location-grey-15x23.svg?at=refs%2Fheads%2Fmaster",
+          "alt": null,
+          "iconAlign": "left",
+          "ariaLabel": "Find ATM",
+          "width": "200px",
+          "height": "50px",
+          "openinnewTab": false,
+          "iconBadge": "10",
+          "href": "http://www.mastercard.com",
+          "accentColor": "#b1ada6"
+        }
+
+      ]
+    };
+
+    const contentListData = [
+      {
+        "contentId": "contentLinkList",
+        "titleText": "Support",
+        "href": "http://www.mastercard.com",
+        "aria-label": "Support",
+        "target": "true",
+        "contentListItems": [
+          {
+            "subTitle": "What we do",
+            "href": "What we do",
+            "ariaLabel": "What we do",
+            "target": false
+          },
+          {
+            "subTitle": "Who we are ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Who we are ",
+            "target": false
+          },
+          {
+            "subTitle": "Careers ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Careers ",
+            "target": true
+          },
+          {
+            "subTitle": "Newsroom ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Newsroom ",
+            "target": false
+          },
+          {
+            "subTitle": "Investors ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Investors ",
+            "target": false
+          }
+        ]
+      },
+      {
+        "content-id": "contentLinkList",
+        "ariaLabel": "Resources",
+        "headerSize": "h2",
+        "href": "http://www.mastercard.com",
+        "orientation": "vertical",
+        "target": "true",
+        "titleText": "Resources",
+        "contentListItems": [
+          {
+            "subTitle": "Mastercard Data and Services ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Mastercard Brand Center",
+            "target": false
+          },
+          {
+            "subTitle": "Mastercard Brand Center ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Mastercard Brand Center",
+            "target": false
+          },
+          {
+            "subTitle": "Mastercard Marketing Center ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Mastercard Marketing Center ",
+            "target": true
+          },
+          {
+            "subTitle": "Mastercard Connect ",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Mastercard Connect ",
+            "target": false
+          },
+          {
+            "subTitle": "Developer Zone",
+            "href": "http://www.mastercard.com",
+            "ariaLabel": "Developer Zone",
+            "target": false
+          }
+        ]
+      }];
+
+    const socialFollowData = {
+      "follow-us-label": "Follow Us",
+      "orientation": "vertical",
+      "socialFollowItems": [
+        {
+          "type": "facebook",
+          "socialTitle": "Facebook",
+          "ariaLabel": "Facebook",
+          "alt": "Facebook",
+          "href": "https://www.facebook.com/MasterCardUS?brand_redir=1",
+          "target": "true"
+
+        },
+        {
+          "type": "linkedin",
+          "socialTitle": "linkedin",
+          "ariaLabel": "linkedin",
+          "alt": "LinkedIn",
+          "href": "http://www.linkedin.com/company/mastercard",
+          "target": "true"
+        },
+        {
+          "type": "twitter",
+          "socialTitle": "Twitter",
+          "ariaLabel": "Twitter",
+          "alt": "Twitter",
+          "href": "https://twitter.com/mastercardnews",
+          "target": "true"
+        },
+        {
+          "type": "youtube",
+          "socialTitle": "Youtube",
+          "ariaLabel": "Youtube",
+          "alt": "Youtube",
+          "href": "http://www.youtube.com/user/MasterCard",
+          "target": "true"
+        }
+      ]
+    };
+
+    const countryLanguageData = {
+      "end-point-url": "https://api.myjson.com/bins/stsqh",
+      "target-url": "https://publicis.invisionapp.com/d/#/console/17070181/360919589/preview"
+    };
+
+    const copyrightData = {
+      "text": "© 1994-2018 Mastercard."
+    };
+
+    const footerRef = document.querySelector("[content-id = \"dxp-footer\"]");
+
+    document.addEventListener("DOMContentLoaded", function () {
+      footerRef.logoData = logoData;
+      footerRef.copyrightData = copyrightData;
+      footerRef.contentListData = contentListData;
+      footerRef.socialFollowData = socialFollowData;
+      footerRef.countryLanguageData = countryLanguageData;
+      footerRef.footerlinkData = footerlinkData;
+      footerRef.ctaListData = ctaListData;
+    });
+  </script>
+
+</body>
+
+</html>

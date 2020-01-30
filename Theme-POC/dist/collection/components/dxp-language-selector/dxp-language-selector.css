@@ -1,0 +1,95 @@
+div.dxp.dxp-language-selector .language-wrapper {
+  padding-right: 0;
+  width: 50px;
+  position: relative;
+  cursor: pointer;
+}
+div.dxp.dxp-language-selector .language-wrapper.active .header-lang-list {
+  display: block;
+}
+div.dxp.dxp-language-selector .show-lang-list {
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+div.dxp.dxp-language-selector .sel-lang {
+  height: 25px;
+  width: 40px;
+  padding-left: 0;
+  display: inline-block;
+}
+div.dxp.dxp-language-selector ul {
+  display: none;
+  padding-top: 12px;
+  border-radius: 0 0 4px 4px;
+  position: absolute;
+  top: 56px;
+  z-index: 1;
+  right: 0;
+}
+div.dxp.dxp-language-selector .lang-caret {
+  position: relative;
+}
+div.dxp.dxp-language-selector .lang-caret:before, div.dxp.dxp-language-selector .lang-caret:after {
+  content: "";
+  height: 6px;
+  width: 1px;
+  position: absolute;
+  top: 10px;
+  display: block;
+  transform: rotate(45deg);
+  right: 0px;
+  border-radius: 3px;
+}
+div.dxp.dxp-language-selector .lang-caret:after {
+  transform: rotate(-45deg);
+  right: 4px;
+}
+div.dxp.dxp-language-selector .lang-list:hover > li.active span {
+  border: none;
+  padding: 12px 0;
+}
+div.dxp.dxp-language-selector .lang-list:hover > li.active:hover span {
+  padding-bottom: 8px;
+}
+div.dxp.dxp-language-selector .language-selector > div {
+  padding-right: 0;
+}
+div.dxp.dxp-language-selector .language-selector > div::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+div.dxp.dxp-language-selector[dir=rtl] .language-wrapper {
+  float: left;
+}
+div.dxp.dxp-language-selector[dir=rtl] .language-wrapper ul {
+  left: 0;
+  right: auto;
+}
+div.dxp.dxp-language-selector[dir=rtl] .language-wrapper li {
+  text-align: left;
+}
+div.dxp.dxp-language-selector[dir=rtl] .language-wrapper .sel-lang {
+  padding-right: 32px;
+}
+div.dxp.dxp-language-selector[dir=rtl] .language-wrapper .lang-caret {
+  position: relative;
+}
+div.dxp.dxp-language-selector[dir=rtl] .language-wrapper .lang-caret:before, div.dxp.dxp-language-selector[dir=rtl] .language-wrapper .lang-caret:after {
+  content: "";
+  height: 6px;
+  width: 1px;
+  position: absolute;
+  top: 10px;
+  display: block;
+  transform: rotate(45deg);
+  right: 32px;
+  border-radius: 3px;
+}
+div.dxp.dxp-language-selector[dir=rtl] .language-wrapper .lang-caret:after {
+  transform: rotate(-45deg);
+  right: 36px;
+}

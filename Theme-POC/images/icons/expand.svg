@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="11px" viewBox="0 0 12 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>expand</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Designs-on-Invision" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02)-Sidebar-dropdown" transform="translate(-394.000000, -599.000000)" fill="#161615" fill-rule="nonzero">
+            <g id="expand" transform="translate(393.000000, 598.000000)">
+                <g id="Group">
+                    <g id="dropdown-black" transform="translate(9.500000, 6.500000) rotate(-90.000000) translate(-9.500000, -6.500000) translate(3.500000, 2.500000)">
+                        <g id="form_x2F_without-label_x2F_black_x2F_selector_x2F_filled-h6_1_" transform="translate(6.000000, 4.250000) rotate(-180.000000) translate(-6.000000, -4.250000) translate(0.000000, 0.750000)">
+                            <g id="icon_x2F_dropdown-arrow_x2F_small_x2F_black_x2F_rest_1_" transform="translate(0.665771, 0.674093)">
+                                <g id="drop-down_1_">
+                                    <polygon id="_x31_px_1_" points="0.546885333 5.64109785 5.881954 0.7111098 5.43414067 0.207803475 0.0990706667 5.13779085"></polygon>
+                                    <polygon id="_x31_p_1_" points="10.3208073 5.64109785 4.98573733 0.711110475 5.433552 0.20780415 10.7686207 5.13779085"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="dropdown-black-copy" transform="translate(4.500000, 6.500000) rotate(-90.000000) translate(-4.500000, -6.500000) translate(-1.500000, 2.500000)">
+                        <g id="form_x2F_without-label_x2F_black_x2F_selector_x2F_filled-h6_1_" transform="translate(6.000000, 4.250000) rotate(-180.000000) translate(-6.000000, -4.250000) translate(0.000000, 0.750000)">
+                            <g id="icon_x2F_dropdown-arrow_x2F_small_x2F_black_x2F_rest_1_" transform="translate(0.665771, 0.674093)">
+                                <g id="drop-down_1_">
+                                    <polygon id="_x31_px_1_" points="0.546885333 5.64109785 5.881954 0.7111098 5.43414067 0.207803475 0.0990706667 5.13779085"></polygon>
+                                    <polygon id="_x31_p_1_" points="10.3208073 5.64109785 4.98573733 0.711110475 5.433552 0.20780415 10.7686207 5.13779085"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,54 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-location-search-banner {
+  position: relative;
+}
+div.dxp.dxp-location-search-banner .dxp-eyebrow-lg {
+  margin-bottom: 8px;
+}
+div.dxp.dxp-location-search-banner h1 {
+  margin-bottom: 0;
+}
+div.dxp.dxp-location-search-banner .lead {
+  margin-top: 1rem;
+}
+div.dxp.dxp-location-search-banner .banner-content .dxp-row:last-child {
+  margin-top: 1rem;
+}
+div.dxp.dxp-location-search-banner .image-container {
+  height: 320px;
+  overflow: hidden;
+}
+div.dxp.dxp-location-search-banner .banner-content {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  min-height: 288px;
+}
+div.dxp.dxp-location-search-banner .location-selector {
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  div.dxp.dxp-location-search-banner {
+    max-height: 450px;
+    overflow: hidden;
+  }
+  div.dxp.dxp-location-search-banner .dxp-eyebrow-lg {
+    margin-bottom: 13px;
+  }
+  div.dxp.dxp-location-search-banner .banner-content .dxp-row:last-child {
+    margin-top: 1.875rem;
+  }
+  div.dxp.dxp-location-search-banner .banner-content {
+    min-height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div.dxp.dxp-location-search-banner .image-container {
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  div.dxp.dxp-location-search-banner .location-selector {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,113 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-location-selector.search-wrapper {
+  padding: 0;
+}
+div.dxp.dxp-location-selector.search-wrapper.simple-search {
+  background-color: transparent;
+  width: 100%;
+}
+div.dxp.dxp-location-selector.search-wrapper .search-box-container,
+div.dxp.dxp-location-selector.search-wrapper .wrapper {
+  position: relative;
+}
+div.dxp.dxp-location-selector.search-wrapper input {
+  line-height: 2rem;
+  padding: 8px 65px 8px 47px;
+  border-radius: 19px;
+}
+div.dxp.dxp-location-selector.search-wrapper input:focus {
+  outline: none;
+}
+div.dxp.dxp-location-selector.search-wrapper .dxp-icon:focus {
+  outline: none;
+}
+div.dxp.dxp-location-selector.search-wrapper .searchbox.dxp-border-radius {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+div.dxp.dxp-location-selector.search-wrapper .dxp-icon-globe {
+  position: absolute;
+  padding: 0;
+  cursor: pointer;
+  left: 20px;
+  top: 10px;
+}
+div.dxp.dxp-location-selector.search-wrapper .dxp-icon.dxp-icon-caret-down,
+div.dxp.dxp-location-selector.search-wrapper .dxp-icon-caret-up {
+  position: absolute;
+  right: 16px;
+  top: 10px;
+}
+div.dxp.dxp-location-selector.search-wrapper .dxp-icon-close {
+  position: absolute;
+  top: 11px;
+  right: 16px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+div.dxp.dxp-location-selector.search-wrapper .dxp-location-list-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-top: 0;
+  border-bottom-right-radius: 19px;
+  border-bottom-left-radius: 19px;
+}
+div.dxp.dxp-location-selector.search-wrapper .dxp-suggestion-list {
+  list-style: none;
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 19px;
+  padding: 0;
+}
+div.dxp.dxp-location-selector.search-wrapper .dxp-suggestion-list li {
+  padding: 10px 40px;
+  padding-bottom: 10px;
+  position: relative;
+}
+div.dxp.dxp-location-selector.search-wrapper .dxp-suggestion-list li p {
+  margin: 0;
+}
+div.dxp.dxp-location-selector.search-wrapper .dxp-suggestion-list li::before {
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  width: calc(100% - 70px);
+}
+div.dxp.dxp-location-selector.search-wrapper .dxp-suggestion-list li:first-child::before {
+  content: "";
+}
+div.dxp.dxp-location-selector.search-wrapper .current-location li p {
+  margin: 0;
+}
+div.dxp.dxp-location-selector.search-wrapper .current-location li::before {
+  content: "";
+}
+div.dxp.dxp-location-selector.search-wrapper .current-location-data {
+  display: flex;
+}
+div.dxp.dxp-location-selector.search-wrapper .dxp-icon-current-location {
+  position: relative;
+  top: 2px;
+  margin-right: 8px;
+  width: 16px;
+  height: 18px;
+  display: block;
+}
+@media (max-width: 767px) {
+  div.dxp.dxp-location-selector.search-wrapper .cta {
+    padding-top: 24px;
+  }
+}
+div.dxp.dxp-location-selector.search-wrapper[dir=rtl] .dxp-icon-globe {
+  right: 20px;
+  left: auto;
+}
+div.dxp.dxp-location-selector.search-wrapper[dir=rtl] .dxp-icon.dxp-icon-caret-down,
+div.dxp.dxp-location-selector.search-wrapper[dir=rtl] .dxp-icon-caret-up, div.dxp.dxp-location-selector.search-wrapper[dir=rtl] .dxp-icon-close {
+  left: 16px;
+  right: auto;
+}

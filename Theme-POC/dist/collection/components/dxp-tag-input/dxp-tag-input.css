@@ -1,0 +1,89 @@
+/* namespace all component styles to create then most specific ruleset */
+div.dxp.dxp-tag-input {
+  position: relative;
+}
+div.dxp.dxp-tag-input input.searchbox {
+  padding: 0;
+  height: auto;
+  width: auto;
+  display: inline-block;
+  border: none;
+}
+div.dxp.dxp-tag-input input.searchbox:focus {
+  box-shadow: none;
+}
+div.dxp.dxp-tag-input .tag-div {
+  min-height: 40px;
+  max-height: 68px;
+  border-radius: 4px;
+  padding: 7px 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+div.dxp.dxp-tag-input .tag-div .tag-block {
+  display: inline-block;
+}
+div.dxp.dxp-tag-input .tags {
+  padding: 3px 30px 3px 11px;
+  border-radius: 19.5px;
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+}
+div.dxp.dxp-tag-input .tags .icon-close {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  cursor: pointer;
+}
+div.dxp.dxp-tag-input .dxp-list-container {
+  border-radius: 5px;
+  border: none;
+  margin: auto;
+  top: 42px;
+  left: 0;
+  right: 0;
+}
+div.dxp.dxp-tag-input .dxp-list-container .dxp-dropdown-list {
+  margin: 0;
+  padding: 8px 0 20px 0;
+}
+div.dxp.dxp-tag-input .dxp-list-container .dxp-dropdown-list .dxp-dropdown-list-item span {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+div.dxp.dxp-tag-input .dxp-list-container .dxp-dropdown-list div > span:first-of-type {
+  padding-left: 17px;
+  cursor: default;
+}
+div.dxp.dxp-tag-input .dxp-list-container .dxp-dropdown-list li {
+  height: auto;
+  line-height: normal;
+  padding: 4.5px 34px 7.5px 19px;
+  margin-top: 6px;
+}
+div.dxp.dxp-tag-input .dxp-list-container .dxp-dropdown-list li::after {
+  border-top: none;
+  border-bottom: none;
+}
+div.dxp.dxp-tag-input .dxp-list-container .dxp-dropdown-list .group-title {
+  padding-left: 17px;
+  cursor: default;
+}
+div.dxp.dxp-tag-input[dir=rtl] .dxp-list-container .dxp-dropdown-list li {
+  padding: 4px 19px 5px 34px;
+}
+div.dxp.dxp-tag-input[dir=rtl] .dxp-list-container .dxp-dropdown-list div > span:first-of-type {
+  padding-left: 0;
+  padding-right: 17px;
+  cursor: default;
+}
+div.dxp.dxp-tag-input[dir=rtl] .tags {
+  padding: 3px 11px 3px 30px;
+}
+div.dxp.dxp-tag-input[dir=rtl] .tags .icon-close {
+  right: auto;
+  left: 5px;
+}
